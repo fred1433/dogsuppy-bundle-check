@@ -1,0 +1,15 @@
+{
+ "what": "The Internet Archive's copy of one dogsuppy.it product page, read once. Only the fields below were kept; the page itself is not stored here.",
+ "page": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1",
+ "snapshot": "https://web.archive.org/web/20260418074716/https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1",
+ "captured_utc": "2026-04-18T07:47:16+00:00",
+ "read_utc": "2026-11-23T16:23:12+00:00",
+ "currency": "EUR",
+ "note": "Prices are the variant JSON the page embeds (\"price\":2990 is EUR 29.90): the product itself and the product cards further down the same page. compare_at_price is null on all of them.",
+ "items": [
+  {"handle": "sollievo-prurito-100-naturale-60-integratori-1", "archived_name": "Sollievo Prurito | 100% Naturale | 60 integratori", "archived_skus": ["5430004203674", "5430004203681"], "price": "29.90", "matched_by": "sku"},
+  {"handle": "ansia-stress-100-naturale-60-integratori-1", "archived_name": "Ansia & Stress | 100% Naturale | 60 integratori", "archived_skus": ["5430004203698", "5430004203704"], "price": "29.90", "matched_by": "sku"},
+  {"handle": "dental-bright", "archived_name": "Dental Bright | Polvere 100% Naturale | 60 dosi", "archived_skus": ["5430004203506"], "price": "29.90", "matched_by": "sku"},
+  {"handle": "dental-sticks", "archived_name": "Dental Sticks Clean Bite", "archived_skus": ["5430004203520"], "price": "7.14", "matched_by": "name: the SKU on the archived page differs from today's"}
+ ]
+}

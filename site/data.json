@@ -91,7 +91,22 @@
    "implied_note": {
     "n": 4,
     "fixed": []
-   }
+   },
+   "archive": [
+    {
+     "label": "Sollievo Prurito",
+     "url": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1",
+     "price": "29.90",
+     "by_sku": true
+    },
+    {
+     "label": "Stress & Ansia",
+     "url": "https://dogsuppy.it/products/ansia-stress-100-naturale-60-integratori-1",
+     "price": "29.90",
+     "by_sku": true
+    }
+   ],
+   "archive_total": "119.60"
   },
   {
    "store": "dogsuppy.it",
@@ -131,7 +146,22 @@
    "implied_note": {
     "n": 4,
     "fixed": []
-   }
+   },
+   "archive": [
+    {
+     "label": "Dental Bright",
+     "url": "https://dogsuppy.it/products/dental-bright",
+     "price": "29.90",
+     "by_sku": true
+    },
+    {
+     "label": "Sollievo Prurito",
+     "url": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1",
+     "price": "29.90",
+     "by_sku": true
+    }
+   ],
+   "archive_total": "119.60"
   },
   {
    "store": "dogsuppy.it",
@@ -171,7 +201,22 @@
    "implied_note": {
     "n": 2,
     "fixed": []
-   }
+   },
+   "archive": [
+    {
+     "label": "Ansia & Stress",
+     "url": "https://dogsuppy.it/products/ansia-stress-100-naturale-60-integratori-1",
+     "price": "29.90",
+     "by_sku": true
+    },
+    {
+     "label": "Dental Bright",
+     "url": "https://dogsuppy.it/products/dental-bright",
+     "price": "29.90",
+     "by_sku": true
+    }
+   ],
+   "archive_total": "59.80"
   },
   {
    "store": "dogsuppy.it",
@@ -216,7 +261,22 @@
       "unit": "7.14"
      }
     ]
-   }
+   },
+   "archive": [
+    {
+     "label": "Dental Bright",
+     "url": "https://dogsuppy.it/products/dental-bright",
+     "price": "29.90",
+     "by_sku": true
+    },
+    {
+     "label": "Dental Sticks",
+     "url": "https://dogsuppy.it/products/dental-sticks",
+     "price": "7.14",
+     "by_sku": false
+    }
+   ],
+   "archive_total": "95.50"
   },
   {
    "store": "dogsuppy.com",
@@ -771,8 +831,37 @@
   }
  ],
  "mismatch_count": 4,
- "short_total": "48.00",
  "pass_count": 15,
+ "short_min": "8.00",
+ "short_max": "16.00",
+ "stores_with_bundles": [
+  "dogsuppy.com",
+  "dogsuppy.it"
+ ],
+ "views": [
+  {
+   "view": "checks_bundle_compare_at",
+   "rows": 4
+  },
+  {
+   "view": "checks_compare_at_not_above_price",
+   "rows": 0
+  },
+  {
+   "view": "checks_bundle_unparsed",
+   "rows": 0
+  },
+  {
+   "view": "checks_same_sku_two_prices",
+   "rows": 0
+  }
+ ],
+ "archive": {
+  "page": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1",
+  "snapshot": "https://web.archive.org/web/20260418074716/https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1",
+  "captured_utc": "2026-04-18T07:47:16+00:00",
+  "read_utc": "2026-11-23T16:23:12+00:00"
+ },
  "implied_jar_price": [
   "29.90"
  ],
@@ -783,6 +872,7 @@
   "dental-bright-anti-stress",
   "gebit-and-jeuk"
  ],
+ "mutation_raise_dental_bright_total": 8,
  "mutation_it_jars_2990": [],
  "it_jars_moved": [
   "ansia-stress-100-naturale-60-integratori-1",
@@ -1193,47 +1283,16 @@
    "sku": "5430003031353",
    "com": "4.60",
    "it": "7.14",
+   "uk": "7.14",
+   "uk_currency": "GBP",
    "diff_pct": "55.2"
-  },
-  "jar_90": {
-   "com_90": "58.20",
-   "com_60": "38.20",
-   "com_per_90": "0.647",
-   "com_per_60": "0.637",
-   "com_pct": "1.6",
-   "uk_90": "42.95",
-   "uk_60": "34.86",
-   "uk_per_90": "0.477",
-   "uk_per_60": "0.581",
-   "uk_pct": "-17.9"
-  },
-  "handle_title": {
-   "handle": "maxi-pack-dental-bright-voor-grote-honden-100-natuurlijk-180-schepjes",
-   "title": "Dental Bright GroteHond⁺ 🌿 60 schepjes",
-   "type": "Hidden"
   }
  },
  "tests": {
   "cases": 9,
   "failures": [],
   "mutants_caught": 14,
-  "mutants_total": 14,
-  "mutants": [
-   "drop the quantity (2x counted once)",
-   "widen the tolerance to 50 cents",
-   "ignore the \"or\" alternative",
-   "pass bundles whose jars cannot be priced",
-   "count gifts and builders at 0.00",
-   "count a paid gift (no 0.00 price) as stock",
-   "count Hidden listings",
-   "compare SKUs without dropping the leading zero",
-   "keep landing-page copies",
-   "keep marketplace-import copies",
-   "count B2B listings as retail",
-   "accept a struck price equal to the price",
-   "report parsed bundles instead of unparsed ones",
-   "never compare the two prices"
-  ]
+  "mutants_total": 14
  },
  "sql_view": "-- A bundle's struck price (compare_at_price) must equal the sum of today's prices of the jars\n-- its own description lists. When the description offers \"X or Y\", either total passes.\n-- Contract: 0 rows = PASS. A bundle whose jars cannot all be priced is returned as not_checked, never passed.\nCREATE OR REPLACE VIEW checks_bundle_compare_at AS\nWITH bundle AS (\n  SELECT store, handle, url, compare_at_price, read_at\n  FROM listing_clean\n  WHERE compare_at_price IS NOT NULL AND excluded_reason IS NULL\n),\nunit AS (            -- one price per jar; NULL when its flavours disagree\n  SELECT store, handle, CASE WHEN MIN(price) = MAX(price) THEN MIN(price) END AS unit_price\n  FROM listing_clean\n  WHERE excluded_reason IS NULL\n  GROUP BY store, handle\n),\nline AS (\n  SELECT b.store, b.bundle_handle, b.slot, b.qty, b.is_default, u.unit_price\n  FROM bundle_line b\n  LEFT JOIN unit u ON u.store = b.store AND u.handle = b.component_handle\n),\nlisted AS (          -- the composition as written first in the description\n  SELECT store, bundle_handle,\n         SUM(CASE WHEN is_default THEN qty * unit_price END) AS total,\n         SUM(CASE WHEN unit_price IS NULL THEN 1 ELSE 0 END) AS unpriced   -- counts \"or\" alternatives too\n  FROM line\n  GROUP BY store, bundle_handle\n),\npossible AS (        -- that total, plus one total per \"or\" alternative swapped into its slot\n  SELECT store, bundle_handle, total FROM listed\n  UNION ALL\n  SELECT a.store, a.bundle_handle, l.total - d.qty * d.unit_price + a.qty * a.unit_price\n  FROM line a\n  JOIN line d ON d.store = a.store AND d.bundle_handle = a.bundle_handle AND d.slot = a.slot AND d.is_default\n  JOIN listed l ON l.store = a.store AND l.bundle_handle = a.bundle_handle\n  WHERE NOT a.is_default\n),\nclosest AS (\n  SELECT p.store, p.bundle_handle, MIN(ABS(p.total - b.compare_at_price)) AS gap\n  FROM possible p\n  JOIN bundle b ON b.store = p.store AND b.handle = p.bundle_handle\n  GROUP BY p.store, p.bundle_handle\n)\nSELECT\n  'bundle_compare_at' AS check_name,\n  CASE WHEN l.unpriced > 0 THEN 'not_checked' ELSE 'mismatch' END AS severity,\n  b.store, b.handle AS key,\n  CASE WHEN l.unpriced = 0 THEN l.total END AS expected,\n  b.compare_at_price AS actual,\n  CASE WHEN l.unpriced = 0 THEN b.compare_at_price - l.total END AS delta,\n  b.url AS evidence_url, b.read_at\nFROM bundle b\nJOIN listed l ON l.store = b.store AND l.bundle_handle = b.handle\nJOIN closest c ON c.store = b.store AND c.bundle_handle = b.handle\nWHERE l.unpriced > 0 OR c.gap > 0.005;\n"
 }

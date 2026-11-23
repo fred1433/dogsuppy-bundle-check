@@ -1,8 +1,13 @@
 /**
  * Exceptions tab: one row per row of the BigQuery view checks_all, refreshed each morning.
  * Rows that were not there on the previous run are coloured; rows that disappeared are listed
- * under "Cleared since last run". Nothing here was executed for the demo: it needs your project,
- * the BigQuery advanced service enabled in the Apps Script editor, and your own authorisation.
+ * under "Cleared since last run". Provided to install; it was not executed for the demo: it needs
+ * your project, the BigQuery advanced service enabled in the Apps Script editor, and your own
+ * authorisation.
+ *
+ * The REST API returns a TIMESTAMP as float seconds ("1.763913282E9") and a NUMERIC without its
+ * trailing zeros ("-16"), and Sheets turns a SKU such as 05430003031827 into a number. So the query
+ * formats both in SQL, and the key column is set to plain text before the values are written.
  *
  * Set PROJECT_ID and VIEW, run refreshExceptions() once by hand, then installDailyTrigger().
  */
@@ -12,6 +17,17 @@ const SHEET = 'Exceptions';
 const COLUMNS = ['check_name', 'severity', 'store', 'key', 'expected', 'actual', 'delta', 'evidence_url', 'read_at'];
 const NEW_ROW = '#fde3df';      // pale coral: appeared since the last run
 const NOT_CHECKED = '#eef1f0';  // grey: the rule could not run on this row
+const TZ = 'Europe/Brussels';
+const QUERY = [
+  'SELECT check_name, severity, store, key,',
+  "  IF(expected IS NULL, NULL, FORMAT('%.2f', expected)) AS expected,",
+  "  IF(actual IS NULL, NULL, FORMAT('%.2f', actual)) AS actual,",
+  "  IF(delta IS NULL, NULL, FORMAT('%.2f', delta)) AS delta,",
+  '  evidence_url,',
+  "  FORMAT_TIMESTAMP('%F %R', read_at, '" + TZ + "') AS read_at",
+  'FROM ' + VIEW,
+  'ORDER BY check_name, store, key',
+].join('\n');
 
 function refreshExceptions() {
   const rows = queryView_();
@@ -24,8 +40,10 @@ function refreshExceptions() {
 
   sheet.clear();
   sheet.getRange(1, 1, 1, COLUMNS.length).setValues([COLUMNS]).setFontWeight('bold');
-  sheet.getRange(1, COLUMNS.length + 2).setValue('Last run: ' + new Date().toISOString());
+  sheet.getRange(1, COLUMNS.length + 2).setValue('Last run: ' + Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd HH:mm') + ' (' + TZ + ')');
   if (rows.length) {
+    sheet.getRange(2, COLUMNS.indexOf('key') + 1, rows.length, 1).setNumberFormat('@');          // keeps 05430003031827 as text
+    sheet.getRange(2, COLUMNS.indexOf('expected') + 1, rows.length, 3).setNumberFormat('0.00');  // expected, actual, delta
     sheet.getRange(2, 1, rows.length, COLUMNS.length).setValues(rows);
     rows.forEach((r, i) => {
       const colour = r[1] === 'not_checked' ? NOT_CHECKED : (before.has(keyOf(r)) ? null : NEW_ROW);
@@ -44,7 +62,7 @@ function refreshExceptions() {
 }
 
 function queryView_() {
-  const request = { query: 'SELECT ' + COLUMNS.join(', ') + ' FROM ' + VIEW + ' ORDER BY check_name, store, key', useLegacySql: false };
+  const request = { query: QUERY, useLegacySql: false };
   let res = BigQuery.Jobs.query(request, PROJECT_ID);
   const jobId = res.jobReference.jobId;
   while (!res.jobComplete) {

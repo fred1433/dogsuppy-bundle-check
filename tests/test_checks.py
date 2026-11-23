@@ -89,3 +89,31 @@ def test_bigquery_rendering_parses():
 def test_suite_and_mutants_agree():
     passed, fails = suite.suite()
     assert fails == [] and passed == 1 + len(suite.EXPECTED)
+
+# --- the web archive's copy of 18 Apr 2026 (data/archive) ---
+def test_archived_prices_add_up_to_each_italian_struck_price(snap):
+    arch = json.loads((ROOT / "data" / "archive" / "dogsuppy.it.20260418.json").read_text())
+    price = {i["handle"]: float(i["price"]) for i in arch["items"]}
+    lines = [l for l in csv.DictReader(open(TABLES / "bundle_line.csv", encoding="utf-8"))
+             if l["store"] == "dogsuppy.it" and l["is_default"] == "true"]
+    flagged = {r["key"]: float(r["actual"]) for r in checks.rows(snap, "checks_all") if r["store"] == "dogsuppy.it"}
+    assert len(flagged) == 4
+    for key, struck in flagged.items():
+        assert sum(int(l["qty"]) * price[l["component_handle"]] for l in lines if l["bundle_handle"] == key) == pytest.approx(struck), key
+    assert arch["snapshot"].startswith("https://web.archive.org/web/20260418")
+
+# --- the Apps Script query: what BigQuery's REST API hands to Sheets ---
+def test_apps_script_query_formats_amounts_times_and_keeps_keys_as_text():
+    import shutil, subprocess, sqlglot
+    gs = ROOT / "apps_script" / "Exceptions.gs"
+    if not shutil.which("node"):
+        pytest.skip("node is needed to evaluate the Apps Script constants")
+    query = subprocess.run(["node", "-e", "const fs = require('fs'); eval(fs.readFileSync(process.argv[1], 'utf8') + '; process.stdout.write(QUERY)')", str(gs)],
+                           capture_output=True, text=True, check=True).stdout
+    tree = sqlglot.parse_one(query, read="bigquery")
+    assert [e.alias_or_name for e in tree.expressions] == ["check_name", "severity", "store", "key", "expected", "actual", "delta", "evidence_url", "read_at"]
+    assert "FORMAT_TIMESTAMP('%F %R', read_at, 'Europe/Brussels')" in query
+    assert query.count("FORMAT('%.2f',") == 3
+    src = gs.read_text()
+    body = src[src.index("function refreshExceptions"):src.index("function queryView_")]
+    assert body.index("setNumberFormat('@')") < body.index("setValues(rows)")

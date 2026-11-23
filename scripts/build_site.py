@@ -72,11 +72,21 @@ def main():
     it_rows = [b for b in bundles if b["status"] == "mismatch"]
     implied = {b["implied_jar_price"] for b in it_rows}
 
+    # --- the web archive's copy of one dogsuppy.it page (data/archive, read once, by hand) ---
+    arch = json.loads((ROOT / "data" / "archive" / "dogsuppy.it.20260418.json").read_text())
+    arch_price = {i["handle"]: i for i in arch["items"]}
+    for b in it_rows:
+        if all(j["handle"] in arch_price for j in b["jars"]):
+            b["archive"] = [{"label": j["label"], "url": j["url"], "price": arch_price[j["handle"]]["price"],
+                             "by_sku": arch_price[j["handle"]]["matched_by"] == "sku"} for j in b["jars"]]
+            b["archive_total"] = q2(sum(int(j["qty"]) * Decimal(arch_price[j["handle"]]["price"]) for j in b["jars"]))
+
     # --- data mutations shown on the page ---
     t = copy.deepcopy(tables)
     for r in t["listing"]:
         if r["store"] == "dogsuppy.com" and r["handle"] == "dental-powder": r["price"] = "37.70"
-    raise_db = [r["key"] for r in checks.rows(checks.connect(t), "checks_all") if r["store"] == "dogsuppy.com"]
+    raised = checks.rows(checks.connect(t), "checks_all")
+    raise_db = [r["key"] for r in raised if r["store"] == "dogsuppy.com"]
     t = copy.deepcopy(tables)
     jars_3390 = sorted({j["handle"] for b in it_rows for j in b["jars"] if j["unit"] == "33.90"})
     for r in t["listing"]:
@@ -96,20 +106,20 @@ def main():
                       "rate": str(rates.get(c["currency"], "")) } for s, c in fam["Dental Bright (60 scoops)"].items()),
                     key=lambda x: Decimal(x["eur"]))
 
-    # --- the three open questions, numbers from the snapshot ---
-    cb_com, cb_it = unit[("dogsuppy.com", "clean-bite-sticks-schone-tanden-en-verwijderen-van-tandplak-5-sticks-per-zakje")], unit[("dogsuppy.it", "dental-sticks")]
-    big_com, small_com = unit[("dogsuppy.com", "maxi-pack-anti-jeuk-voor-grote-honden-100-natuurlijk-90-snoepjes")], unit[("dogsuppy.com", "probiotica-forte-anti-jeuk-hond")]
-    big_uk, small_uk = unit[("dogsuppy.co.uk", "largedog-itch-relief")], unit[("dogsuppy.co.uk", "probiotica-forte-anti-itch-dog")]
-    hidden = con.execute("SELECT handle, title, product_type FROM listing_clean WHERE store = 'dogsuppy.com' AND handle LIKE 'maxi-pack-dental-bright%'").fetchone()
-    per = lambda p, n: (p / n).quantize(Decimal("0.001"), ROUND_HALF_UP)
-    questions = {
-        "clean_bite": {"sku": "5430003031353", "com": q2(cb_com), "it": q2(cb_it), "diff_pct": pct(cb_it / cb_com - 1)},
-        "jar_90": {"com_90": q2(big_com), "com_60": q2(small_com), "com_per_90": str(per(big_com, 90)), "com_per_60": str(per(small_com, 60)),
-                   "com_pct": pct((big_com / 90) / (small_com / 60) - 1),
-                   "uk_90": q2(big_uk), "uk_60": q2(small_uk), "uk_per_90": str(per(big_uk, 90)), "uk_per_60": str(per(small_uk, 60)),
-                   "uk_pct": pct((big_uk / 90) / (small_uk / 60) - 1)},
-        "handle_title": {"handle": hidden[0], "title": hidden[1], "type": hidden[2]},
-    }
+    # --- the open question, numbers from the snapshot ---
+    cb = {s: (h, unit[(s, h)]) for s, h in (("dogsuppy.com", "clean-bite-sticks-schone-tanden-en-verwijderen-van-tandplak-5-sticks-per-zakje"),
+                                            ("dogsuppy.it", "dental-sticks"), ("dogsuppy.co.uk", "clean-bite-dental-sticks"))}
+    cb_skus = {r[0] for r in con.execute("SELECT DISTINCT sku FROM listing_clean WHERE excluded_reason IS NULL AND (store, handle) IN (" +
+                                         ", ".join(f"('{s}', '{h}')" for s, (h, _) in cb.items()) + ")").fetchall()}
+    assert len(cb_skus) == 1, cb_skus      # the question says "the same SKU"
+    questions = {"clean_bite": {"sku": cb_skus.pop(), "com": q2(cb["dogsuppy.com"][1]), "it": q2(cb["dogsuppy.it"][1]),
+                                "uk": q2(cb["dogsuppy.co.uk"][1]), "uk_currency": currency["dogsuppy.co.uk"],
+                                "diff_pct": pct(cb["dogsuppy.it"][1] / cb["dogsuppy.com"][1] - 1)}}
+    views = [{"view": v, "rows": con.execute(f"SELECT COUNT(*) FROM {v}").fetchone()[0]} for v in
+             ("checks_bundle_compare_at", "checks_compare_at_not_above_price", "checks_bundle_unparsed", "checks_same_sku_two_prices")]
+    stores_with_bundles = sorted({b["store"] for b in bundles})
+    stores_with_struck = sorted({r[0] for r in con.execute("SELECT DISTINCT store FROM listing_clean WHERE excluded_reason IS NULL AND compare_at_price IS NOT NULL").fetchall()})
+    assert stores_with_bundles == stores_with_struck, (stores_with_bundles, stores_with_struck)
 
     db_skus = sorted({r[0] for r in con.execute(
         "SELECT DISTINCT l.sku FROM listing_clean l JOIN (SELECT * FROM (VALUES " +
@@ -125,13 +135,15 @@ def main():
         "currency_requests": sum(1 for r in reqs if "cart.js" in r["url"]),
         "stores": [{"store": s, "currency": currency[s], "variants": sum(1 for r in tables["listing"] if r["store"] == s)} for s in STORES],
         "ecb_day": day, "ecb_rates": {k: str(v) for k, v in rates.items() if k in ("DKK", "GBP", "NOK", "PLN", "SEK")},
-        "bundles": bundles, "mismatch_count": len(it_rows), "short_total": q2(sum(-Decimal(b["gap"]) for b in it_rows)), "pass_count": len(bundles) - len(it_rows),
+        "bundles": bundles, "mismatch_count": len(it_rows), "pass_count": len(bundles) - len(it_rows),
+        "short_min": q2(min(-Decimal(b["gap"]) for b in it_rows)), "short_max": q2(max(-Decimal(b["gap"]) for b in it_rows)),
+        "stores_with_bundles": stores_with_bundles, "views": views,
+        "archive": {k: arch[k] for k in ("page", "snapshot", "captured_utc", "read_utc")},
         "implied_jar_price": sorted(implied), "checks_all_rows": len(all_rows),
-        "mutation_raise_dental_bright": raise_db, "mutation_it_jars_2990": at_2990, "it_jars_moved": jars_3390,
+        "mutation_raise_dental_bright": raise_db, "mutation_raise_dental_bright_total": len(raised), "mutation_it_jars_2990": at_2990, "it_jars_moved": jars_3390,
         "dental_bright_skus": db_skus, "variants_total": excl[0], "variants_checked": int(excl[1]),
         "matrix_stores": STORES, "matrix": matrix, "ladder": ladder, "questions": questions,
-        "tests": {"cases": passed, "failures": fails, "mutants_caught": mut["caught"], "mutants_total": mut["total"],
-                  "mutants": [m["mutant"] for m in mut["mutants"]]},
+        "tests": {"cases": passed, "failures": fails, "mutants_caught": mut["caught"], "mutants_total": mut["total"]},
         "sql_view": (ROOT / "sql" / "10_checks_bundle_compare_at.sql").read_text(encoding="utf-8"),
     }
     (ROOT / "site" / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1))
@@ -140,6 +152,14 @@ def main():
     print(f"mutation .it jars at 29.90 -> {at_2990}")
     print(f"tests {passed} cases, {len(fails)} failures; mutants {mut['caught']}/{mut['total']}")
 
+WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+VIEW_TEXT = {
+    "checks_bundle_compare_at": "struck price against the products the description lists",
+    "checks_compare_at_not_above_price": "struck price at or below the selling price",
+    "checks_bundle_unparsed": "struck price with no readable contents",
+    "checks_same_sku_two_prices": "one SKU, two prices, in one store",
+}
+
 def render_page():
     """Fill site_src/index.html with the numbers from site/data.json and write site/index.html."""
     import datetime, shutil
@@ -147,6 +167,7 @@ def render_page():
     head = next(b for b in d["bundles"] if b["handle"] == "bun-prurito-stress")
     read = datetime.datetime.fromisoformat(d["read_at_utc"])
     day = datetime.date.fromisoformat(d["ecb_day"])
+    arch_at = datetime.datetime.fromisoformat(d["archive"]["captured_utc"])
     q = d["questions"]
     jars_now = {j["unit"] for b in d["bundles"] if b["status"] == "mismatch" for j in b["jars"] if j["handle"] in d["it_jars_moved"]}
     assert len(jars_now) == 1 and len(d["implied_jar_price"]) == 1
@@ -155,18 +176,27 @@ def render_page():
         "pass_count": d["pass_count"], "mismatch_count": d["mismatch_count"],
         "jar_implied": d["implied_jar_price"][0], "jar_now": jars_now.pop(),
         "read_date": f"{read.day} {read:%B %Y}", "read_date_short": f"{read.day} {read:%b}", "read_time": f"{read:%H:%M}",
-        "catalogue_requests": d["catalogue_requests"], "variants_checked": d["variants_checked"], "variants_total": d["variants_total"],
+        "read_day_mon_year": f"{read.day} {read:%b %Y}",
+        "catalogue_requests": d["catalogue_requests"], "currency_requests": d["currency_requests"],
+        "bundle_count": len(d["bundles"]), "short_min": d["short_min"], "short_max": d["short_max"],
+        "arch_date": f"{arch_at.day} {arch_at:%b %Y}", "arch_snapshot": d["archive"]["snapshot"],
+        "other_store_count": len(d["stores"]) - len(d["stores_with_bundles"]), "store_count": len(d["stores"]),
+        "store_count_w": WORDS[len(d["stores"])], "other_store_count_w": WORDS[len(d["stores"]) - len(d["stores_with_bundles"])], "variants_checked": d["variants_checked"], "variants_total": d["variants_total"],
         "db_sku_count": len(d["dental_bright_skus"]), "ecb_day_long": f"{day.day} {day:%B %Y}",
         "cb_sku": q["clean_bite"]["sku"], "cb_com": q["clean_bite"]["com"], "cb_it": q["clean_bite"]["it"], "cb_pct": q["clean_bite"]["diff_pct"],
-        "j_com_pct": q["jar_90"]["com_pct"].lstrip("-"), "j_com_90": q["jar_90"]["com_per_90"], "j_com_60": q["jar_90"]["com_per_60"],
-        "j_uk_pct": q["jar_90"]["uk_pct"].lstrip("-"), "j_uk_90": q["jar_90"]["uk_per_90"], "j_uk_60": q["jar_90"]["uk_per_60"],
+        "cb_uk": q["clean_bite"]["uk"],
+        "family_count": len(d["matrix"]),
         "checks_rows": d["checks_all_rows"], "trap_count": d["tests"]["cases"] - 1,
-        "mut_db_count": len(d["mutation_raise_dental_bright"]), "mut_it_count": len(d["mutation_it_jars_2990"]),
+        "views_rows": "".join(f'<tr{" class=\"hit\"" if v["rows"] else ""}><td><code>{v["view"]}</code></td><td>{VIEW_TEXT[v["view"]]}</td><td class="n">{v["rows"]} row{"" if v["rows"] == 1 else "s"}</td></tr>' for v in d["views"]),
+        "mut_db_count": len(d["mutation_raise_dental_bright"]), "mut_db_total": d["mutation_raise_dental_bright_total"],
+        "mut_it_count": len(d["mutation_it_jars_2990"]),
         "mut_total": d["tests"]["mutants_total"], "mut_caught": d["tests"]["mutants_caught"],
         "data_json": json.dumps(d, ensure_ascii=False).replace("</", "<\\/"),
     }
-    # the sentences around these numbers assume their direction: stop if the data says otherwise
-    assert not q["jar_90"]["com_pct"].startswith("-") and q["jar_90"]["uk_pct"].startswith("-")
+    # the sentences around these numbers assume what they say: stop if the data says otherwise
+    assert d["stores_with_bundles"] == ["dogsuppy.com", "dogsuppy.it"] and q["clean_bite"]["uk_currency"] == "GBP"
+    assert all(b.get("archive_total") == b["compare_at"] for b in d["bundles"] if b["status"] == "mismatch")
+    assert sum(v["rows"] for v in d["views"]) == d["checks_all_rows"]
     page = (ROOT / "site_src" / "index.html").read_text(encoding="utf-8")
     for k, v in values.items():
         page = page.replace("{{" + k + "}}", str(v))
