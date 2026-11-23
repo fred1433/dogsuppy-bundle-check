@@ -1,0 +1,1239 @@
+{
+ "read_at_utc": "2026-11-23T15:54:42+00:00",
+ "catalogue_requests": 8,
+ "currency_requests": 9,
+ "stores": [
+  {
+   "store": "dogsuppy.com",
+   "currency": "EUR",
+   "variants": 59
+  },
+  {
+   "store": "dogsuppy.de",
+   "currency": "EUR",
+   "variants": 5
+  },
+  {
+   "store": "dogsuppy.dk",
+   "currency": "DKK",
+   "variants": 1
+  },
+  {
+   "store": "dogsuppy.no",
+   "currency": "NOK",
+   "variants": 2
+  },
+  {
+   "store": "dogsuppy.se",
+   "currency": "SEK",
+   "variants": 4
+  },
+  {
+   "store": "dogsuppy.co.uk",
+   "currency": "GBP",
+   "variants": 23
+  },
+  {
+   "store": "dogsuppy.pl",
+   "currency": "PLN",
+   "variants": 16
+  },
+  {
+   "store": "dogsuppy.it",
+   "currency": "EUR",
+   "variants": 20
+  }
+ ],
+ "ecb_day": "2026-11-23",
+ "ecb_rates": {
+  "DKK": "7.4746",
+  "GBP": "0.83673",
+  "PLN": "4.4588",
+  "SEK": "11.2375",
+  "NOK": "10.7285"
+ },
+ "bundles": [
+  {
+   "store": "dogsuppy.it",
+   "handle": "bun-prurito-stress",
+   "title": "Bundle Risparmio:  Prurito & Stress",
+   "url": "https://dogsuppy.it/products/bun-prurito-stress",
+   "available": false,
+   "price": "95.00",
+   "compare_at": "119.60",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Sollievo Prurito",
+     "handle": "sollievo-prurito-100-naturale-60-integratori-1",
+     "jar_title": "Sollievo Prurito🌿 | 100% Naturale | 60 integratori",
+     "unit": "33.90",
+     "line": "67.80",
+     "url": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1"
+    },
+    {
+     "qty": 2,
+     "label": "Stress & Ansia",
+     "handle": "ansia-stress-100-naturale-60-integratori-1",
+     "jar_title": "Ansia & Stress🌿 | 100% Naturale | 60 integratori",
+     "unit": "33.90",
+     "line": "67.80",
+     "url": "https://dogsuppy.it/products/ansia-stress-100-naturale-60-integratori-1"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "135.60",
+   "status": "mismatch",
+   "gap": "-16.00",
+   "discount_shown": "20.6",
+   "discount_on_today": "29.9",
+   "implied_jar_price": "29.90",
+   "implied_note": {
+    "n": 4,
+    "fixed": []
+   }
+  },
+  {
+   "store": "dogsuppy.it",
+   "handle": "bun-denti-prurito",
+   "title": "Bundle Risparmio:  Denti & Prurito",
+   "url": "https://dogsuppy.it/products/bun-denti-prurito",
+   "available": false,
+   "price": "95.00",
+   "compare_at": "119.60",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Dental Bright",
+     "handle": "dental-bright",
+     "jar_title": "Dental Bright 🌿 | Polvere 100% Naturale | 60 dosi",
+     "unit": "33.90",
+     "line": "67.80",
+     "url": "https://dogsuppy.it/products/dental-bright"
+    },
+    {
+     "qty": 2,
+     "label": "Sollievo Prurito",
+     "handle": "sollievo-prurito-100-naturale-60-integratori-1",
+     "jar_title": "Sollievo Prurito🌿 | 100% Naturale | 60 integratori",
+     "unit": "33.90",
+     "line": "67.80",
+     "url": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "135.60",
+   "status": "mismatch",
+   "gap": "-16.00",
+   "discount_shown": "20.6",
+   "discount_on_today": "29.9",
+   "implied_jar_price": "29.90",
+   "implied_note": {
+    "n": 4,
+    "fixed": []
+   }
+  },
+  {
+   "store": "dogsuppy.it",
+   "handle": "bun-denti-e-stress",
+   "title": "Bundle Risparmio: Denti & stress",
+   "url": "https://dogsuppy.it/products/bun-denti-e-stress",
+   "available": false,
+   "price": "50.00",
+   "compare_at": "59.80",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Ansia & Stress",
+     "handle": "ansia-stress-100-naturale-60-integratori-1",
+     "jar_title": "Ansia & Stress🌿 | 100% Naturale | 60 integratori",
+     "unit": "33.90",
+     "line": "33.90",
+     "url": "https://dogsuppy.it/products/ansia-stress-100-naturale-60-integratori-1"
+    },
+    {
+     "qty": 1,
+     "label": "Dental Bright",
+     "handle": "dental-bright",
+     "jar_title": "Dental Bright 🌿 | Polvere 100% Naturale | 60 dosi",
+     "unit": "33.90",
+     "line": "33.90",
+     "url": "https://dogsuppy.it/products/dental-bright"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "67.80",
+   "status": "mismatch",
+   "gap": "-8.00",
+   "discount_shown": "16.4",
+   "discount_on_today": "26.3",
+   "implied_jar_price": "29.90",
+   "implied_note": {
+    "n": 2,
+    "fixed": []
+   }
+  },
+  {
+   "store": "dogsuppy.it",
+   "handle": "bun-denti-totale",
+   "title": "Bundle Risparmio: Denti Totale",
+   "url": "https://dogsuppy.it/products/bun-denti-totale",
+   "available": false,
+   "price": "70.00",
+   "compare_at": "95.50",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Dental Bright",
+     "handle": "dental-bright",
+     "jar_title": "Dental Bright 🌿 | Polvere 100% Naturale | 60 dosi",
+     "unit": "33.90",
+     "line": "67.80",
+     "url": "https://dogsuppy.it/products/dental-bright"
+    },
+    {
+     "qty": 5,
+     "label": "Dental Sticks",
+     "handle": "dental-sticks",
+     "jar_title": "Dental Sticks Clean Bite🌿",
+     "unit": "7.14",
+     "line": "35.70",
+     "url": "https://dogsuppy.it/products/dental-sticks"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "103.50",
+   "status": "mismatch",
+   "gap": "-8.00",
+   "discount_shown": "26.7",
+   "discount_on_today": "32.4",
+   "implied_jar_price": "29.90",
+   "implied_note": {
+    "n": 2,
+    "fixed": [
+     {
+      "qty": 5,
+      "unit": "7.14"
+     }
+    ]
+   }
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "basis-verzorging",
+   "title": "[BUN] Basisverzorging",
+   "url": "https://dogsuppy.com/products/basis-verzorging",
+   "available": true,
+   "price": "45.00",
+   "compare_at": "50.90",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Neus- & Pootbalsem",
+     "handle": "neus-pootbalsem",
+     "jar_title": "Neus- & Pootbalsem 🌿  125 ml",
+     "unit": "24.20",
+     "line": "24.20",
+     "url": "https://dogsuppy.com/products/neus-pootbalsem"
+    },
+    {
+     "qty": 1,
+     "label": "Honingzalf",
+     "handle": "honingzalf",
+     "jar_title": "Honingzalf 🌿 125 ml",
+     "unit": "26.70",
+     "line": "26.70",
+     "url": "https://dogsuppy.com/products/honingzalf"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "50.90",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "11.6",
+   "discount_on_today": "11.6"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "anti-irritatie",
+   "title": "[BUN] Comfort",
+   "url": "https://dogsuppy.com/products/anti-irritatie",
+   "available": true,
+   "price": "65.00",
+   "compare_at": "76.40",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 1,
+     "label": "Anaalklieren",
+     "handle": "probiotica-vermijdt-verstopte-anaalklieren",
+     "jar_title": "Anaalklieren Probiotica Forte 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/probiotica-vermijdt-verstopte-anaalklieren"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "76.40",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "14.9",
+   "discount_on_today": "14.9"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "gebit-and-jeuk",
+   "title": "[BUN] Gebit & Jeuk",
+   "url": "https://dogsuppy.com/products/gebit-and-jeuk",
+   "available": true,
+   "price": "65.00",
+   "compare_at": "75.80",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Dental Bright",
+     "handle": "dental-powder",
+     "jar_title": "Dental Bright 🌿 60 schepjes",
+     "unit": "37.60",
+     "line": "37.60",
+     "url": "https://dogsuppy.com/products/dental-powder"
+    },
+    {
+     "qty": 1,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "75.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "14.2",
+   "discount_on_today": "14.2"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "dental-bright-anti-stress",
+   "title": "[BUN] Gebit & Stress",
+   "url": "https://dogsuppy.com/products/dental-bright-anti-stress",
+   "available": true,
+   "price": "65.00",
+   "compare_at": "75.80",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Dental Bright",
+     "handle": "dental-powder",
+     "jar_title": "Dental Bright 🌿 60 schepjes",
+     "unit": "37.60",
+     "line": "37.60",
+     "url": "https://dogsuppy.com/products/dental-powder"
+    },
+    {
+     "qty": 1,
+     "label": "Stress & Angst",
+     "handle": "anti-stress-angst",
+     "jar_title": "Stress & Angst 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/anti-stress-angst"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "75.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "14.2",
+   "discount_on_today": "14.2"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "herstel-huid",
+   "title": "[BUN] Huid comfort",
+   "url": "https://dogsuppy.com/products/herstel-huid",
+   "available": true,
+   "price": "120.00",
+   "compare_at": "151.60",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 2,
+     "label": "Huid & Vacht",
+     "handle": "huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g",
+     "jar_title": "Huid & Vacht 🌿 60 Snoepjes",
+     "unit": "37.60",
+     "line": "75.20",
+     "url": "https://dogsuppy.com/products/huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "151.60",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "20.8",
+   "discount_on_today": "20.8"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "2x-anti-jeuk-2x-heup-gewrichten",
+   "title": "[BUN] Jeuk & Gewrichten",
+   "url": "https://dogsuppy.com/products/2x-anti-jeuk-2x-heup-gewrichten",
+   "available": true,
+   "price": "120.00",
+   "compare_at": "152.80",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 2,
+     "label": "Heup & Gewrichten",
+     "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes",
+     "jar_title": "Heup & Gewrichten 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/heup-gewrichten-supplement-honden-chewies-snoepjes"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "152.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "21.5",
+   "discount_on_today": "21.5"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "anti-gisten",
+   "title": "[BUN] Jeuk & Oren",
+   "url": "https://dogsuppy.com/products/anti-gisten",
+   "available": true,
+   "price": "100.00",
+   "compare_at": "125.20",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 2,
+     "label": "Oorreiniger",
+     "handle": "oorreiniger",
+     "jar_title": "Oorreiniger 🌿 100 ml",
+     "unit": "24.40",
+     "line": "48.80",
+     "url": "https://dogsuppy.com/products/oorreiniger"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "125.20",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "20.1",
+   "discount_on_today": "20.1"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "2x-anti-jeuk-2x-anti-stress-angst",
+   "title": "[BUN] Jeuk & Stress",
+   "url": "https://dogsuppy.com/products/2x-anti-jeuk-2x-anti-stress-angst",
+   "available": true,
+   "price": "120.00",
+   "compare_at": "152.80",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 2,
+     "label": "Stress & Angst",
+     "handle": "anti-stress-angst",
+     "jar_title": "Stress & Angst 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/anti-stress-angst"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "152.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "21.5",
+   "discount_on_today": "21.5"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "stop-krabben-en-pootlikken",
+   "title": "[BUN] Jeuk & pootlikken",
+   "url": "https://dogsuppy.com/products/stop-krabben-en-pootlikken",
+   "available": true,
+   "price": "55.00",
+   "compare_at": "62.90",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 1,
+     "label": "Hennepzaadolie",
+     "handle": "hennepzaadolie-🌿-250-ml",
+     "jar_title": "Hennepzaadolie 🌿 250 ml",
+     "unit": "24.70",
+     "line": "24.70",
+     "url": "https://dogsuppy.com/products/hennepzaadolie-🌿-250-ml"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "62.90",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "12.6",
+   "discount_on_today": "12.6"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "2x-anti-jeuk-1x-anti-jeuk-spray",
+   "title": "[BUN] Jeuk XL",
+   "url": "https://dogsuppy.com/products/2x-anti-jeuk-1x-anti-jeuk-spray",
+   "available": true,
+   "price": "100.00",
+   "compare_at": "125.80",
+   "jars": [
+    {
+     "qty": 2,
+     "label": "Anti-Jeuk",
+     "handle": "probiotica-forte-anti-jeuk-hond",
+     "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "76.40",
+     "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "qty": 2,
+     "label": "Anti-Jeuk Spray",
+     "handle": "anti-jeuk-spray",
+     "jar_title": "Anti-Jeuk Spray 🌿 250ml",
+     "unit": "24.70",
+     "line": "49.40",
+     "url": "https://dogsuppy.com/products/anti-jeuk-spray"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "125.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "20.5",
+   "discount_on_today": "20.5"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "bun-mooie-vacht",
+   "title": "[BUN] Mooie vacht",
+   "url": "https://dogsuppy.com/products/bun-mooie-vacht",
+   "available": true,
+   "price": "49.00",
+   "compare_at": "55.00",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Huid & Vacht",
+     "handle": "huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g",
+     "jar_title": "Huid & Vacht 🌿 60 Snoepjes",
+     "unit": "37.60",
+     "line": "37.60",
+     "url": "https://dogsuppy.com/products/huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g"
+    },
+    {
+     "qty": 1,
+     "label": "Zalmolie",
+     "handle": "zalmolie-supplement-gezonde-huid-en-glanzende-vacht-voor-honden",
+     "jar_title": "Zalmolie 🌿 250 ml",
+     "unit": "17.40",
+     "line": "17.40",
+     "url": "https://dogsuppy.com/products/zalmolie-supplement-gezonde-huid-en-glanzende-vacht-voor-honden"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "55.00",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "10.9",
+   "discount_on_today": "10.9"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "bun-senior-support",
+   "title": "[BUN] Senior support",
+   "url": "https://dogsuppy.com/products/bun-senior-support",
+   "available": true,
+   "price": "65.00",
+   "compare_at": "75.80",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Heup & Gewrichten",
+     "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes",
+     "jar_title": "Heup & Gewrichten 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/heup-gewrichten-supplement-honden-chewies-snoepjes"
+    },
+    {
+     "qty": 1,
+     "label": "Dental Bright",
+     "handle": "dental-powder",
+     "jar_title": "Dental Bright 🌿 60 schepjes",
+     "unit": "37.60",
+     "line": "37.60",
+     "url": "https://dogsuppy.com/products/dental-powder"
+    }
+   ],
+   "alternatives": [
+    {
+     "qty": 1,
+     "label": "Dental Liquid",
+     "handle": "dental-liquid",
+     "jar_title": "Dental Liquid 🌿 250 ml",
+     "unit": "36.70",
+     "line": "36.70",
+     "url": "https://dogsuppy.com/products/dental-liquid",
+     "slot": 2,
+     "replaces": "Dental Bright",
+     "total_with_it": "74.90"
+    }
+   ],
+   "jar_total": "75.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "14.2",
+   "discount_on_today": "14.2"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "soepele-gewrichten",
+   "title": "[BUN] Soepele Gewrichten",
+   "url": "https://dogsuppy.com/products/soepele-gewrichten",
+   "available": true,
+   "price": "58.00",
+   "compare_at": "64.90",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Heup & Gewrichten",
+     "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes",
+     "jar_title": "Heup & Gewrichten 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/heup-gewrichten-supplement-honden-chewies-snoepjes"
+    },
+    {
+     "qty": 1,
+     "label": "Silicium Boost",
+     "handle": "silicium",
+     "jar_title": "Silicium Boost 🌿 250 ml",
+     "unit": "26.70",
+     "line": "26.70",
+     "url": "https://dogsuppy.com/products/silicium"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "64.90",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "10.6",
+   "discount_on_today": "10.6"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "bun-no-stress",
+   "title": "[BUN] Stress XL",
+   "url": "https://dogsuppy.com/products/bun-no-stress",
+   "available": true,
+   "price": "55.00",
+   "compare_at": "62.90",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Stress & Angst",
+     "handle": "anti-stress-angst",
+     "jar_title": "Stress & Angst 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/anti-stress-angst"
+    },
+    {
+     "qty": 1,
+     "label": "Hennepzaadolie",
+     "handle": "hennepzaadolie-🌿-250-ml",
+     "jar_title": "Hennepzaadolie 🌿 250 ml",
+     "unit": "24.70",
+     "line": "24.70",
+     "url": "https://dogsuppy.com/products/hennepzaadolie-🌿-250-ml"
+    }
+   ],
+   "alternatives": [],
+   "jar_total": "62.90",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "12.6",
+   "discount_on_today": "12.6"
+  },
+  {
+   "store": "dogsuppy.com",
+   "handle": "bun-vieze-geurtjes",
+   "title": "[BUN] Vieze geurtjes",
+   "url": "https://dogsuppy.com/products/bun-vieze-geurtjes",
+   "available": true,
+   "price": "65.00",
+   "compare_at": "75.80",
+   "jars": [
+    {
+     "qty": 1,
+     "label": "Anti-Anaalklieren",
+     "handle": "probiotica-vermijdt-verstopte-anaalklieren",
+     "jar_title": "Anaalklieren Probiotica Forte 🌿 60 snoepjes",
+     "unit": "38.20",
+     "line": "38.20",
+     "url": "https://dogsuppy.com/products/probiotica-vermijdt-verstopte-anaalklieren"
+    },
+    {
+     "qty": 1,
+     "label": "Dental Bright",
+     "handle": "dental-powder",
+     "jar_title": "Dental Bright 🌿 60 schepjes",
+     "unit": "37.60",
+     "line": "37.60",
+     "url": "https://dogsuppy.com/products/dental-powder"
+    }
+   ],
+   "alternatives": [
+    {
+     "qty": 1,
+     "label": "Dental Liquid",
+     "handle": "dental-liquid",
+     "jar_title": "Dental Liquid 🌿 250 ml",
+     "unit": "36.70",
+     "line": "36.70",
+     "url": "https://dogsuppy.com/products/dental-liquid",
+     "slot": 2,
+     "replaces": "Dental Bright",
+     "total_with_it": "74.90"
+    }
+   ],
+   "jar_total": "75.80",
+   "status": "pass",
+   "gap": "0.00",
+   "discount_shown": "14.2",
+   "discount_on_today": "14.2"
+  }
+ ],
+ "mismatch_count": 4,
+ "short_total": "48.00",
+ "pass_count": 15,
+ "implied_jar_price": [
+  "29.90"
+ ],
+ "checks_all_rows": 4,
+ "mutation_raise_dental_bright": [
+  "bun-senior-support",
+  "bun-vieze-geurtjes",
+  "dental-bright-anti-stress",
+  "gebit-and-jeuk"
+ ],
+ "mutation_it_jars_2990": [],
+ "it_jars_moved": [
+  "ansia-stress-100-naturale-60-integratori-1",
+  "dental-bright",
+  "sollievo-prurito-100-naturale-60-integratori-1"
+ ],
+ "dental_bright_skus": [
+  "5430004203025",
+  "5430004203230",
+  "5430004203506",
+  "5430004203513",
+  "5430004203780",
+  "5430004203797"
+ ],
+ "variants_total": 130,
+ "variants_checked": 90,
+ "matrix_stores": [
+  "dogsuppy.com",
+  "dogsuppy.de",
+  "dogsuppy.dk",
+  "dogsuppy.no",
+  "dogsuppy.se",
+  "dogsuppy.co.uk",
+  "dogsuppy.pl",
+  "dogsuppy.it"
+ ],
+ "matrix": [
+  {
+   "family": "Dental Bright (60 scoops)",
+   "cells": [
+    {
+     "price": "37.60",
+     "currency": "EUR",
+     "handle": "dental-powder"
+    },
+    {
+     "price": "37.60",
+     "currency": "EUR",
+     "handle": "dental-bright"
+    },
+    {
+     "price": "280.00",
+     "currency": "DKK",
+     "handle": "dental-bright"
+    },
+    {
+     "price": "430.00",
+     "currency": "NOK",
+     "handle": "dental-bright"
+    },
+    {
+     "price": "495.00",
+     "currency": "SEK",
+     "handle": "dental-bright"
+    },
+    {
+     "price": "32.36",
+     "currency": "GBP",
+     "handle": "dental-bright"
+    },
+    {
+     "price": "127.00",
+     "currency": "PLN",
+     "handle": "dental-bright-100-naturalny-60-porcji"
+    },
+    {
+     "price": "33.90",
+     "currency": "EUR",
+     "handle": "dental-bright"
+    }
+   ]
+  },
+  {
+   "family": "Itch relief probiotic (60)",
+   "cells": [
+    {
+     "price": "38.20",
+     "currency": "EUR",
+     "handle": "probiotica-forte-anti-jeuk-hond"
+    },
+    {
+     "price": "38.20",
+     "currency": "EUR",
+     "handle": "juckreiz-linderung-probiotika-forte"
+    },
+    null,
+    {
+     "price": "450.00",
+     "currency": "NOK",
+     "handle": "itch-relief"
+    },
+    {
+     "price": "495.00",
+     "currency": "SEK",
+     "handle": "anti-klada-probiotika"
+    },
+    {
+     "price": "34.86",
+     "currency": "GBP",
+     "handle": "probiotica-forte-anti-itch-dog"
+    },
+    {
+     "price": "127.00",
+     "currency": "PLN",
+     "handle": "anty-swiad-probiotyki-forte-60-smakolykow"
+    },
+    {
+     "price": "33.90",
+     "currency": "EUR",
+     "handle": "sollievo-prurito-100-naturale-60-integratori-1"
+    }
+   ]
+  },
+  {
+   "family": "Anxiety & stress (60)",
+   "cells": [
+    {
+     "price": "38.20",
+     "currency": "EUR",
+     "handle": "anti-stress-angst"
+    },
+    null,
+    null,
+    null,
+    {
+     "price": "495.00",
+     "currency": "SEK",
+     "handle": "stress-oro"
+    },
+    {
+     "price": "29.80",
+     "currency": "GBP",
+     "handle": "anxiety-stress-relief"
+    },
+    {
+     "price": "127.00",
+     "currency": "PLN",
+     "handle": "anty-stres-niepokoj-100-naturalne-60-smakolykow-offer"
+    },
+    {
+     "price": "33.90",
+     "currency": "EUR",
+     "handle": "ansia-stress-100-naturale-60-integratori-1"
+    }
+   ]
+  },
+  {
+   "family": "Hip & joint (60)",
+   "cells": [
+    {
+     "price": "38.20",
+     "currency": "EUR",
+     "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes"
+    },
+    null,
+    null,
+    null,
+    {
+     "price": "495.00",
+     "currency": "SEK",
+     "handle": "hofter-leder"
+    },
+    {
+     "price": "34.86",
+     "currency": "GBP",
+     "handle": "hip-joint-100-natural-ingredients-60-soft-chews"
+    },
+    {
+     "price": "127.00",
+     "currency": "PLN",
+     "handle": "stawy-i-ruchomosc"
+    },
+    {
+     "price": "33.90",
+     "currency": "EUR",
+     "handle": "hips-joints"
+    }
+   ]
+  },
+  {
+   "family": "Anal glands (60)",
+   "cells": [
+    {
+     "price": "38.20",
+     "currency": "EUR",
+     "handle": "probiotica-vermijdt-verstopte-anaalklieren"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "29.80",
+     "currency": "GBP",
+     "handle": "anal-glands"
+    },
+    {
+     "price": "127.00",
+     "currency": "PLN",
+     "handle": "gruczoly-okoloodbytowe-🌿-100-naturalne-60-smakolykow"
+    },
+    {
+     "price": "33.90",
+     "currency": "EUR",
+     "handle": "sollievo-ghiandole-anali"
+    }
+   ]
+  },
+  {
+   "family": "Clean Bite sticks (5)",
+   "cells": [
+    {
+     "price": "4.60",
+     "currency": "EUR",
+     "handle": "clean-bite-sticks-schone-tanden-en-verwijderen-van-tandplak-5-sticks-per-zakje"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "7.14",
+     "currency": "GBP",
+     "handle": "clean-bite-dental-sticks"
+    },
+    {
+     "price": "29.99",
+     "currency": "PLN",
+     "handle": "dental-sticks"
+    },
+    {
+     "price": "7.14",
+     "currency": "EUR",
+     "handle": "dental-sticks"
+    }
+   ]
+  },
+  {
+   "family": "Vitamin Boost",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "4.30",
+     "currency": "GBP",
+     "handle": "vitamin-boost"
+    },
+    {
+     "price": "19.99",
+     "currency": "PLN",
+     "handle": "vitamine-snack"
+    },
+    {
+     "price": "4.80",
+     "currency": "EUR",
+     "handle": "vitamine-boost"
+    }
+   ]
+  },
+  {
+   "family": "Probiotica Forte (60)",
+   "cells": [
+    {
+     "price": "38.20",
+     "currency": "EUR",
+     "handle": "probiotica-forte"
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "127.00",
+     "currency": "PLN",
+     "handle": "probiotyki-forte-🌿-100-naturalne-60-smakolykow"
+    },
+    null
+   ]
+  },
+  {
+   "family": "No poo eating (60)",
+   "cells": [
+    {
+     "price": "28.40",
+     "currency": "EUR",
+     "handle": "anti-poep-eten"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "29.80",
+     "currency": "GBP",
+     "handle": "no-poo-eating"
+    },
+    null,
+    null
+   ]
+  },
+  {
+   "family": "Honey balm (125 ml)",
+   "cells": [
+    {
+     "price": "26.70",
+     "currency": "EUR",
+     "handle": "honingzalf"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "23.00",
+     "currency": "GBP",
+     "handle": "honey-balm"
+    },
+    null,
+    null
+   ]
+  },
+  {
+   "family": "Large-dog itch relief (90)",
+   "cells": [
+    {
+     "price": "58.20",
+     "currency": "EUR",
+     "handle": "maxi-pack-anti-jeuk-voor-grote-honden-100-natuurlijk-90-snoepjes"
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+     "price": "42.95",
+     "currency": "GBP",
+     "handle": "largedog-itch-relief"
+    },
+    null,
+    null
+   ]
+  }
+ ],
+ "ladder": [
+  {
+   "store": "dogsuppy.pl",
+   "price": "127.00",
+   "currency": "PLN",
+   "eur": "28.48",
+   "rate": "4.4588"
+  },
+  {
+   "store": "dogsuppy.it",
+   "price": "33.90",
+   "currency": "EUR",
+   "eur": "33.90",
+   "rate": ""
+  },
+  {
+   "store": "dogsuppy.dk",
+   "price": "280.00",
+   "currency": "DKK",
+   "eur": "37.46",
+   "rate": "7.4746"
+  },
+  {
+   "store": "dogsuppy.com",
+   "price": "37.60",
+   "currency": "EUR",
+   "eur": "37.60",
+   "rate": ""
+  },
+  {
+   "store": "dogsuppy.de",
+   "price": "37.60",
+   "currency": "EUR",
+   "eur": "37.60",
+   "rate": ""
+  },
+  {
+   "store": "dogsuppy.co.uk",
+   "price": "32.36",
+   "currency": "GBP",
+   "eur": "38.67",
+   "rate": "0.83673"
+  },
+  {
+   "store": "dogsuppy.no",
+   "price": "430.00",
+   "currency": "NOK",
+   "eur": "40.08",
+   "rate": "10.7285"
+  },
+  {
+   "store": "dogsuppy.se",
+   "price": "495.00",
+   "currency": "SEK",
+   "eur": "44.05",
+   "rate": "11.2375"
+  }
+ ],
+ "questions": {
+  "clean_bite": {
+   "sku": "5430003031353",
+   "com": "4.60",
+   "it": "7.14",
+   "diff_pct": "55.2"
+  },
+  "jar_90": {
+   "com_90": "58.20",
+   "com_60": "38.20",
+   "com_per_90": "0.647",
+   "com_per_60": "0.637",
+   "com_pct": "1.6",
+   "uk_90": "42.95",
+   "uk_60": "34.86",
+   "uk_per_90": "0.477",
+   "uk_per_60": "0.581",
+   "uk_pct": "-17.9"
+  },
+  "handle_title": {
+   "handle": "maxi-pack-dental-bright-voor-grote-honden-100-natuurlijk-180-schepjes",
+   "title": "Dental Bright GroteHond⁺ 🌿 60 schepjes",
+   "type": "Hidden"
+  }
+ },
+ "tests": {
+  "cases": 9,
+  "failures": [],
+  "mutants_caught": 14,
+  "mutants_total": 14,
+  "mutants": [
+   "drop the quantity (2x counted once)",
+   "widen the tolerance to 50 cents",
+   "ignore the \"or\" alternative",
+   "pass bundles whose jars cannot be priced",
+   "count gifts and builders at 0.00",
+   "count a paid gift (no 0.00 price) as stock",
+   "count Hidden listings",
+   "compare SKUs without dropping the leading zero",
+   "keep landing-page copies",
+   "keep marketplace-import copies",
+   "count B2B listings as retail",
+   "accept a struck price equal to the price",
+   "report parsed bundles instead of unparsed ones",
+   "never compare the two prices"
+  ]
+ },
+ "sql_view": "-- A bundle's struck price (compare_at_price) must equal the sum of today's prices of the jars\n-- its own description lists. When the description offers \"X or Y\", either total passes.\n-- Contract: 0 rows = PASS. A bundle whose jars cannot all be priced is returned as not_checked, never passed.\nCREATE OR REPLACE VIEW checks_bundle_compare_at AS\nWITH bundle AS (\n  SELECT store, handle, url, compare_at_price, read_at\n  FROM listing_clean\n  WHERE compare_at_price IS NOT NULL AND excluded_reason IS NULL\n),\nunit AS (            -- one price per jar; NULL when its flavours disagree\n  SELECT store, handle, CASE WHEN MIN(price) = MAX(price) THEN MIN(price) END AS unit_price\n  FROM listing_clean\n  WHERE excluded_reason IS NULL\n  GROUP BY store, handle\n),\nline AS (\n  SELECT b.store, b.bundle_handle, b.slot, b.qty, b.is_default, u.unit_price\n  FROM bundle_line b\n  LEFT JOIN unit u ON u.store = b.store AND u.handle = b.component_handle\n),\nlisted AS (          -- the composition as written first in the description\n  SELECT store, bundle_handle,\n         SUM(CASE WHEN is_default THEN qty * unit_price END) AS total,\n         SUM(CASE WHEN unit_price IS NULL THEN 1 ELSE 0 END) AS unpriced   -- counts \"or\" alternatives too\n  FROM line\n  GROUP BY store, bundle_handle\n),\npossible AS (        -- that total, plus one total per \"or\" alternative swapped into its slot\n  SELECT store, bundle_handle, total FROM listed\n  UNION ALL\n  SELECT a.store, a.bundle_handle, l.total - d.qty * d.unit_price + a.qty * a.unit_price\n  FROM line a\n  JOIN line d ON d.store = a.store AND d.bundle_handle = a.bundle_handle AND d.slot = a.slot AND d.is_default\n  JOIN listed l ON l.store = a.store AND l.bundle_handle = a.bundle_handle\n  WHERE NOT a.is_default\n),\nclosest AS (\n  SELECT p.store, p.bundle_handle, MIN(ABS(p.total - b.compare_at_price)) AS gap\n  FROM possible p\n  JOIN bundle b ON b.store = p.store AND b.handle = p.bundle_handle\n  GROUP BY p.store, p.bundle_handle\n)\nSELECT\n  'bundle_compare_at' AS check_name,\n  CASE WHEN l.unpriced > 0 THEN 'not_checked' ELSE 'mismatch' END AS severity,\n  b.store, b.handle AS key,\n  CASE WHEN l.unpriced = 0 THEN l.total END AS expected,\n  b.compare_at_price AS actual,\n  CASE WHEN l.unpriced = 0 THEN b.compare_at_price - l.total END AS delta,\n  b.url AS evidence_url, b.read_at\nFROM bundle b\nJOIN listed l ON l.store = b.store AND l.bundle_handle = b.handle\nJOIN closest c ON c.store = b.store AND c.bundle_handle = b.handle\nWHERE l.unpriced > 0 OR c.gap > 0.005;\n"
+}

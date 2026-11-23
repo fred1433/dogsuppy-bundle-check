@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DogSuppy bundle check</title>
+<meta name="description" content="Every DogSuppy bundle's struck price, added up against today's price of the jars it lists.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#e7f2ee; --mint:#bfe0d7; --ink:#054f45; --ink-2:#3a6a60; --ink-3:#6e9188;
+  --paper:#fbfdfa; --rule:#c4e2d6; --rule-2:#8cc5b0; --gum:#2f7f6c;
+  --coral:#e06553; --coral-wash:#fbe4df; --graphite:#454b48;
+  --franklin:"Libre Franklin", "Franklin Gothic", "Helvetica Neue", Arial, sans-serif;
+  --hand:"Kalam", "Segoe Print", cursive;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --row:34px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--franklin);font-size:17px;line-height:1.55;
+  font-variant-numeric:tabular-nums lining-nums;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--gum)}
+:focus-visible{outline:2px solid var(--coral);outline-offset:2px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.for{padding:28px 0 0;font-size:14px;color:var(--ink-2)}
+.for b{font-weight:600;color:var(--ink)}
+
+/* --- opening --- */
+.open{padding:40px 0 34px;max-width:860px}
+h1{font-weight:800;font-size:clamp(34px,4.6vw,58px);line-height:1.04;letter-spacing:-.025em;margin:0 0 22px}
+h1 s{text-decoration-thickness:.09em;text-decoration-color:var(--coral)}
+.lede{font-size:19px;line-height:1.55;max-width:64ch;margin:0;color:var(--ink)}
+.lede + .lede{margin-top:12px}
+
+/* --- the sheet --- */
+.sheet{position:relative;background:var(--paper);border-radius:2px 2px 3px 3px;
+  box-shadow:0 1px 0 #d3e7df, 0 2px 0 #f4faf7, 0 3px 0 #d3e7df, 0 30px 60px -36px rgba(5,79,69,.45);
+  display:grid;grid-template-columns:272px 1fr;margin:0 0 18px}
+.sheet::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:var(--gum);border-radius:2px 2px 0 0}
+.margin{padding:32px 0 26px;border-right:3px double var(--rule-2)}
+.margin h3{font-size:13px;font-weight:600;color:var(--ink-2);margin:12px 0 0;padding:0 20px;line-height:var(--row);height:calc(var(--row) + 1px);border-bottom:1px solid var(--rule-2)}
+.margin ul{list-style:none;margin:0;padding:0}
+.margin li{border-bottom:1px solid var(--rule)}
+.pick{all:unset;box-sizing:border-box;display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:6px;width:100%;
+  height:var(--row);padding:0 16px 0 14px;cursor:pointer;font-size:14px;color:var(--ink)}
+.pick:hover{background:rgba(191,224,215,.35)}
+.pick[aria-pressed="true"]{background:var(--mint)}
+.pick:focus-visible{outline:2px solid var(--coral);outline-offset:-2px}
+.pick .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pick .am{font-size:13px;color:var(--ink-2)}
+.pick svg{display:block}
+
+.body{padding:32px 36px 0 40px;position:relative;min-width:0;display:flex;flex-direction:column}
+.fill{flex:1;min-height:110px;margin-top:22px;position:relative;
+  background:repeating-linear-gradient(to bottom, transparent 0 calc(var(--row) - 1px), var(--rule) calc(var(--row) - 1px) var(--row))}
+.foot{position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:flex-end;font-family:var(--hand);color:var(--graphite);font-size:20px;line-height:1.2;text-align:right}
+.foot span{background:var(--paper);padding:0 0 0 10px}
+.tk-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px;min-height:calc(var(--row)*2);margin-top:12px}
+.tk-head h2{font-size:24px;font-weight:700;letter-spacing:-.01em;margin:0;line-height:1.2}
+.tk-src{font-size:14px;color:var(--ink-2)}
+.state{font-size:13px;font-weight:600;padding:2px 9px;border-radius:20px;border:1.5px solid currentColor;white-space:nowrap}
+.state.off{color:var(--coral)}
+.state.on{color:var(--gum)}
+table.tk{width:100%;border-collapse:collapse;margin-top:6px;font-size:16px}
+.tk th{font-size:12.5px;font-weight:600;color:var(--ink-2);text-align:left;height:var(--row);border-bottom:1px solid var(--rule-2);padding:0 10px;vertical-align:bottom;padding-bottom:6px}
+.tk td{height:var(--row);border-bottom:1px solid var(--rule);padding:0 10px;vertical-align:middle}
+.tk .n{text-align:right;width:104px;border-left:1px solid var(--rule)}
+.tk th.n{border-left:1px solid var(--rule)}
+.tk .q{width:44px;text-align:right;color:var(--ink-2)}
+.tk .jar small{display:block;font-size:12px;color:var(--ink-3);line-height:1.2;margin-top:-1px}
+.tk td.jar{line-height:1.25;padding-top:4px;padding-bottom:4px}
+.tk tr.alt td{color:var(--ink-3)}
+.tk tr.alt td.jar{font-style:italic}
+.tk tr.sum td{border-bottom:none}
+.pencil{font-family:var(--hand);font-weight:400;color:var(--graphite);font-size:22px;line-height:1}
+.tot{display:inline-block;border-bottom:1.5px solid var(--graphite);box-shadow:0 3px 0 -1.5px var(--paper),0 4.5px 0 -1.5px var(--graphite);padding:0 2px 1px}
+.tk tr.lab td:first-child{color:var(--ink-2)}
+.strike{text-decoration:line-through;text-decoration-thickness:1.5px}
+.gapcell{position:relative}
+.gapcell .ring{position:absolute;right:-14px;top:50%;width:122px;height:50px;transform:translateY(-50%);pointer-events:none;overflow:visible}
+.ring path{fill:none;stroke:var(--coral);stroke-width:2.6;stroke-linecap:round}
+.gapv{font-weight:700}
+.gapv.bad{color:var(--coral)}
+.tick-ok{display:inline-flex;align-items:center;gap:4px}
+.note{position:absolute;font-family:var(--hand);color:var(--coral);font-size:21px;line-height:1.15;transform:rotate(-2.5deg);right:44px;max-width:320px;text-align:right;z-index:1}
+.note.ok{color:var(--graphite)}
+.savings{display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:14px;font-size:15px;color:var(--ink-2)}
+.savings b{color:var(--ink);font-weight:700}
+.after{font-size:14px;color:var(--ink-2);max-width:80ch;margin:0 0 6px}
+
+/* --- section 2 & 3 --- */
+section.calm{padding:76px 0 0}
+h2.sec{font-size:30px;font-weight:700;letter-spacing:-.015em;margin:0 0 10px;line-height:1.15}
+.sec-intro{max-width:68ch;margin:0 0 30px;color:var(--ink)}
+h3.sub{font-size:17px;font-weight:700;margin:40px 0 4px}
+.sub-note{font-size:14.5px;color:var(--ink-2);max-width:76ch;margin:0 0 14px}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;border-top:2px solid var(--ink)}
+table.mx{border-collapse:collapse;width:100%;min-width:760px;font-size:14.5px}
+.mx th,.mx td{padding:7px 10px;border-bottom:1px solid var(--rule-2);text-align:right;white-space:nowrap}
+.mx th{font-weight:600;font-size:13px;color:var(--ink-2);vertical-align:bottom}
+.mx th span{display:block;font-weight:400;color:var(--ink-3)}
+.mx th:first-child,.mx td:first-child{text-align:left;color:var(--ink);font-weight:500;padding-left:0}
+.mx td.none{color:var(--rule-2)}
+.ladder{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink);max-width:880px}
+.ladder li{display:grid;grid-template-columns:150px 120px 1fr 74px;align-items:center;gap:14px;height:40px;border-bottom:1px solid var(--rule-2);font-size:14.5px}
+.ladder .st{font-weight:500}
+.ladder .lc{color:var(--ink-2);text-align:right}
+.ladder .tr{position:relative;height:2px;background:var(--rule)}
+.ladder .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--ink);transform:translate(-50%,-50%)}
+.ladder .eu{text-align:right;font-weight:600}
+.qs{list-style:none;margin:0;padding:0;max-width:78ch;border-top:2px solid var(--ink)}
+.qs li{padding:14px 0;border-bottom:1px solid var(--rule-2)}
+
+pre.sql{font-family:var(--mono);font-size:13px;line-height:1.55;background:var(--paper);color:#1f3a34;margin:0;padding:18px 20px;
+  max-height:440px;overflow:auto;border-left:3px solid var(--gum);white-space:pre}
+.sql .c{color:#6e9188}
+.sql .k{color:var(--ink);font-weight:600}
+.proof{list-style:none;margin:0;padding:0;max-width:80ch;border-top:2px solid var(--ink)}
+.proof li{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:12px 0;border-bottom:1px solid var(--rule-2)}
+.proof li svg{margin-top:3px}
+.proof li.notrun svg circle{stroke:var(--ink-3)}
+.two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:start;margin-top:34px}
+.two h3.sub{margin-top:0}
+.private{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.private li{padding:11px 0;border-bottom:1px solid var(--rule-2)}
+footer{margin:90px 0 0;padding:28px 0 56px;border-top:1px solid var(--rule-2);font-size:15px;color:var(--ink-2)}
+footer p{margin:0 0 6px;max-width:80ch}
+footer .call{font-size:19px;color:var(--ink);font-weight:600;margin-bottom:10px}
+
+@media (max-width:900px){
+  .two{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .sheet{grid-template-columns:1fr}
+  .margin{order:2;border-right:none;border-top:3px double var(--rule-2);padding-top:8px;background-position:0 20px}
+  .body{order:1;padding:28px 14px 24px}
+  .tk .n{width:74px;padding:0 6px}
+  .tk .jar small{display:none}
+  .tk .q{width:30px;padding:0 4px}
+  .tk td,.tk th{padding-left:6px;padding-right:6px}
+  .note{position:static;transform:rotate(-1.5deg);margin:14px 0 0;text-align:left;max-width:none;font-size:19px}
+  .fill{min-height:92px}
+  .foot{justify-content:flex-start;font-size:18px;bottom:14px}
+  .foot span{padding:0 10px 0 0}
+  .gapcell .ring{width:96px;right:-10px}
+  .ladder li{grid-template-columns:96px 1fr 64px;grid-template-rows:auto auto;height:auto;padding:8px 0;row-gap:4px}
+  .ladder .lc{grid-column:1;grid-row:2;text-align:left;font-size:13px}
+  .ladder .tr{grid-column:2;grid-row:1 / span 2}
+  .ladder .eu{grid-column:3;grid-row:1 / span 2}
+  h1{font-size:33px}
+  .lede{font-size:17px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .ring path.draw{stroke-dasharray:400;stroke-dashoffset:400;animation:draw .9s .35s ease-out forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="for">For <b>Nicolas Buysschaert</b>, DogSuppy. Prepared by Frederic de Lavenne de Choulot, The AI Pipe.</p>
+
+  <header class="open">
+    <h1>On dogsuppy.it the jars add up to €{{it_total}}. The bundle is struck through at <s>€{{it_struck}}</s>.</h1>
+    <p class="lede">I added up every bundle in your eight Shopify stores: the struck price against today's price of the jars that the bundle's own description lists. The {{pass_count}} bundles on dogsuppy.com add up to the cent. The {{mismatch_count}} on dogsuppy.it do not: each struck price matches jars at €{{jar_implied}}, and the jars show €{{jar_now}} today.</p>
+    <p class="lede">So the bundle page shows a {{shown}}% saving where today's jar prices give {{today}}%. All four are set to not available, so no one can buy them today.</p>
+  </header>
+
+  <div class="sheet" id="sheet">
+    <nav class="margin" aria-label="Bundles">
+      <h3>dogsuppy.it, {{mismatch_count}} bundles</h3>
+      <ul id="list-it"></ul>
+      <h3>dogsuppy.com, {{pass_count}} bundles</h3>
+      <ul id="list-com"></ul>
+    </nav>
+    <div class="body" id="ticket" aria-live="polite"></div>
+  </div>
+  <p class="after">Read on {{read_date}} at {{read_time}} UTC: {{catalogue_requests}} catalogue requests, one <code>products.json</code> per store, and each store's currency from its own <code>/cart.js</code>. dogsuppy.nl and dogsuppy.be redirect to dogsuppy.com; dogsuppy.es does not serve a store. {{variants_checked}} of {{variants_total}} variants checked; gifts and builders at 0.00, Hidden and B2B listings, landing-page and marketplace copies, and one placeholder are left out first.</p>
+
+  <section class="calm" aria-labelledby="s2">
+    <h2 class="sec" id="s2">The rest of the catalogue, without verdicts</h2>
+    <p class="sec-intro">A smaller range in one country and a different price in another are choices, not errors, so nothing below is flagged. It is the same snapshot, laid out so a gap you did not choose would be easy to see.</p>
+
+    <h3 class="sub">Range by store</h3>
+    <p class="sub-note">Public price in each store's own currency. Families are matched by a hand-written table, because neither SKU nor handle lines them up: Dental Bright alone carries {{db_sku_count}} different SKUs across the stores. Hidden listings and products sold in one store only are not shown.</p>
+    <div class="scroller"><table class="mx" id="matrix"></table></div>
+
+    <h3 class="sub">Dental Bright, the one product in all eight stores</h3>
+    <p class="sub-note">Converted to euros at the ECB reference rate of {{ecb_day_long}}, the last one published before the read. The ECB publishes these rates for information purposes only; here they only line the stores up. Prices are assumed to include local VAT.</p>
+    <ul class="ladder" id="ladder"></ul>
+
+    <h3 class="sub">Three things I could not settle from the outside</h3>
+    <ol class="qs">
+      <li>Clean Bite Dental Sticks carry the same SKU ({{cb_sku}}) and 5 sticks a pack on both stores: €{{cb_com}} on dogsuppy.com, €{{cb_it}} on dogsuppy.it. Is the {{cb_pct}}% difference intended?</li>
+      <li>The 90-chew large-dog itch relief jar costs {{j_com_pct}}% more per chew than the 60-chew jar on dogsuppy.com (€{{j_com_90}} against €{{j_com_60}}), and {{j_uk_pct}}% less on dogsuppy.co.uk (£{{j_uk_90}} against £{{j_uk_60}}). If the large-dog formula carries a different dose, both can be right; I do not know the dose.</li>
+      <li>The large-dog Dental Bright on dogsuppy.com (set to Hidden) has a handle ending in <code>180-schepjes</code> and a title that says 60 schepjes. Which one is right?</li>
+    </ol>
+  </section>
+
+  <section class="calm" aria-labelledby="s3">
+    <h2 class="sec" id="s3">The same check, every morning</h2>
+    <p class="sec-intro">The sheet at the top is what this view returns on the snapshot. It is one of four; each returns one row per problem and nothing when all is well, with the same columns: <code>check_name, severity, store, key, expected, actual, delta, evidence_url, read_at</code>. A rule that cannot run on a row returns it as <code>not_checked</code>, never as a pass.</p>
+    <pre class="sql" id="sql" tabindex="0" aria-label="checks_bundle_compare_at view"></pre>
+    <div class="two">
+      <div>
+        <h3 class="sub">What was tested, and how</h3>
+        <ul class="proof">
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>On the {{read_date_short}} snapshot, <code>checks_all</code> returns {{checks_rows}} rows: the four Italian bundles, nothing else.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>A clean test catalogue returns 0 rows; each of {{trap_count}} trapped catalogues returns exactly its one row (stale struck price, 10 cents off, struck price equal to the price, a bundle with no readable contents, a jar that cannot be priced, and more).</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>Change the data: Dental Bright on dogsuppy.com at €37.70 instead of €37.60 gives {{mut_db_count}} rows, the four bundles that hold it. The Italian jars at €29.90 give {{mut_it_count}} rows.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>Break the SQL on purpose, {{mut_total}} ways (drop the quantity, widen the tolerance to 50 cents, ignore the "or Dental Liquid" choice, count gifts at 0.00): the tests catch {{mut_caught}} of {{mut_total}}.</span></li>
+          <li class="notrun"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke-width="2"/></svg><span>Not run here: BigQuery and Google Sheets. No Google account was used. The BigQuery copy is the same SQL with dataset names added; it parses in BigQuery's dialect but has not been executed. The Apps Script fills an Exceptions tab from <code>checks_all</code> each morning and colours the rows that were not there the day before.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">On your private tables, the same contract would cover</h3>
+        <ul class="private">
+          <li>Net orders against what the payment provider actually paid out, per day and currency.</li>
+          <li>Order lines with no unit cost, which make a margin look better than it is.</li>
+          <li>Ad spend in the warehouse against the spend your reporting sheet shows.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="call">If this is the kind of check you want running on your numbers, <a href="https://cal.theaipipe.com">book 15 minutes</a>.</p>
+    <p>Frederic de Lavenne de Choulot, The AI Pipe. Code, SQL, tests and the frozen snapshot: <a href="https://github.com/fred1433/dogsuppy-bundle-check">github.com/fred1433/dogsuppy-bundle-check</a>. Public pages only; no customer data; no marketplace read.</p>
+  </footer>
+</div>
+
+<script id="data" type="application/json">{{data_json}}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var B = D.bundles, byHandle = {};
+  B.forEach(function(b){ byHandle[b.store + '/' + b.handle] = b; });
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function short(t){ return t.replace(/^\[BUN\]\s*/, '').replace(/^Bundle Risparmio:\s*/, '').replace(/\s+/g, ' '); }
+  function minus(v){ return v.charAt(0) === '-' ? '−' + v.slice(1) : v; }
+  var TICK = '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10.8c1.3 1 2.6 2.3 3.6 3.9C9.4 9.6 12.6 6 16.6 3.6" fill="none" stroke="#2f7f6c" stroke-width="2.1" stroke-linecap="round"/></svg>';
+  var CIRC = '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.5 3.2C6 2.9 2.9 5.9 3.1 10.1c.2 4 3.6 6.8 7.6 6.6 4-.2 6.6-3.4 6.2-7.2C16.5 5.6 13.6 3.2 9.4 3.6" fill="none" stroke="#e06553" stroke-width="1.9" stroke-linecap="round"/></svg>';
+
+  function pick(b){ return '<li><button type="button" class="pick" data-k="' + esc(b.store + '/' + b.handle) + '" aria-pressed="false">' +
+      (b.status === 'mismatch' ? CIRC : TICK) + '<span class="nm">' + esc(short(b.title)) + '</span><span class="am">' + b.compare_at + '</span></button></li>'; }
+  document.getElementById('list-it').innerHTML = B.filter(function(b){ return b.store === 'dogsuppy.it'; }).map(pick).join('');
+  document.getElementById('list-com').innerHTML = B.filter(function(b){ return b.store === 'dogsuppy.com'; }).map(pick).join('');
+
+  function noteFor(b){
+    if (b.status === 'mismatch') {
+      var parts = [b.implied_note.n + ' × ' + b.implied_jar_price].concat(b.implied_note.fixed.map(function(f){ return f.qty + ' × ' + f.unit; }));
+      return '<div class="note">' + b.compare_at + ' = ' + parts.join(' + ') + '<br>jars today: ' + b.jars[0].unit + '</div>';
+    }
+    if (b.alternatives.length) {
+      var a = b.alternatives[0];
+      return '<div class="note ok">with ' + esc(a.label) + ': ' + a.total_with_it + '<br>struck price uses ' + esc(a.replaces) + '</div>';
+    }
+    return '<div class="note ok">agrees to the cent</div>';
+  }
+
+  function render(key, animate){
+    var b = byHandle[key] || B[0];
+    var bad = b.status === 'mismatch';
+    var rows = b.jars.map(function(j){
+      return '<tr><td class="q">' + j.qty + '×</td><td class="jar">' + esc(j.label) + '<small>' + esc(j.jar_title) + '</small></td><td class="n">' + j.unit + '</td><td class="n">' + j.line + '</td></tr>';
+    }).join('') + b.alternatives.map(function(a){
+      return '<tr class="alt"><td class="q">or</td><td class="jar">' + esc(a.label) + ', in place of ' + esc(a.replaces) + '<small>' + esc(a.jar_title) + '</small></td><td class="n">' + a.unit + '</td><td class="n"></td></tr>';
+    }).join('');
+    var ring = bad ? '<svg class="ring" viewBox="0 0 122 50" aria-hidden="true"><path class="' + (animate ? 'draw' : '') + '" d="M64 6C35 4 9 12 8 26c-1 13 22 20 55 19 31-1 52-8 51-21C113 11 92 4 58 7"/></svg>' : '';
+    var html =
+      '<div class="tk-head"><div><h2>' + esc(short(b.title)) + '</h2><div class="tk-src"><a href="' + esc(b.url) + '">' + esc(b.url.replace('https://', '')) + '</a></div></div>' +
+      '<span class="state ' + (b.available ? 'on' : 'off') + '">' + (b.available ? 'Available' : 'Not available today') + '</span></div>' +
+      '<table class="tk"><thead><tr><th class="q">Qty</th><th>Jar, as the bundle description lists it</th><th class="n">Today, ' + (b.store === 'dogsuppy.it' || b.store === 'dogsuppy.com' ? '€' : '') + '</th><th class="n">Line</th></tr></thead><tbody>' + rows +
+      '<tr class="sum lab"><td></td><td>Jars at today’s prices</td><td class="n"></td><td class="n"><span class="pencil tot">' + b.jar_total + '</span></td></tr>' +
+      '<tr class="lab"><td></td><td>Struck price on the bundle page</td><td class="n"></td><td class="n"><span class="strike">' + b.compare_at + '</span></td></tr>' +
+      '<tr class="lab"><td></td><td>' + (bad ? 'Short of the jars by' : 'Difference') + '</td><td class="n"></td><td class="n gapcell"><span class="gapv ' + (bad ? 'bad' : '') + '">' + (bad ? minus(b.gap) : '<span class="tick-ok">' + TICK + '0.00</span>') + '</span>' + ring + '</td></tr>' +
+      '<tr class="lab"><td></td><td>Selling price</td><td class="n"></td><td class="n">' + b.price + '</td></tr>' +
+      '</tbody></table>' +
+      '<div class="savings"><span>Saving the page shows: <b>' + b.discount_shown + '%</b></span><span>Saving on today’s jars: <b>' + b.discount_on_today + '%</b></span></div>' +
+      noteFor(b) +
+      '<div class="fill"><div class="foot"><span>' + B.length + ' bundles footed: ' + D.pass_count + ' agree to the cent, ' + D.mismatch_count + ' fall short of their jars by ' + D.short_total + ' in all</span></div></div>';
+    var t = document.getElementById('ticket');
+    t.innerHTML = html;
+    var note = t.querySelector('.note');
+    if (note && window.matchMedia('(min-width: 821px)').matches) { note.style.top = (t.querySelector('table.tk').offsetTop + t.querySelector('table.tk').offsetHeight + 16) + 'px'; }
+    Array.prototype.forEach.call(document.querySelectorAll('.pick'), function(p){ p.setAttribute('aria-pressed', p.getAttribute('data-k') === b.store + '/' + b.handle ? 'true' : 'false'); });
+  }
+  document.querySelector('.margin').addEventListener('click', function(e){
+    var p = e.target.closest('.pick'); if (!p) return;
+    render(p.getAttribute('data-k'), true);
+    if (history.replaceState) history.replaceState(null, '', '#' + p.getAttribute('data-k').split('/')[1]);
+  });
+  var start = (location.hash || '').slice(1), startKey = null;
+  B.forEach(function(b){ if (b.handle === start) startKey = b.store + '/' + b.handle; });
+  render(startKey || (B[0].store + '/' + B[0].handle), true);
+
+  // range matrix
+  var head = '<thead><tr><th>Family</th>' + D.stores.map(function(s){ return '<th>' + s.store.replace('dogsuppy', '') + '<span>' + s.currency + '</span></th>'; }).join('') + '</tr></thead>';
+  var body = D.matrix.map(function(r){ return '<tr><td>' + esc(r.family) + '</td>' + r.cells.map(function(c){ return c ? '<td title="' + esc(c.handle) + '">' + c.price + '</td>' : '<td class="none" aria-label="not listed">–</td>'; }).join('') + '</tr>'; }).join('');
+  document.getElementById('matrix').innerHTML = head + '<tbody>' + body + '</tbody>';
+
+  // Dental Bright ladder
+  var lo = 26, hi = 46;
+  document.getElementById('ladder').innerHTML = D.ladder.map(function(l){
+    var x = (parseFloat(l.eur) - lo) / (hi - lo) * 100;
+    var sym = {EUR:'€', GBP:'£'}[l.currency];
+    var local = sym ? sym + l.price : l.price + ' ' + l.currency;
+    return '<li><span class="st">' + l.store + '</span><span class="lc">' + local + '</span><span class="tr"><span class="dot" style="left:' + x.toFixed(2) + '%"></span></span><span class="eu">€' + l.eur + '</span></li>';
+  }).join('');
+
+  // the SQL view, lightly marked up
+  var kw = /\b(CREATE OR REPLACE VIEW|WITH|AS|SELECT|FROM|WHERE|LEFT JOIN|JOIN|ON|GROUP BY|UNION ALL|CASE|WHEN|THEN|END|AND|OR|NOT|IS NOT NULL|IS NULL|SUM|MIN|MAX|ABS)\b/g;
+  document.getElementById('sql').innerHTML = D.sql_view.split('\n').map(function(line){
+    var i = line.indexOf('--'), code = i >= 0 ? line.slice(0, i) : line, com = i >= 0 ? line.slice(i) : '';
+    return esc(code).replace(kw, '<span class="k">$1</span>') + (com ? '<span class="c">' + esc(com) + '</span>' : '');
+  }).join('\n');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+store,bundle_handle,slot,qty,label,component_handle,is_default
+dogsuppy.com,gebit-and-jeuk,1,1,Dental Bright,dental-powder,true
+dogsuppy.com,gebit-and-jeuk,2,1,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,basis-verzorging,1,1,Neus- & Pootbalsem,neus-pootbalsem,true
+dogsuppy.com,basis-verzorging,2,1,Honingzalf,honingzalf,true
+dogsuppy.com,dental-bright-anti-stress,1,1,Dental Bright,dental-powder,true
+dogsuppy.com,dental-bright-anti-stress,2,1,Stress & Angst,anti-stress-angst,true
+dogsuppy.com,2x-anti-jeuk-1x-anti-jeuk-spray,1,2,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,2x-anti-jeuk-1x-anti-jeuk-spray,2,2,Anti-Jeuk Spray,anti-jeuk-spray,true
+dogsuppy.com,2x-anti-jeuk-2x-heup-gewrichten,1,2,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,2x-anti-jeuk-2x-heup-gewrichten,2,2,Heup & Gewrichten,heup-gewrichten-supplement-honden-chewies-snoepjes,true
+dogsuppy.com,2x-anti-jeuk-2x-anti-stress-angst,1,2,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,2x-anti-jeuk-2x-anti-stress-angst,2,2,Stress & Angst,anti-stress-angst,true
+dogsuppy.com,herstel-huid,1,2,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,herstel-huid,2,2,Huid & Vacht,huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g,true
+dogsuppy.com,soepele-gewrichten,1,1,Heup & Gewrichten,heup-gewrichten-supplement-honden-chewies-snoepjes,true
+dogsuppy.com,soepele-gewrichten,2,1,Silicium Boost,silicium,true
+dogsuppy.com,bun-mooie-vacht,1,1,Huid & Vacht,huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g,true
+dogsuppy.com,bun-mooie-vacht,2,1,Zalmolie,zalmolie-supplement-gezonde-huid-en-glanzende-vacht-voor-honden,true
+dogsuppy.com,stop-krabben-en-pootlikken,1,1,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,stop-krabben-en-pootlikken,2,1,Hennepzaadolie,hennepzaadolie-🌿-250-ml,true
+dogsuppy.com,bun-no-stress,1,1,Stress & Angst,anti-stress-angst,true
+dogsuppy.com,bun-no-stress,2,1,Hennepzaadolie,hennepzaadolie-🌿-250-ml,true
+dogsuppy.com,anti-irritatie,1,1,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,anti-irritatie,2,1,Anaalklieren,probiotica-vermijdt-verstopte-anaalklieren,true
+dogsuppy.com,bun-vieze-geurtjes,1,1,Anti-Anaalklieren,probiotica-vermijdt-verstopte-anaalklieren,true
+dogsuppy.com,bun-vieze-geurtjes,2,1,Dental Bright,dental-powder,true
+dogsuppy.com,bun-vieze-geurtjes,2,1,Dental Liquid,dental-liquid,false
+dogsuppy.com,anti-gisten,1,2,Anti-Jeuk,probiotica-forte-anti-jeuk-hond,true
+dogsuppy.com,anti-gisten,2,2,Oorreiniger,oorreiniger,true
+dogsuppy.com,bun-senior-support,1,1,Heup & Gewrichten,heup-gewrichten-supplement-honden-chewies-snoepjes,true
+dogsuppy.com,bun-senior-support,2,1,Dental Bright,dental-powder,true
+dogsuppy.com,bun-senior-support,2,1,Dental Liquid,dental-liquid,false
+dogsuppy.it,bun-prurito-stress,1,2,Sollievo Prurito,sollievo-prurito-100-naturale-60-integratori-1,true
+dogsuppy.it,bun-prurito-stress,2,2,Stress & Ansia,ansia-stress-100-naturale-60-integratori-1,true
+dogsuppy.it,bun-denti-e-stress,1,1,Ansia & Stress,ansia-stress-100-naturale-60-integratori-1,true
+dogsuppy.it,bun-denti-e-stress,2,1,Dental Bright,dental-bright,true
+dogsuppy.it,bun-denti-totale,1,2,Dental Bright,dental-bright,true
+dogsuppy.it,bun-denti-totale,2,5,Dental Sticks,dental-sticks,true
+dogsuppy.it,bun-denti-prurito,1,2,Dental Bright,dental-bright,true
+dogsuppy.it,bun-denti-prurito,2,2,Sollievo Prurito,sollievo-prurito-100-naturale-60-integratori-1,true

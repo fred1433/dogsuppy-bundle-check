@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DogSuppy bundle check</title>
+<meta name="description" content="Every DogSuppy bundle's struck price, added up against today's price of the jars it lists.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#e7f2ee; --mint:#bfe0d7; --ink:#054f45; --ink-2:#3a6a60; --ink-3:#6e9188;
+  --paper:#fbfdfa; --rule:#c4e2d6; --rule-2:#8cc5b0; --gum:#2f7f6c;
+  --coral:#e06553; --coral-wash:#fbe4df; --graphite:#454b48;
+  --franklin:"Libre Franklin", "Franklin Gothic", "Helvetica Neue", Arial, sans-serif;
+  --hand:"Kalam", "Segoe Print", cursive;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --row:34px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--franklin);font-size:17px;line-height:1.55;
+  font-variant-numeric:tabular-nums lining-nums;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--gum)}
+:focus-visible{outline:2px solid var(--coral);outline-offset:2px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.for{padding:28px 0 0;font-size:14px;color:var(--ink-2)}
+.for b{font-weight:600;color:var(--ink)}
+
+/* --- opening --- */
+.open{padding:40px 0 34px;max-width:860px}
+h1{font-weight:800;font-size:clamp(34px,4.6vw,58px);line-height:1.04;letter-spacing:-.025em;margin:0 0 22px}
+h1 s{text-decoration-thickness:.09em;text-decoration-color:var(--coral)}
+.lede{font-size:19px;line-height:1.55;max-width:64ch;margin:0;color:var(--ink)}
+.lede + .lede{margin-top:12px}
+
+/* --- the sheet --- */
+.sheet{position:relative;background:var(--paper);border-radius:2px 2px 3px 3px;
+  box-shadow:0 1px 0 #d3e7df, 0 2px 0 #f4faf7, 0 3px 0 #d3e7df, 0 30px 60px -36px rgba(5,79,69,.45);
+  display:grid;grid-template-columns:272px 1fr;margin:0 0 18px}
+.sheet::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:var(--gum);border-radius:2px 2px 0 0}
+.margin{padding:32px 0 26px;border-right:3px double var(--rule-2)}
+.margin h3{font-size:13px;font-weight:600;color:var(--ink-2);margin:12px 0 0;padding:0 20px;line-height:var(--row);height:calc(var(--row) + 1px);border-bottom:1px solid var(--rule-2)}
+.margin ul{list-style:none;margin:0;padding:0}
+.margin li{border-bottom:1px solid var(--rule)}
+.pick{all:unset;box-sizing:border-box;display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:6px;width:100%;
+  height:var(--row);padding:0 16px 0 14px;cursor:pointer;font-size:14px;color:var(--ink)}
+.pick:hover{background:rgba(191,224,215,.35)}
+.pick[aria-pressed="true"]{background:var(--mint)}
+.pick:focus-visible{outline:2px solid var(--coral);outline-offset:-2px}
+.pick .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pick .am{font-size:13px;color:var(--ink-2)}
+.pick svg{display:block}
+
+.body{padding:32px 36px 0 40px;position:relative;min-width:0;display:flex;flex-direction:column}
+.fill{flex:1;min-height:110px;margin-top:22px;position:relative;
+  background:repeating-linear-gradient(to bottom, transparent 0 calc(var(--row) - 1px), var(--rule) calc(var(--row) - 1px) var(--row))}
+.foot{position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:flex-end;font-family:var(--hand);color:var(--graphite);font-size:20px;line-height:1.2;text-align:right}
+.foot span{background:var(--paper);padding:0 0 0 10px}
+.tk-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px;min-height:calc(var(--row)*2);margin-top:12px}
+.tk-head h2{font-size:24px;font-weight:700;letter-spacing:-.01em;margin:0;line-height:1.2}
+.tk-src{font-size:14px;color:var(--ink-2)}
+.state{font-size:13px;font-weight:600;padding:2px 9px;border-radius:20px;border:1.5px solid currentColor;white-space:nowrap}
+.state.off{color:var(--coral)}
+.state.on{color:var(--gum)}
+table.tk{width:100%;border-collapse:collapse;margin-top:6px;font-size:16px}
+.tk th{font-size:12.5px;font-weight:600;color:var(--ink-2);text-align:left;height:var(--row);border-bottom:1px solid var(--rule-2);padding:0 10px;vertical-align:bottom;padding-bottom:6px}
+.tk td{height:var(--row);border-bottom:1px solid var(--rule);padding:0 10px;vertical-align:middle}
+.tk .n{text-align:right;width:104px;border-left:1px solid var(--rule)}
+.tk th.n{border-left:1px solid var(--rule)}
+.tk .q{width:44px;text-align:right;color:var(--ink-2)}
+.tk .jar small{display:block;font-size:12px;color:var(--ink-3);line-height:1.2;margin-top:-1px}
+.tk td.jar{line-height:1.25;padding-top:4px;padding-bottom:4px}
+.tk tr.alt td{color:var(--ink-3)}
+.tk tr.alt td.jar{font-style:italic}
+.tk tr.sum td{border-bottom:none}
+.pencil{font-family:var(--hand);font-weight:400;color:var(--graphite);font-size:22px;line-height:1}
+.tot{display:inline-block;border-bottom:1.5px solid var(--graphite);box-shadow:0 3px 0 -1.5px var(--paper),0 4.5px 0 -1.5px var(--graphite);padding:0 2px 1px}
+.tk tr.lab td:first-child{color:var(--ink-2)}
+.strike{text-decoration:line-through;text-decoration-thickness:1.5px}
+.gapcell{position:relative}
+.gapcell .ring{position:absolute;right:-14px;top:50%;width:122px;height:50px;transform:translateY(-50%);pointer-events:none;overflow:visible}
+.ring path{fill:none;stroke:var(--coral);stroke-width:2.6;stroke-linecap:round}
+.gapv{font-weight:700}
+.gapv.bad{color:var(--coral)}
+.tick-ok{display:inline-flex;align-items:center;gap:4px}
+.note{position:absolute;font-family:var(--hand);color:var(--coral);font-size:21px;line-height:1.15;transform:rotate(-2.5deg);right:44px;max-width:320px;text-align:right;z-index:1}
+.note.ok{color:var(--graphite)}
+.savings{display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:14px;font-size:15px;color:var(--ink-2)}
+.savings b{color:var(--ink);font-weight:700}
+.after{font-size:14px;color:var(--ink-2);max-width:80ch;margin:0 0 6px}
+
+/* --- section 2 & 3 --- */
+section.calm{padding:76px 0 0}
+h2.sec{font-size:30px;font-weight:700;letter-spacing:-.015em;margin:0 0 10px;line-height:1.15}
+.sec-intro{max-width:68ch;margin:0 0 30px;color:var(--ink)}
+h3.sub{font-size:17px;font-weight:700;margin:40px 0 4px}
+.sub-note{font-size:14.5px;color:var(--ink-2);max-width:76ch;margin:0 0 14px}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;border-top:2px solid var(--ink)}
+table.mx{border-collapse:collapse;width:100%;min-width:760px;font-size:14.5px}
+.mx th,.mx td{padding:7px 10px;border-bottom:1px solid var(--rule-2);text-align:right;white-space:nowrap}
+.mx th{font-weight:600;font-size:13px;color:var(--ink-2);vertical-align:bottom}
+.mx th span{display:block;font-weight:400;color:var(--ink-3)}
+.mx th:first-child,.mx td:first-child{text-align:left;color:var(--ink);font-weight:500;padding-left:0}
+.mx td.none{color:var(--rule-2)}
+.ladder{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink);max-width:880px}
+.ladder li{display:grid;grid-template-columns:150px 120px 1fr 74px;align-items:center;gap:14px;height:40px;border-bottom:1px solid var(--rule-2);font-size:14.5px}
+.ladder .st{font-weight:500}
+.ladder .lc{color:var(--ink-2);text-align:right}
+.ladder .tr{position:relative;height:2px;background:var(--rule)}
+.ladder .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--ink);transform:translate(-50%,-50%)}
+.ladder .eu{text-align:right;font-weight:600}
+.qs{list-style:none;margin:0;padding:0;max-width:78ch;border-top:2px solid var(--ink)}
+.qs li{padding:14px 0;border-bottom:1px solid var(--rule-2)}
+
+pre.sql{font-family:var(--mono);font-size:13px;line-height:1.55;background:var(--paper);color:#1f3a34;margin:0;padding:18px 20px;
+  max-height:440px;overflow:auto;border-left:3px solid var(--gum);white-space:pre}
+.sql .c{color:#6e9188}
+.sql .k{color:var(--ink);font-weight:600}
+.proof{list-style:none;margin:0;padding:0;max-width:80ch;border-top:2px solid var(--ink)}
+.proof li{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:12px 0;border-bottom:1px solid var(--rule-2)}
+.proof li svg{margin-top:3px}
+.proof li.notrun svg circle{stroke:var(--ink-3)}
+.two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:start;margin-top:34px}
+.two h3.sub{margin-top:0}
+.private{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.private li{padding:11px 0;border-bottom:1px solid var(--rule-2)}
+footer{margin:90px 0 0;padding:28px 0 56px;border-top:1px solid var(--rule-2);font-size:15px;color:var(--ink-2)}
+footer p{margin:0 0 6px;max-width:80ch}
+footer .call{font-size:19px;color:var(--ink);font-weight:600;margin-bottom:10px}
+
+@media (max-width:900px){
+  .two{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .sheet{grid-template-columns:1fr}
+  .margin{order:2;border-right:none;border-top:3px double var(--rule-2);padding-top:8px;background-position:0 20px}
+  .body{order:1;padding:28px 14px 24px}
+  .tk .n{width:74px;padding:0 6px}
+  .tk .jar small{display:none}
+  .tk .q{width:30px;padding:0 4px}
+  .tk td,.tk th{padding-left:6px;padding-right:6px}
+  .note{position:static;transform:rotate(-1.5deg);margin:14px 0 0;text-align:left;max-width:none;font-size:19px}
+  .fill{min-height:92px}
+  .foot{justify-content:flex-start;font-size:18px;bottom:14px}
+  .foot span{padding:0 10px 0 0}
+  .gapcell .ring{width:96px;right:-10px}
+  .ladder li{grid-template-columns:96px 1fr 64px;grid-template-rows:auto auto;height:auto;padding:8px 0;row-gap:4px}
+  .ladder .lc{grid-column:1;grid-row:2;text-align:left;font-size:13px}
+  .ladder .tr{grid-column:2;grid-row:1 / span 2}
+  .ladder .eu{grid-column:3;grid-row:1 / span 2}
+  h1{font-size:33px}
+  .lede{font-size:17px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .ring path.draw{stroke-dasharray:400;stroke-dashoffset:400;animation:draw .9s .35s ease-out forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="for">For <b>Nicolas Buysschaert</b>, DogSuppy. Prepared by Frederic de Lavenne de Choulot, The AI Pipe.</p>
+
+  <header class="open">
+    <h1>On dogsuppy.it the jars add up to €135.60. The bundle is struck through at <s>€119.60</s>.</h1>
+    <p class="lede">I added up every bundle in your eight Shopify stores: the struck price against today's price of the jars that the bundle's own description lists. The 15 bundles on dogsuppy.com add up to the cent. The 4 on dogsuppy.it do not: each struck price matches jars at €29.90, and the jars show €33.90 today.</p>
+    <p class="lede">So the bundle page shows a 20.6% saving where today's jar prices give 29.9%. All four are set to not available, so no one can buy them today.</p>
+  </header>
+
+  <div class="sheet" id="sheet">
+    <nav class="margin" aria-label="Bundles">
+      <h3>dogsuppy.it, 4 bundles</h3>
+      <ul id="list-it"></ul>
+      <h3>dogsuppy.com, 15 bundles</h3>
+      <ul id="list-com"></ul>
+    </nav>
+    <div class="body" id="ticket" aria-live="polite"></div>
+  </div>
+  <p class="after">Read on 23 November 2026 at 15:54 UTC: 8 catalogue requests, one <code>products.json</code> per store, and each store's currency from its own <code>/cart.js</code>. dogsuppy.nl and dogsuppy.be redirect to dogsuppy.com; dogsuppy.es does not serve a store. 90 of 130 variants checked; gifts and builders at 0.00, Hidden and B2B listings, landing-page and marketplace copies, and one placeholder are left out first.</p>
+
+  <section class="calm" aria-labelledby="s2">
+    <h2 class="sec" id="s2">The rest of the catalogue, without verdicts</h2>
+    <p class="sec-intro">A smaller range in one country and a different price in another are choices, not errors, so nothing below is flagged. It is the same snapshot, laid out so a gap you did not choose would be easy to see.</p>
+
+    <h3 class="sub">Range by store</h3>
+    <p class="sub-note">Public price in each store's own currency. Families are matched by a hand-written table, because neither SKU nor handle lines them up: Dental Bright alone carries 6 different SKUs across the stores. Hidden listings and products sold in one store only are not shown.</p>
+    <div class="scroller"><table class="mx" id="matrix"></table></div>
+
+    <h3 class="sub">Dental Bright, the one product in all eight stores</h3>
+    <p class="sub-note">Converted to euros at the ECB reference rate of 23 November 2026, the last one published before the read. The ECB publishes these rates for information purposes only; here they only line the stores up. Prices are assumed to include local VAT.</p>
+    <ul class="ladder" id="ladder"></ul>
+
+    <h3 class="sub">Three things I could not settle from the outside</h3>
+    <ol class="qs">
+      <li>Clean Bite Dental Sticks carry the same SKU (5430003031353) and 5 sticks a pack on both stores: €4.60 on dogsuppy.com, €7.14 on dogsuppy.it. Is the 55.2% difference intended?</li>
+      <li>The 90-chew large-dog itch relief jar costs 1.6% more per chew than the 60-chew jar on dogsuppy.com (€0.647 against €0.637), and 17.9% less on dogsuppy.co.uk (£0.477 against £0.581). If the large-dog formula carries a different dose, both can be right; I do not know the dose.</li>
+      <li>The large-dog Dental Bright on dogsuppy.com (set to Hidden) has a handle ending in <code>180-schepjes</code> and a title that says 60 schepjes. Which one is right?</li>
+    </ol>
+  </section>
+
+  <section class="calm" aria-labelledby="s3">
+    <h2 class="sec" id="s3">The same check, every morning</h2>
+    <p class="sec-intro">The sheet at the top is what this view returns on the snapshot. It is one of four; each returns one row per problem and nothing when all is well, with the same columns: <code>check_name, severity, store, key, expected, actual, delta, evidence_url, read_at</code>. A rule that cannot run on a row returns it as <code>not_checked</code>, never as a pass.</p>
+    <pre class="sql" id="sql" tabindex="0" aria-label="checks_bundle_compare_at view"></pre>
+    <div class="two">
+      <div>
+        <h3 class="sub">What was tested, and how</h3>
+        <ul class="proof">
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>On the 23 Nov snapshot, <code>checks_all</code> returns 4 rows: the four Italian bundles, nothing else.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>A clean test catalogue returns 0 rows; each of 8 trapped catalogues returns exactly its one row (stale struck price, 10 cents off, struck price equal to the price, a bundle with no readable contents, a jar that cannot be priced, and more).</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>Change the data: Dental Bright on dogsuppy.com at €37.70 instead of €37.60 gives 4 rows, the four bundles that hold it. The Italian jars at €29.90 give 0 rows.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5l3.6 3.6L15 4" fill="none" stroke="#2f7f6c" stroke-width="2.2" stroke-linecap="round"/></svg><span>Break the SQL on purpose, 14 ways (drop the quantity, widen the tolerance to 50 cents, ignore the "or Dental Liquid" choice, count gifts at 0.00): the tests catch 14 of 14.</span></li>
+          <li class="notrun"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke-width="2"/></svg><span>Not run here: BigQuery and Google Sheets. No Google account was used. The BigQuery copy is the same SQL with dataset names added; it parses in BigQuery's dialect but has not been executed. The Apps Script fills an Exceptions tab from <code>checks_all</code> each morning and colours the rows that were not there the day before.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">On your private tables, the same contract would cover</h3>
+        <ul class="private">
+          <li>Net orders against what the payment provider actually paid out, per day and currency.</li>
+          <li>Order lines with no unit cost, which make a margin look better than it is.</li>
+          <li>Ad spend in the warehouse against the spend your reporting sheet shows.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="call">If this is the kind of check you want running on your numbers, <a href="https://cal.theaipipe.com">book 15 minutes</a>.</p>
+    <p>Frederic de Lavenne de Choulot, The AI Pipe. Code, SQL, tests and the frozen snapshot: <a href="https://github.com/fred1433/dogsuppy-bundle-check">github.com/fred1433/dogsuppy-bundle-check</a>. Public pages only; no customer data; no marketplace read.</p>
+  </footer>
+</div>
+
+<script id="data" type="application/json">{"read_at_utc": "2026-11-23T15:54:42+00:00", "catalogue_requests": 8, "currency_requests": 9, "stores": [{"store": "dogsuppy.com", "currency": "EUR", "variants": 59}, {"store": "dogsuppy.de", "currency": "EUR", "variants": 5}, {"store": "dogsuppy.dk", "currency": "DKK", "variants": 1}, {"store": "dogsuppy.no", "currency": "NOK", "variants": 2}, {"store": "dogsuppy.se", "currency": "SEK", "variants": 4}, {"store": "dogsuppy.co.uk", "currency": "GBP", "variants": 23}, {"store": "dogsuppy.pl", "currency": "PLN", "variants": 16}, {"store": "dogsuppy.it", "currency": "EUR", "variants": 20}], "ecb_day": "2026-11-23", "ecb_rates": {"DKK": "7.4746", "GBP": "0.83673", "PLN": "4.4588", "SEK": "11.2375", "NOK": "10.7285"}, "bundles": [{"store": "dogsuppy.it", "handle": "bun-prurito-stress", "title": "Bundle Risparmio:  Prurito & Stress", "url": "https://dogsuppy.it/products/bun-prurito-stress", "available": false, "price": "95.00", "compare_at": "119.60", "jars": [{"qty": 2, "label": "Sollievo Prurito", "handle": "sollievo-prurito-100-naturale-60-integratori-1", "jar_title": "Sollievo Prurito🌿 | 100% Naturale | 60 integratori", "unit": "33.90", "line": "67.80", "url": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1"}, {"qty": 2, "label": "Stress & Ansia", "handle": "ansia-stress-100-naturale-60-integratori-1", "jar_title": "Ansia & Stress🌿 | 100% Naturale | 60 integratori", "unit": "33.90", "line": "67.80", "url": "https://dogsuppy.it/products/ansia-stress-100-naturale-60-integratori-1"}], "alternatives": [], "jar_total": "135.60", "status": "mismatch", "gap": "-16.00", "discount_shown": "20.6", "discount_on_today": "29.9", "implied_jar_price": "29.90", "implied_note": {"n": 4, "fixed": []}}, {"store": "dogsuppy.it", "handle": "bun-denti-prurito", "title": "Bundle Risparmio:  Denti & Prurito", "url": "https://dogsuppy.it/products/bun-denti-prurito", "available": false, "price": "95.00", "compare_at": "119.60", "jars": [{"qty": 2, "label": "Dental Bright", "handle": "dental-bright", "jar_title": "Dental Bright 🌿 | Polvere 100% Naturale | 60 dosi", "unit": "33.90", "line": "67.80", "url": "https://dogsuppy.it/products/dental-bright"}, {"qty": 2, "label": "Sollievo Prurito", "handle": "sollievo-prurito-100-naturale-60-integratori-1", "jar_title": "Sollievo Prurito🌿 | 100% Naturale | 60 integratori", "unit": "33.90", "line": "67.80", "url": "https://dogsuppy.it/products/sollievo-prurito-100-naturale-60-integratori-1"}], "alternatives": [], "jar_total": "135.60", "status": "mismatch", "gap": "-16.00", "discount_shown": "20.6", "discount_on_today": "29.9", "implied_jar_price": "29.90", "implied_note": {"n": 4, "fixed": []}}, {"store": "dogsuppy.it", "handle": "bun-denti-e-stress", "title": "Bundle Risparmio: Denti & stress", "url": "https://dogsuppy.it/products/bun-denti-e-stress", "available": false, "price": "50.00", "compare_at": "59.80", "jars": [{"qty": 1, "label": "Ansia & Stress", "handle": "ansia-stress-100-naturale-60-integratori-1", "jar_title": "Ansia & Stress🌿 | 100% Naturale | 60 integratori", "unit": "33.90", "line": "33.90", "url": "https://dogsuppy.it/products/ansia-stress-100-naturale-60-integratori-1"}, {"qty": 1, "label": "Dental Bright", "handle": "dental-bright", "jar_title": "Dental Bright 🌿 | Polvere 100% Naturale | 60 dosi", "unit": "33.90", "line": "33.90", "url": "https://dogsuppy.it/products/dental-bright"}], "alternatives": [], "jar_total": "67.80", "status": "mismatch", "gap": "-8.00", "discount_shown": "16.4", "discount_on_today": "26.3", "implied_jar_price": "29.90", "implied_note": {"n": 2, "fixed": []}}, {"store": "dogsuppy.it", "handle": "bun-denti-totale", "title": "Bundle Risparmio: Denti Totale", "url": "https://dogsuppy.it/products/bun-denti-totale", "available": false, "price": "70.00", "compare_at": "95.50", "jars": [{"qty": 2, "label": "Dental Bright", "handle": "dental-bright", "jar_title": "Dental Bright 🌿 | Polvere 100% Naturale | 60 dosi", "unit": "33.90", "line": "67.80", "url": "https://dogsuppy.it/products/dental-bright"}, {"qty": 5, "label": "Dental Sticks", "handle": "dental-sticks", "jar_title": "Dental Sticks Clean Bite🌿", "unit": "7.14", "line": "35.70", "url": "https://dogsuppy.it/products/dental-sticks"}], "alternatives": [], "jar_total": "103.50", "status": "mismatch", "gap": "-8.00", "discount_shown": "26.7", "discount_on_today": "32.4", "implied_jar_price": "29.90", "implied_note": {"n": 2, "fixed": [{"qty": 5, "unit": "7.14"}]}}, {"store": "dogsuppy.com", "handle": "basis-verzorging", "title": "[BUN] Basisverzorging", "url": "https://dogsuppy.com/products/basis-verzorging", "available": true, "price": "45.00", "compare_at": "50.90", "jars": [{"qty": 1, "label": "Neus- & Pootbalsem", "handle": "neus-pootbalsem", "jar_title": "Neus- & Pootbalsem 🌿  125 ml", "unit": "24.20", "line": "24.20", "url": "https://dogsuppy.com/products/neus-pootbalsem"}, {"qty": 1, "label": "Honingzalf", "handle": "honingzalf", "jar_title": "Honingzalf 🌿 125 ml", "unit": "26.70", "line": "26.70", "url": "https://dogsuppy.com/products/honingzalf"}], "alternatives": [], "jar_total": "50.90", "status": "pass", "gap": "0.00", "discount_shown": "11.6", "discount_on_today": "11.6"}, {"store": "dogsuppy.com", "handle": "anti-irritatie", "title": "[BUN] Comfort", "url": "https://dogsuppy.com/products/anti-irritatie", "available": true, "price": "65.00", "compare_at": "76.40", "jars": [{"qty": 1, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 1, "label": "Anaalklieren", "handle": "probiotica-vermijdt-verstopte-anaalklieren", "jar_title": "Anaalklieren Probiotica Forte 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/probiotica-vermijdt-verstopte-anaalklieren"}], "alternatives": [], "jar_total": "76.40", "status": "pass", "gap": "0.00", "discount_shown": "14.9", "discount_on_today": "14.9"}, {"store": "dogsuppy.com", "handle": "gebit-and-jeuk", "title": "[BUN] Gebit & Jeuk", "url": "https://dogsuppy.com/products/gebit-and-jeuk", "available": true, "price": "65.00", "compare_at": "75.80", "jars": [{"qty": 1, "label": "Dental Bright", "handle": "dental-powder", "jar_title": "Dental Bright 🌿 60 schepjes", "unit": "37.60", "line": "37.60", "url": "https://dogsuppy.com/products/dental-powder"}, {"qty": 1, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}], "alternatives": [], "jar_total": "75.80", "status": "pass", "gap": "0.00", "discount_shown": "14.2", "discount_on_today": "14.2"}, {"store": "dogsuppy.com", "handle": "dental-bright-anti-stress", "title": "[BUN] Gebit & Stress", "url": "https://dogsuppy.com/products/dental-bright-anti-stress", "available": true, "price": "65.00", "compare_at": "75.80", "jars": [{"qty": 1, "label": "Dental Bright", "handle": "dental-powder", "jar_title": "Dental Bright 🌿 60 schepjes", "unit": "37.60", "line": "37.60", "url": "https://dogsuppy.com/products/dental-powder"}, {"qty": 1, "label": "Stress & Angst", "handle": "anti-stress-angst", "jar_title": "Stress & Angst 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/anti-stress-angst"}], "alternatives": [], "jar_total": "75.80", "status": "pass", "gap": "0.00", "discount_shown": "14.2", "discount_on_today": "14.2"}, {"store": "dogsuppy.com", "handle": "herstel-huid", "title": "[BUN] Huid comfort", "url": "https://dogsuppy.com/products/herstel-huid", "available": true, "price": "120.00", "compare_at": "151.60", "jars": [{"qty": 2, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 2, "label": "Huid & Vacht", "handle": "huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g", "jar_title": "Huid & Vacht 🌿 60 Snoepjes", "unit": "37.60", "line": "75.20", "url": "https://dogsuppy.com/products/huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g"}], "alternatives": [], "jar_total": "151.60", "status": "pass", "gap": "0.00", "discount_shown": "20.8", "discount_on_today": "20.8"}, {"store": "dogsuppy.com", "handle": "2x-anti-jeuk-2x-heup-gewrichten", "title": "[BUN] Jeuk & Gewrichten", "url": "https://dogsuppy.com/products/2x-anti-jeuk-2x-heup-gewrichten", "available": true, "price": "120.00", "compare_at": "152.80", "jars": [{"qty": 2, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 2, "label": "Heup & Gewrichten", "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes", "jar_title": "Heup & Gewrichten 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/heup-gewrichten-supplement-honden-chewies-snoepjes"}], "alternatives": [], "jar_total": "152.80", "status": "pass", "gap": "0.00", "discount_shown": "21.5", "discount_on_today": "21.5"}, {"store": "dogsuppy.com", "handle": "anti-gisten", "title": "[BUN] Jeuk & Oren", "url": "https://dogsuppy.com/products/anti-gisten", "available": true, "price": "100.00", "compare_at": "125.20", "jars": [{"qty": 2, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 2, "label": "Oorreiniger", "handle": "oorreiniger", "jar_title": "Oorreiniger 🌿 100 ml", "unit": "24.40", "line": "48.80", "url": "https://dogsuppy.com/products/oorreiniger"}], "alternatives": [], "jar_total": "125.20", "status": "pass", "gap": "0.00", "discount_shown": "20.1", "discount_on_today": "20.1"}, {"store": "dogsuppy.com", "handle": "2x-anti-jeuk-2x-anti-stress-angst", "title": "[BUN] Jeuk & Stress", "url": "https://dogsuppy.com/products/2x-anti-jeuk-2x-anti-stress-angst", "available": true, "price": "120.00", "compare_at": "152.80", "jars": [{"qty": 2, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 2, "label": "Stress & Angst", "handle": "anti-stress-angst", "jar_title": "Stress & Angst 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/anti-stress-angst"}], "alternatives": [], "jar_total": "152.80", "status": "pass", "gap": "0.00", "discount_shown": "21.5", "discount_on_today": "21.5"}, {"store": "dogsuppy.com", "handle": "stop-krabben-en-pootlikken", "title": "[BUN] Jeuk & pootlikken", "url": "https://dogsuppy.com/products/stop-krabben-en-pootlikken", "available": true, "price": "55.00", "compare_at": "62.90", "jars": [{"qty": 1, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 1, "label": "Hennepzaadolie", "handle": "hennepzaadolie-🌿-250-ml", "jar_title": "Hennepzaadolie 🌿 250 ml", "unit": "24.70", "line": "24.70", "url": "https://dogsuppy.com/products/hennepzaadolie-🌿-250-ml"}], "alternatives": [], "jar_total": "62.90", "status": "pass", "gap": "0.00", "discount_shown": "12.6", "discount_on_today": "12.6"}, {"store": "dogsuppy.com", "handle": "2x-anti-jeuk-1x-anti-jeuk-spray", "title": "[BUN] Jeuk XL", "url": "https://dogsuppy.com/products/2x-anti-jeuk-1x-anti-jeuk-spray", "available": true, "price": "100.00", "compare_at": "125.80", "jars": [{"qty": 2, "label": "Anti-Jeuk", "handle": "probiotica-forte-anti-jeuk-hond", "jar_title": "Anti-Jeuk Probiotica 🌿 60 snoepjes", "unit": "38.20", "line": "76.40", "url": "https://dogsuppy.com/products/probiotica-forte-anti-jeuk-hond"}, {"qty": 2, "label": "Anti-Jeuk Spray", "handle": "anti-jeuk-spray", "jar_title": "Anti-Jeuk Spray 🌿 250ml", "unit": "24.70", "line": "49.40", "url": "https://dogsuppy.com/products/anti-jeuk-spray"}], "alternatives": [], "jar_total": "125.80", "status": "pass", "gap": "0.00", "discount_shown": "20.5", "discount_on_today": "20.5"}, {"store": "dogsuppy.com", "handle": "bun-mooie-vacht", "title": "[BUN] Mooie vacht", "url": "https://dogsuppy.com/products/bun-mooie-vacht", "available": true, "price": "49.00", "compare_at": "55.00", "jars": [{"qty": 1, "label": "Huid & Vacht", "handle": "huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g", "jar_title": "Huid & Vacht 🌿 60 Snoepjes", "unit": "37.60", "line": "37.60", "url": "https://dogsuppy.com/products/huid-vacht-supplement-voor-honden-omega-3-6-9-en-visolie-180g"}, {"qty": 1, "label": "Zalmolie", "handle": "zalmolie-supplement-gezonde-huid-en-glanzende-vacht-voor-honden", "jar_title": "Zalmolie 🌿 250 ml", "unit": "17.40", "line": "17.40", "url": "https://dogsuppy.com/products/zalmolie-supplement-gezonde-huid-en-glanzende-vacht-voor-honden"}], "alternatives": [], "jar_total": "55.00", "status": "pass", "gap": "0.00", "discount_shown": "10.9", "discount_on_today": "10.9"}, {"store": "dogsuppy.com", "handle": "bun-senior-support", "title": "[BUN] Senior support", "url": "https://dogsuppy.com/products/bun-senior-support", "available": true, "price": "65.00", "compare_at": "75.80", "jars": [{"qty": 1, "label": "Heup & Gewrichten", "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes", "jar_title": "Heup & Gewrichten 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/heup-gewrichten-supplement-honden-chewies-snoepjes"}, {"qty": 1, "label": "Dental Bright", "handle": "dental-powder", "jar_title": "Dental Bright 🌿 60 schepjes", "unit": "37.60", "line": "37.60", "url": "https://dogsuppy.com/products/dental-powder"}], "alternatives": [{"qty": 1, "label": "Dental Liquid", "handle": "dental-liquid", "jar_title": "Dental Liquid 🌿 250 ml", "unit": "36.70", "line": "36.70", "url": "https://dogsuppy.com/products/dental-liquid", "slot": 2, "replaces": "Dental Bright", "total_with_it": "74.90"}], "jar_total": "75.80", "status": "pass", "gap": "0.00", "discount_shown": "14.2", "discount_on_today": "14.2"}, {"store": "dogsuppy.com", "handle": "soepele-gewrichten", "title": "[BUN] Soepele Gewrichten", "url": "https://dogsuppy.com/products/soepele-gewrichten", "available": true, "price": "58.00", "compare_at": "64.90", "jars": [{"qty": 1, "label": "Heup & Gewrichten", "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes", "jar_title": "Heup & Gewrichten 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/heup-gewrichten-supplement-honden-chewies-snoepjes"}, {"qty": 1, "label": "Silicium Boost", "handle": "silicium", "jar_title": "Silicium Boost 🌿 250 ml", "unit": "26.70", "line": "26.70", "url": "https://dogsuppy.com/products/silicium"}], "alternatives": [], "jar_total": "64.90", "status": "pass", "gap": "0.00", "discount_shown": "10.6", "discount_on_today": "10.6"}, {"store": "dogsuppy.com", "handle": "bun-no-stress", "title": "[BUN] Stress XL", "url": "https://dogsuppy.com/products/bun-no-stress", "available": true, "price": "55.00", "compare_at": "62.90", "jars": [{"qty": 1, "label": "Stress & Angst", "handle": "anti-stress-angst", "jar_title": "Stress & Angst 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/anti-stress-angst"}, {"qty": 1, "label": "Hennepzaadolie", "handle": "hennepzaadolie-🌿-250-ml", "jar_title": "Hennepzaadolie 🌿 250 ml", "unit": "24.70", "line": "24.70", "url": "https://dogsuppy.com/products/hennepzaadolie-🌿-250-ml"}], "alternatives": [], "jar_total": "62.90", "status": "pass", "gap": "0.00", "discount_shown": "12.6", "discount_on_today": "12.6"}, {"store": "dogsuppy.com", "handle": "bun-vieze-geurtjes", "title": "[BUN] Vieze geurtjes", "url": "https://dogsuppy.com/products/bun-vieze-geurtjes", "available": true, "price": "65.00", "compare_at": "75.80", "jars": [{"qty": 1, "label": "Anti-Anaalklieren", "handle": "probiotica-vermijdt-verstopte-anaalklieren", "jar_title": "Anaalklieren Probiotica Forte 🌿 60 snoepjes", "unit": "38.20", "line": "38.20", "url": "https://dogsuppy.com/products/probiotica-vermijdt-verstopte-anaalklieren"}, {"qty": 1, "label": "Dental Bright", "handle": "dental-powder", "jar_title": "Dental Bright 🌿 60 schepjes", "unit": "37.60", "line": "37.60", "url": "https://dogsuppy.com/products/dental-powder"}], "alternatives": [{"qty": 1, "label": "Dental Liquid", "handle": "dental-liquid", "jar_title": "Dental Liquid 🌿 250 ml", "unit": "36.70", "line": "36.70", "url": "https://dogsuppy.com/products/dental-liquid", "slot": 2, "replaces": "Dental Bright", "total_with_it": "74.90"}], "jar_total": "75.80", "status": "pass", "gap": "0.00", "discount_shown": "14.2", "discount_on_today": "14.2"}], "mismatch_count": 4, "short_total": "48.00", "pass_count": 15, "implied_jar_price": ["29.90"], "checks_all_rows": 4, "mutation_raise_dental_bright": ["bun-senior-support", "bun-vieze-geurtjes", "dental-bright-anti-stress", "gebit-and-jeuk"], "mutation_it_jars_2990": [], "it_jars_moved": ["ansia-stress-100-naturale-60-integratori-1", "dental-bright", "sollievo-prurito-100-naturale-60-integratori-1"], "dental_bright_skus": ["5430004203025", "5430004203230", "5430004203506", "5430004203513", "5430004203780", "5430004203797"], "variants_total": 130, "variants_checked": 90, "matrix_stores": ["dogsuppy.com", "dogsuppy.de", "dogsuppy.dk", "dogsuppy.no", "dogsuppy.se", "dogsuppy.co.uk", "dogsuppy.pl", "dogsuppy.it"], "matrix": [{"family": "Dental Bright (60 scoops)", "cells": [{"price": "37.60", "currency": "EUR", "handle": "dental-powder"}, {"price": "37.60", "currency": "EUR", "handle": "dental-bright"}, {"price": "280.00", "currency": "DKK", "handle": "dental-bright"}, {"price": "430.00", "currency": "NOK", "handle": "dental-bright"}, {"price": "495.00", "currency": "SEK", "handle": "dental-bright"}, {"price": "32.36", "currency": "GBP", "handle": "dental-bright"}, {"price": "127.00", "currency": "PLN", "handle": "dental-bright-100-naturalny-60-porcji"}, {"price": "33.90", "currency": "EUR", "handle": "dental-bright"}]}, {"family": "Itch relief probiotic (60)", "cells": [{"price": "38.20", "currency": "EUR", "handle": "probiotica-forte-anti-jeuk-hond"}, {"price": "38.20", "currency": "EUR", "handle": "juckreiz-linderung-probiotika-forte"}, null, {"price": "450.00", "currency": "NOK", "handle": "itch-relief"}, {"price": "495.00", "currency": "SEK", "handle": "anti-klada-probiotika"}, {"price": "34.86", "currency": "GBP", "handle": "probiotica-forte-anti-itch-dog"}, {"price": "127.00", "currency": "PLN", "handle": "anty-swiad-probiotyki-forte-60-smakolykow"}, {"price": "33.90", "currency": "EUR", "handle": "sollievo-prurito-100-naturale-60-integratori-1"}]}, {"family": "Anxiety & stress (60)", "cells": [{"price": "38.20", "currency": "EUR", "handle": "anti-stress-angst"}, null, null, null, {"price": "495.00", "currency": "SEK", "handle": "stress-oro"}, {"price": "29.80", "currency": "GBP", "handle": "anxiety-stress-relief"}, {"price": "127.00", "currency": "PLN", "handle": "anty-stres-niepokoj-100-naturalne-60-smakolykow-offer"}, {"price": "33.90", "currency": "EUR", "handle": "ansia-stress-100-naturale-60-integratori-1"}]}, {"family": "Hip & joint (60)", "cells": [{"price": "38.20", "currency": "EUR", "handle": "heup-gewrichten-supplement-honden-chewies-snoepjes"}, null, null, null, {"price": "495.00", "currency": "SEK", "handle": "hofter-leder"}, {"price": "34.86", "currency": "GBP", "handle": "hip-joint-100-natural-ingredients-60-soft-chews"}, {"price": "127.00", "currency": "PLN", "handle": "stawy-i-ruchomosc"}, {"price": "33.90", "currency": "EUR", "handle": "hips-joints"}]}, {"family": "Anal glands (60)", "cells": [{"price": "38.20", "currency": "EUR", "handle": "probiotica-vermijdt-verstopte-anaalklieren"}, null, null, null, null, {"price": "29.80", "currency": "GBP", "handle": "anal-glands"}, {"price": "127.00", "currency": "PLN", "handle": "gruczoly-okoloodbytowe-🌿-100-naturalne-60-smakolykow"}, {"price": "33.90", "currency": "EUR", "handle": "sollievo-ghiandole-anali"}]}, {"family": "Clean Bite sticks (5)", "cells": [{"price": "4.60", "currency": "EUR", "handle": "clean-bite-sticks-schone-tanden-en-verwijderen-van-tandplak-5-sticks-per-zakje"}, null, null, null, null, {"price": "7.14", "currency": "GBP", "handle": "clean-bite-dental-sticks"}, {"price": "29.99", "currency": "PLN", "handle": "dental-sticks"}, {"price": "7.14", "currency": "EUR", "handle": "dental-sticks"}]}, {"family": "Vitamin Boost", "cells": [null, null, null, null, null, {"price": "4.30", "currency": "GBP", "handle": "vitamin-boost"}, {"price": "19.99", "currency": "PLN", "handle": "vitamine-snack"}, {"price": "4.80", "currency": "EUR", "handle": "vitamine-boost"}]}, {"family": "Probiotica Forte (60)", "cells": [{"price": "38.20", "currency": "EUR", "handle": "probiotica-forte"}, null, null, null, null, null, {"price": "127.00", "currency": "PLN", "handle": "probiotyki-forte-🌿-100-naturalne-60-smakolykow"}, null]}, {"family": "No poo eating (60)", "cells": [{"price": "28.40", "currency": "EUR", "handle": "anti-poep-eten"}, null, null, null, null, {"price": "29.80", "currency": "GBP", "handle": "no-poo-eating"}, null, null]}, {"family": "Honey balm (125 ml)", "cells": [{"price": "26.70", "currency": "EUR", "handle": "honingzalf"}, null, null, null, null, {"price": "23.00", "currency": "GBP", "handle": "honey-balm"}, null, null]}, {"family": "Large-dog itch relief (90)", "cells": [{"price": "58.20", "currency": "EUR", "handle": "maxi-pack-anti-jeuk-voor-grote-honden-100-natuurlijk-90-snoepjes"}, null, null, null, null, {"price": "42.95", "currency": "GBP", "handle": "largedog-itch-relief"}, null, null]}], "ladder": [{"store": "dogsuppy.pl", "price": "127.00", "currency": "PLN", "eur": "28.48", "rate": "4.4588"}, {"store": "dogsuppy.it", "price": "33.90", "currency": "EUR", "eur": "33.90", "rate": ""}, {"store": "dogsuppy.dk", "price": "280.00", "currency": "DKK", "eur": "37.46", "rate": "7.4746"}, {"store": "dogsuppy.com", "price": "37.60", "currency": "EUR", "eur": "37.60", "rate": ""}, {"store": "dogsuppy.de", "price": "37.60", "currency": "EUR", "eur": "37.60", "rate": ""}, {"store": "dogsuppy.co.uk", "price": "32.36", "currency": "GBP", "eur": "38.67", "rate": "0.83673"}, {"store": "dogsuppy.no", "price": "430.00", "currency": "NOK", "eur": "40.08", "rate": "10.7285"}, {"store": "dogsuppy.se", "price": "495.00", "currency": "SEK", "eur": "44.05", "rate": "11.2375"}], "questions": {"clean_bite": {"sku": "5430003031353", "com": "4.60", "it": "7.14", "diff_pct": "55.2"}, "jar_90": {"com_90": "58.20", "com_60": "38.20", "com_per_90": "0.647", "com_per_60": "0.637", "com_pct": "1.6", "uk_90": "42.95", "uk_60": "34.86", "uk_per_90": "0.477", "uk_per_60": "0.581", "uk_pct": "-17.9"}, "handle_title": {"handle": "maxi-pack-dental-bright-voor-grote-honden-100-natuurlijk-180-schepjes", "title": "Dental Bright GroteHond⁺ 🌿 60 schepjes", "type": "Hidden"}}, "tests": {"cases": 9, "failures": [], "mutants_caught": 14, "mutants_total": 14, "mutants": ["drop the quantity (2x counted once)", "widen the tolerance to 50 cents", "ignore the \"or\" alternative", "pass bundles whose jars cannot be priced", "count gifts and builders at 0.00", "count a paid gift (no 0.00 price) as stock", "count Hidden listings", "compare SKUs without dropping the leading zero", "keep landing-page copies", "keep marketplace-import copies", "count B2B listings as retail", "accept a struck price equal to the price", "report parsed bundles instead of unparsed ones", "never compare the two prices"]}, "sql_view": "-- A bundle's struck price (compare_at_price) must equal the sum of today's prices of the jars\n-- its own description lists. When the description offers \"X or Y\", either total passes.\n-- Contract: 0 rows = PASS. A bundle whose jars cannot all be priced is returned as not_checked, never passed.\nCREATE OR REPLACE VIEW checks_bundle_compare_at AS\nWITH bundle AS (\n  SELECT store, handle, url, compare_at_price, read_at\n  FROM listing_clean\n  WHERE compare_at_price IS NOT NULL AND excluded_reason IS NULL\n),\nunit AS (            -- one price per jar; NULL when its flavours disagree\n  SELECT store, handle, CASE WHEN MIN(price) = MAX(price) THEN MIN(price) END AS unit_price\n  FROM listing_clean\n  WHERE excluded_reason IS NULL\n  GROUP BY store, handle\n),\nline AS (\n  SELECT b.store, b.bundle_handle, b.slot, b.qty, b.is_default, u.unit_price\n  FROM bundle_line b\n  LEFT JOIN unit u ON u.store = b.store AND u.handle = b.component_handle\n),\nlisted AS (          -- the composition as written first in the description\n  SELECT store, bundle_handle,\n         SUM(CASE WHEN is_default THEN qty * unit_price END) AS total,\n         SUM(CASE WHEN unit_price IS NULL THEN 1 ELSE 0 END) AS unpriced   -- counts \"or\" alternatives too\n  FROM line\n  GROUP BY store, bundle_handle\n),\npossible AS (        -- that total, plus one total per \"or\" alternative swapped into its slot\n  SELECT store, bundle_handle, total FROM listed\n  UNION ALL\n  SELECT a.store, a.bundle_handle, l.total - d.qty * d.unit_price + a.qty * a.unit_price\n  FROM line a\n  JOIN line d ON d.store = a.store AND d.bundle_handle = a.bundle_handle AND d.slot = a.slot AND d.is_default\n  JOIN listed l ON l.store = a.store AND l.bundle_handle = a.bundle_handle\n  WHERE NOT a.is_default\n),\nclosest AS (\n  SELECT p.store, p.bundle_handle, MIN(ABS(p.total - b.compare_at_price)) AS gap\n  FROM possible p\n  JOIN bundle b ON b.store = p.store AND b.handle = p.bundle_handle\n  GROUP BY p.store, p.bundle_handle\n)\nSELECT\n  'bundle_compare_at' AS check_name,\n  CASE WHEN l.unpriced > 0 THEN 'not_checked' ELSE 'mismatch' END AS severity,\n  b.store, b.handle AS key,\n  CASE WHEN l.unpriced = 0 THEN l.total END AS expected,\n  b.compare_at_price AS actual,\n  CASE WHEN l.unpriced = 0 THEN b.compare_at_price - l.total END AS delta,\n  b.url AS evidence_url, b.read_at\nFROM bundle b\nJOIN listed l ON l.store = b.store AND l.bundle_handle = b.handle\nJOIN closest c ON c.store = b.store AND c.bundle_handle = b.handle\nWHERE l.unpriced > 0 OR c.gap > 0.005;\n"}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var B = D.bundles, byHandle = {};
+  B.forEach(function(b){ byHandle[b.store + '/' + b.handle] = b; });
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function short(t){ return t.replace(/^\[BUN\]\s*/, '').replace(/^Bundle Risparmio:\s*/, '').replace(/\s+/g, ' '); }
+  function minus(v){ return v.charAt(0) === '-' ? '−' + v.slice(1) : v; }
+  var TICK = '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10.8c1.3 1 2.6 2.3 3.6 3.9C9.4 9.6 12.6 6 16.6 3.6" fill="none" stroke="#2f7f6c" stroke-width="2.1" stroke-linecap="round"/></svg>';
+  var CIRC = '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.5 3.2C6 2.9 2.9 5.9 3.1 10.1c.2 4 3.6 6.8 7.6 6.6 4-.2 6.6-3.4 6.2-7.2C16.5 5.6 13.6 3.2 9.4 3.6" fill="none" stroke="#e06553" stroke-width="1.9" stroke-linecap="round"/></svg>';
+
+  function pick(b){ return '<li><button type="button" class="pick" data-k="' + esc(b.store + '/' + b.handle) + '" aria-pressed="false">' +
+      (b.status === 'mismatch' ? CIRC : TICK) + '<span class="nm">' + esc(short(b.title)) + '</span><span class="am">' + b.compare_at + '</span></button></li>'; }
+  document.getElementById('list-it').innerHTML = B.filter(function(b){ return b.store === 'dogsuppy.it'; }).map(pick).join('');
+  document.getElementById('list-com').innerHTML = B.filter(function(b){ return b.store === 'dogsuppy.com'; }).map(pick).join('');
+
+  function noteFor(b){
+    if (b.status === 'mismatch') {
+      var parts = [b.implied_note.n + ' × ' + b.implied_jar_price].concat(b.implied_note.fixed.map(function(f){ return f.qty + ' × ' + f.unit; }));
+      return '<div class="note">' + b.compare_at + ' = ' + parts.join(' + ') + '<br>jars today: ' + b.jars[0].unit + '</div>';
+    }
+    if (b.alternatives.length) {
+      var a = b.alternatives[0];
+      return '<div class="note ok">with ' + esc(a.label) + ': ' + a.total_with_it + '<br>struck price uses ' + esc(a.replaces) + '</div>';
+    }
+    return '<div class="note ok">agrees to the cent</div>';
+  }
+
+  function render(key, animate){
+    var b = byHandle[key] || B[0];
+    var bad = b.status === 'mismatch';
+    var rows = b.jars.map(function(j){
+      return '<tr><td class="q">' + j.qty + '×</td><td class="jar">' + esc(j.label) + '<small>' + esc(j.jar_title) + '</small></td><td class="n">' + j.unit + '</td><td class="n">' + j.line + '</td></tr>';
+    }).join('') + b.alternatives.map(function(a){
+      return '<tr class="alt"><td class="q">or</td><td class="jar">' + esc(a.label) + ', in place of ' + esc(a.replaces) + '<small>' + esc(a.jar_title) + '</small></td><td class="n">' + a.unit + '</td><td class="n"></td></tr>';
+    }).join('');
+    var ring = bad ? '<svg class="ring" viewBox="0 0 122 50" aria-hidden="true"><path class="' + (animate ? 'draw' : '') + '" d="M64 6C35 4 9 12 8 26c-1 13 22 20 55 19 31-1 52-8 51-21C113 11 92 4 58 7"/></svg>' : '';
+    var html =
+      '<div class="tk-head"><div><h2>' + esc(short(b.title)) + '</h2><div class="tk-src"><a href="' + esc(b.url) + '">' + esc(b.url.replace('https://', '')) + '</a></div></div>' +
+      '<span class="state ' + (b.available ? 'on' : 'off') + '">' + (b.available ? 'Available' : 'Not available today') + '</span></div>' +
+      '<table class="tk"><thead><tr><th class="q">Qty</th><th>Jar, as the bundle description lists it</th><th class="n">Today, ' + (b.store === 'dogsuppy.it' || b.store === 'dogsuppy.com' ? '€' : '') + '</th><th class="n">Line</th></tr></thead><tbody>' + rows +
+      '<tr class="sum lab"><td></td><td>Jars at today’s prices</td><td class="n"></td><td class="n"><span class="pencil tot">' + b.jar_total + '</span></td></tr>' +
+      '<tr class="lab"><td></td><td>Struck price on the bundle page</td><td class="n"></td><td class="n"><span class="strike">' + b.compare_at + '</span></td></tr>' +
+      '<tr class="lab"><td></td><td>' + (bad ? 'Short of the jars by' : 'Difference') + '</td><td class="n"></td><td class="n gapcell"><span class="gapv ' + (bad ? 'bad' : '') + '">' + (bad ? minus(b.gap) : '<span class="tick-ok">' + TICK + '0.00</span>') + '</span>' + ring + '</td></tr>' +
+      '<tr class="lab"><td></td><td>Selling price</td><td class="n"></td><td class="n">' + b.price + '</td></tr>' +
+      '</tbody></table>' +
+      '<div class="savings"><span>Saving the page shows: <b>' + b.discount_shown + '%</b></span><span>Saving on today’s jars: <b>' + b.discount_on_today + '%</b></span></div>' +
+      noteFor(b) +
+      '<div class="fill"><div class="foot"><span>' + B.length + ' bundles footed: ' + D.pass_count + ' agree to the cent, ' + D.mismatch_count + ' fall short of their jars by ' + D.short_total + ' in all</span></div></div>';
+    var t = document.getElementById('ticket');
+    t.innerHTML = html;
+    var note = t.querySelector('.note');
+    if (note && window.matchMedia('(min-width: 821px)').matches) { note.style.top = (t.querySelector('table.tk').offsetTop + t.querySelector('table.tk').offsetHeight + 16) + 'px'; }
+    Array.prototype.forEach.call(document.querySelectorAll('.pick'), function(p){ p.setAttribute('aria-pressed', p.getAttribute('data-k') === b.store + '/' + b.handle ? 'true' : 'false'); });
+  }
+  document.querySelector('.margin').addEventListener('click', function(e){
+    var p = e.target.closest('.pick'); if (!p) return;
+    render(p.getAttribute('data-k'), true);
+    if (history.replaceState) history.replaceState(null, '', '#' + p.getAttribute('data-k').split('/')[1]);
+  });
+  var start = (location.hash || '').slice(1), startKey = null;
+  B.forEach(function(b){ if (b.handle === start) startKey = b.store + '/' + b.handle; });
+  render(startKey || (B[0].store + '/' + B[0].handle), true);
+
+  // range matrix
+  var head = '<thead><tr><th>Family</th>' + D.stores.map(function(s){ return '<th>' + s.store.replace('dogsuppy', '') + '<span>' + s.currency + '</span></th>'; }).join('') + '</tr></thead>';
+  var body = D.matrix.map(function(r){ return '<tr><td>' + esc(r.family) + '</td>' + r.cells.map(function(c){ return c ? '<td title="' + esc(c.handle) + '">' + c.price + '</td>' : '<td class="none" aria-label="not listed">–</td>'; }).join('') + '</tr>'; }).join('');
+  document.getElementById('matrix').innerHTML = head + '<tbody>' + body + '</tbody>';
+
+  // Dental Bright ladder
+  var lo = 26, hi = 46;
+  document.getElementById('ladder').innerHTML = D.ladder.map(function(l){
+    var x = (parseFloat(l.eur) - lo) / (hi - lo) * 100;
+    var sym = {EUR:'€', GBP:'£'}[l.currency];
+    var local = sym ? sym + l.price : l.price + ' ' + l.currency;
+    return '<li><span class="st">' + l.store + '</span><span class="lc">' + local + '</span><span class="tr"><span class="dot" style="left:' + x.toFixed(2) + '%"></span></span><span class="eu">€' + l.eur + '</span></li>';
+  }).join('');
+
+  // the SQL view, lightly marked up
+  var kw = /\b(CREATE OR REPLACE VIEW|WITH|AS|SELECT|FROM|WHERE|LEFT JOIN|JOIN|ON|GROUP BY|UNION ALL|CASE|WHEN|THEN|END|AND|OR|NOT|IS NOT NULL|IS NULL|SUM|MIN|MAX|ABS)\b/g;
+  document.getElementById('sql').innerHTML = D.sql_view.split('\n').map(function(line){
+    var i = line.indexOf('--'), code = i >= 0 ? line.slice(0, i) : line, com = i >= 0 ? line.slice(i) : '';
+    return esc(code).replace(kw, '<span class="k">$1</span>') + (com ? '<span class="c">' + esc(com) + '</span>' : '');
+  }).join('\n');
+})();
+</script>
+</body>
+</html>

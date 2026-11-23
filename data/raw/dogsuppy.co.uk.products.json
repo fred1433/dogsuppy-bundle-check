@@ -1,0 +1,2198 @@
+{
+ "products": [
+  {
+   "id": 11162961838422,
+   "title": "Scooting & Anal Gland Support",
+   "handle": "anal-glands-noffer",
+   "body_html": "",
+   "published_at": "2026-08-06T10:30:36+01:00",
+   "created_at": "2026-08-04T13:59:40+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 54892045730134,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203407",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11162961838422,
+     "created_at": "2026-08-04T13:59:41+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83629174456662,
+     "created_at": "2026-08-11T15:19:27+01:00",
+     "position": 1,
+     "updated_at": "2026-08-11T15:19:31+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG1_82dce4b0-f4c7-47a9-8fec-5b23b5a11e53.png?v=1786457971",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557021526,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 2,
+     "updated_at": "2026-08-05T09:46:30+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG2.png?v=1785919590",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557054294,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 3,
+     "updated_at": "2026-08-05T09:46:31+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG3.png?v=1785919591",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83628937085270,
+     "created_at": "2026-08-11T15:11:38+01:00",
+     "position": 4,
+     "updated_at": "2026-08-11T15:11:42+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG4_33e1bca8-76c0-413c-8b52-64393a08a2e8.png?v=1786457502",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83465344385366,
+     "created_at": "2026-08-07T11:07:07+01:00",
+     "position": 5,
+     "updated_at": "2026-08-07T11:07:11+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG5_de8cf763-7e9e-49e5-b45b-bea12e0561f8.png?v=1786097231",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557152598,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 6,
+     "updated_at": "2026-08-05T09:46:31+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG6.jpg?v=1785919591",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557185366,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 7,
+     "updated_at": "2026-08-05T09:46:31+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG7.png?v=1785919591",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83417544950102,
+     "created_at": "2026-08-06T10:42:30+01:00",
+     "position": 8,
+     "updated_at": "2026-08-06T10:42:33+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG8_36cac086-5c26-40f6-a656-96b7809c2edc.png?v=1786009353",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557250902,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 9,
+     "updated_at": "2026-08-05T09:46:30+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG9.png?v=1785919590",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557283670,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 10,
+     "updated_at": "2026-08-05T09:46:30+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG10.png?v=1785919590",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83628938395990,
+     "created_at": "2026-08-11T15:11:48+01:00",
+     "position": 11,
+     "updated_at": "2026-08-11T15:11:52+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG11_eac5b845-036e-4551-b905-d4e80f81f504.jpg?v=1786457512",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557349206,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 12,
+     "updated_at": "2026-08-05T09:46:30+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG12.png?v=1785919590",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557381974,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 13,
+     "updated_at": "2026-08-05T09:46:31+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG13.png?v=1785919591",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83380557414742,
+     "created_at": "2026-08-05T09:46:27+01:00",
+     "position": 14,
+     "updated_at": "2026-08-05T09:46:30+01:00",
+     "product_id": 11162961838422,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AG14.png?v=1785919590",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11149482754390,
+   "title": "DogSuppy Flyer (insert)",
+   "handle": "dogsuppy-flyer-insert",
+   "body_html": "<p>DogSuppy Flyer (insert)</p>\n<p>Not for website.<br>Used to track inventory in Shipbob app.</p>\n<p> </p>\n<p>Check with Jonathan if questions.</p>",
+   "published_at": "2026-07-29T10:02:28+01:00",
+   "created_at": "2026-07-29T10:02:27+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 54836692812118,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "0.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 11149482754390,
+     "created_at": "2026-07-29T10:02:28+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10154070606166,
+   "title": "Honey Balm 🌿 100% natural 🫙 125 ml",
+   "handle": "honey-balm",
+   "body_html": "<p data-start=\"100\" data-end=\"158\"><strong>Our Honey Balm has been specially developed for dogs with:</strong></p>\n<ul data-start=\"160\" data-end=\"293\">\n<li data-section-id=\"1nx6ewg\" data-start=\"160\" data-end=\"193\">\n<p data-start=\"162\" data-end=\"193\">Dry, sensitive, or flaky skin</p>\n</li>\n<li data-section-id=\"2ci01t\" data-start=\"194\" data-end=\"222\">\n<p data-start=\"196\" data-end=\"222\">Rough or chapped patches</p>\n</li>\n<li data-section-id=\"91abcp\" data-start=\"223\" data-end=\"293\">\n<p data-start=\"225\" data-end=\"293\">Discomfort or irritation caused by scratching, rubbing, or licking</p>\n</li>\n</ul>\n<p data-start=\"295\" data-end=\"461\">This natural balm provides the skin with extra care and soothing. Made with pure honey and other nourishing ingredients that have been used in skincare for centuries.</p>\n<p data-start=\"463\" data-end=\"928\"><strong data-start=\"463\" data-end=\"499\">What makes this balm so special?</strong><br data-start=\"499\" data-end=\"502\">✅ <strong>Carefully selected ingredients</strong> such as <strong>pure honey</strong>, nourishing oils (argan, almond, jojoba, rapeseed), Aloe Vera, and Vitamin E<br data-start=\"630\" data-end=\"633\">✅ <strong>Soothing and gentle,</strong> ideal for dry or sensitive areas<br data-start=\"688\" data-end=\"691\">✅ <strong>100% natural</strong> and free from artificial colourings, sugars, grains, and gluten<br data-start=\"769\" data-end=\"772\">✅ <strong>Safe if licked</strong> and quickly absorbed<br data-start=\"809\" data-end=\"812\">✅ <strong>Tested and trusted:</strong> developed by passionate nutritionists with over 10 years of experience in animal supplements</p>\n<p data-start=\"930\" data-end=\"1080\">🎁<strong> Now with FREE shipping on orders over £30 and a 60-day money-back guarantee. Order Honey Balm today and give sensitive areas the care they deserve.</strong></p>",
+   "published_at": "2026-07-23T10:12:42+01:00",
+   "created_at": "2026-01-29T10:50:52+00:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 52462392705366,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203766",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "23.00",
+     "grams": 125,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 10154070606166,
+     "created_at": "2026-01-29T10:50:52+00:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 72919837114710,
+     "created_at": "2026-03-17T11:01:26+00:00",
+     "position": 1,
+     "updated_at": "2026-03-17T12:09:01+00:00",
+     "product_id": 10154070606166,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Honing-1.png?v=1773749341",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 72919837081942,
+     "created_at": "2026-03-17T11:01:26+00:00",
+     "position": 2,
+     "updated_at": "2026-03-17T12:09:01+00:00",
+     "product_id": 10154070606166,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Honing-2.jpg?v=1773749341",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 72919837049174,
+     "created_at": "2026-03-17T11:01:26+00:00",
+     "position": 3,
+     "updated_at": "2026-03-17T12:09:01+00:00",
+     "product_id": 10154070606166,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Honing-3.jpg?v=1773749341",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 72919837016406,
+     "created_at": "2026-03-17T11:01:26+00:00",
+     "position": 4,
+     "updated_at": "2026-03-17T12:09:01+00:00",
+     "product_id": 10154070606166,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Honing-4.jpg?v=1773749341",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 72919836983638,
+     "created_at": "2026-03-17T11:01:26+00:00",
+     "position": 5,
+     "updated_at": "2026-03-17T12:09:01+00:00",
+     "product_id": 10154070606166,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Honing-5.png?v=1773749341",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 72919836950870,
+     "created_at": "2026-03-17T11:01:26+00:00",
+     "position": 6,
+     "updated_at": "2026-03-17T12:09:01+00:00",
+     "product_id": 10154070606166,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Honing-8.png?v=1773749341",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9925839454550,
+   "title": "LargeDog⁺ Itch Relief Probiotics Forte 🌿 100% natural 🫙 90 soft chews",
+   "handle": "largedog-itch-relief",
+   "body_html": "<p class=\"product__description prose\">Supports your dog's gut health and immune system, targeting issues such as:</p>\n<ul>\n<li style=\"color: rgb(0, 0, 0);\">Scratching and paw licking</li>\n<li style=\"color: rgb(0, 0, 0);\">Red or irritated skin</li>\n<li style=\"color: rgb(0, 0, 0);\">Environmental and seasonal allergies</li>\n<li style=\"color: rgb(0, 0, 0);\">Head shaking and gunky ears</li>\n<li style=\"color: rgb(0, 0, 0);\">Excessive grass eating</li>\n<li style=\"color: rgb(0, 0, 0);\">Yeast infections</li>\n</ul>\n<p>✅ 83% saw improvement within 6 weeks<br>✅ 100% natural ingredients<br><meta charset=\"utf-8\">✅ Vet approved</p>",
+   "published_at": "2026-01-05T15:58:20+00:00",
+   "created_at": "2025-10-30T14:46:42+00:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 51834121552214,
+     "title": "Without meat",
+     "option1": "Without meat",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203612",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "42.95",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9925839454550,
+     "created_at": "2025-11-13T10:42:39+00:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83470044823894,
+     "created_at": "2026-08-07T14:12:23+01:00",
+     "position": 1,
+     "updated_at": "2026-08-07T14:12:27+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581106.png?v=1786108347",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66229334081878,
+     "created_at": "2025-08-31T17:02:27+01:00",
+     "position": 2,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_vet-testimonial.jpg?v=1775722515",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470045413718,
+     "created_at": "2026-08-07T14:12:23+01:00",
+     "position": 3,
+     "updated_at": "2026-08-07T14:12:27+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/clients_9cc2283f-cb8e-4c46-8383-a463be4935b9.jpg?v=1786108347",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470044758358,
+     "created_at": "2026-08-07T14:12:23+01:00",
+     "position": 4,
+     "updated_at": "2026-08-07T14:12:26+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581108.png?v=1786108346",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470044725590,
+     "created_at": "2026-08-07T14:12:22+01:00",
+     "position": 5,
+     "updated_at": "2026-08-07T14:12:25+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_us-vs-them_a8be18e9-6b13-4630-9829-80194b2d8424.png?v=1786108345",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66229333918038,
+     "created_at": "2025-08-31T17:02:25+01:00",
+     "position": 6,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_us-vs-them.png?v=1775722515",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469801193814,
+     "created_at": "2026-08-07T14:01:36+01:00",
+     "position": 7,
+     "updated_at": "2026-08-07T14:01:40+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_system2.png?v=1786107700",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66229333983574,
+     "created_at": "2025-08-31T17:02:26+01:00",
+     "position": 8,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_system.png?v=1775722515",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469771112790,
+     "created_at": "2026-08-07T13:59:31+01:00",
+     "position": 9,
+     "updated_at": "2026-08-07T13:59:35+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/before_and_after.png?v=1786107575",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66297030803798,
+     "created_at": "2025-09-04T15:58:09+01:00",
+     "position": 10,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir-testi6.png?v=1775722515",
+     "width": 1074,
+     "height": 1074
+    },
+    {
+     "id": 83470044856662,
+     "created_at": "2026-08-07T14:12:23+01:00",
+     "position": 11,
+     "updated_at": "2026-08-07T14:12:27+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Zonder_risoco_d2a4e157-384f-4528-8ee7-073cddb16b78.png?v=1786108347",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470044692822,
+     "created_at": "2026-08-07T14:12:22+01:00",
+     "position": 12,
+     "updated_at": "2026-08-07T14:12:25+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/10._Frame_1484581016.png?v=1786108345",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 57664107348310,
+     "created_at": "2024-10-18T14:02:14+01:00",
+     "position": 13,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9925839454550,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/giphy_f02df15b-56a5-4d40-9958-13d5806fb7e6.gif?v=1775722515",
+     "width": 450,
+     "height": 450
+    }
+   ],
+   "options": [
+    {
+     "name": "Taste",
+     "position": 1,
+     "values": [
+      "Without meat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9909766586710,
+   "title": "LargeDog⁺ Dental Bright™ 🌿 100% natural 🫙 60 scoops",
+   "handle": "largedog-dental-bright",
+   "body_html": "<p>Dental Bright™ is a 3-in-1 dental powder, natural and vet-approved.</p>\n<p>✅ Reduces bad breath in as little as 7 days<br>✅ Breaks down plaque and tartar in <meta charset=\"utf-8\">as little as 21 days</p>\n<p>Neutral flavour with a hint of bacon aroma that even the fussiest dogs love. Sprinkle over food once a day for fresher kisses - no brushing needed!<br></p>",
+   "published_at": "2025-12-10T16:17:59+00:00",
+   "created_at": "2025-10-23T11:34:18+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 51647851168086,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203551",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "40.10",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9909766586710,
+     "created_at": "2025-10-23T11:34:18+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83470771716438,
+     "created_at": "2026-08-07T14:41:00+01:00",
+     "position": 1,
+     "updated_at": "2026-08-07T14:41:03+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581101.png?v=1786110063",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333083990,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 2,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db-vet-testimonial.jpg?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333280598,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 3,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/clients_b91d010a-eb23-4cd1-a6b3-781359b629b2.jpg?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470771683670,
+     "created_at": "2026-08-07T14:41:00+01:00",
+     "position": 4,
+     "updated_at": "2026-08-07T14:41:03+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581103.png?v=1786110063",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470772207958,
+     "created_at": "2026-08-07T14:41:02+01:00",
+     "position": 5,
+     "updated_at": "2026-08-07T14:41:05+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_us-vs-them_4be2bc91-8ba4-4dce-a880-f9654ccc0408.png?v=1786110065",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333018454,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 6,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_system.png?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333051222,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 7,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_freshens-breath_23b44631-4b86-44f7-bd0e-df661a7e9eca.png?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333247830,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 8,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/before_and_after_008a8681-65d6-4d03-ad71-99ba7a153eb9.png?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333182294,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 9,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581104.png?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470772240726,
+     "created_at": "2026-08-07T14:41:02+01:00",
+     "position": 10,
+     "updated_at": "2026-08-07T14:41:06+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Zonder_risoco_9fa0e87b-ce48-4ebc-bfec-bc97eec8af26.png?v=1786110066",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470771290454,
+     "created_at": "2026-08-07T14:40:53+01:00",
+     "position": 11,
+     "updated_at": "2026-08-07T14:40:55+01:00",
+     "product_id": 9909766586710,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/10._Frame_1484581022.png?v=1786110055",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9926000050518,
+   "title": "Vitamin Boost 🌿 100% natural 🫙 60-70 treats",
+   "handle": "vitamin-boost",
+   "body_html": "<p data-start=\"82\" data-end=\"264\">This tasty vitamin-boost snack contains<strong> vitamins and minerals</strong> that support your dog’s overall health. They're also delicious, making giving your dog their daily vitamins a real <strong>treat</strong>! </p>\n<p data-start=\"266\" data-end=\"344\" data-is-last-node=\"\" data-is-only-node=\"\">Give your dog the best of both worlds: <strong>a healthy boost and a tasty reward</strong>!</p>",
+   "published_at": "2025-12-10T15:44:41+00:00",
+   "created_at": "2025-10-30T15:51:10+00:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 51716434035030,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004007258",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "4.30",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9926000050518,
+     "created_at": "2025-10-30T15:51:10+00:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 68898294366550,
+     "created_at": "2025-11-17T08:08:17+00:00",
+     "position": 1,
+     "updated_at": "2025-11-17T08:08:21+00:00",
+     "product_id": 9926000050518,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Vitamine-UK-1_6b0399f7-a0d7-4e38-b192-6ca9518fedac.png?v=1763366901",
+     "width": 1041,
+     "height": 1000
+    },
+    {
+     "id": 68898294399318,
+     "created_at": "2025-11-17T08:08:17+00:00",
+     "position": 2,
+     "updated_at": "2025-11-17T08:08:20+00:00",
+     "product_id": 9926000050518,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Vitamine-UK-2_8c723b1c-6da0-437b-8b00-87e67fa79882.png?v=1763366900",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 68898294432086,
+     "created_at": "2025-11-17T08:08:17+00:00",
+     "position": 3,
+     "updated_at": "2025-11-17T08:08:21+00:00",
+     "product_id": 9926000050518,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Vitamine-UK-3_a3cbed0c-77c6-4866-8335-cde1a51214de.png?v=1763366901",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 68898294464854,
+     "created_at": "2025-11-17T08:08:17+00:00",
+     "position": 4,
+     "updated_at": "2025-11-17T08:08:21+00:00",
+     "product_id": 9926000050518,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Vitamine-UK-4_97c9cb71-56f9-4794-b779-1a2b624be47c.jpg?v=1763366901",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9909664710998,
+   "title": "Salmon Oil 🌿 100% natural💧100ml",
+   "handle": "salmon-oil",
+   "body_html": "<p data-start=\"110\" data-end=\"368\">Our natural salmon oil, rich in omega-3 and omega-6 fatty acids, is essential for supporting your dog’s vitality.</p>\n<p data-start=\"110\" data-end=\"368\">We understand that you want only the best for your loyal companion — that’s why we’ve chosen the purest and most nutritious source of omega-3.</p>\n<p data-start=\"370\" data-end=\"450\">This spray is designed to be used <strong data-start=\"404\" data-end=\"447\">over your dog’s food (not on the skin!)</strong>.</p>\n<p data-start=\"452\" data-end=\"623\">✓ 100% natural<br data-start=\"466\" data-end=\"469\">✓ Cold-pressed and rich in omega-3<br data-start=\"503\" data-end=\"506\">✓ Easy to dose<br data-start=\"520\" data-end=\"523\">✓ Supports optimal health<br data-start=\"589\" data-end=\"592\">✓ 60-day money-back guarantee</p>",
+   "published_at": "2025-11-13T09:12:13+00:00",
+   "created_at": "2025-10-23T10:51:34+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 51647414468950,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203544",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "12.25",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9909664710998,
+     "created_at": "2025-10-23T10:51:34+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 67695478669654,
+     "created_at": "2025-10-23T10:51:03+01:00",
+     "position": 1,
+     "updated_at": "2025-11-21T04:19:21+00:00",
+     "product_id": 9909664710998,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Salmonoil-1.png?v=1763698761",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67695481586006,
+     "created_at": "2025-10-23T10:51:11+01:00",
+     "position": 2,
+     "updated_at": "2025-11-21T04:19:21+00:00",
+     "product_id": 9909664710998,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Salmonoil-2.png?v=1763698761",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67695610822998,
+     "created_at": "2025-10-23T10:58:01+01:00",
+     "position": 3,
+     "updated_at": "2025-11-21T04:19:21+00:00",
+     "product_id": 9909664710998,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Salmonoil-3_14270417-ea62-4e5d-a0fa-e3110d7da63f.png?v=1763698761",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67695492366678,
+     "created_at": "2025-10-23T10:52:04+01:00",
+     "position": 4,
+     "updated_at": "2025-11-21T04:19:21+00:00",
+     "product_id": 9909664710998,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Salmonoil-4.png?v=1763698761",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9893099209046,
+   "title": "Anxiety & Stress Relief",
+   "handle": "anxiety-stress-relief-offer",
+   "body_html": "<p>Is your dog experiencing anxiety or stress? Do you notice one or more of these signs:<br>✔️ Excessive barking or howling<br>✔️ Shaking or trembling<br>✔️ Aggressive behaviour<br>✔️ Restlessness<br>✔️ Poor sleep</p>\n<p>What dog owners are saying:<br>💤 \"My dog finally sleeps peacefully during thunderstorms and is less afraid of fireworks.\" - Anna R.<br>🚗 \"Car rides are now calm and enjoyable, without excessive barking and shaking.\" - Roy P.<br>❤️ <meta charset=\"utf-8\"><meta charset=\"utf-8\"><span></span><span></span><span>“Since we started using these, he reacts far less to other dogs on our walks.”</span> - <meta charset=\"utf-8\"><meta charset=\"utf-8\"><span></span><span></span><span>Anne S.</span></p>\n<p>What makes this supplement so special?<br>✅ Proven effective: Relaxes your dog in stressful situations like fireworks, travel, new environments, or separation anxiety.<br>✅ 100% natural: Contains no chemicals, GMOs, sugars, grains, or gluten.<br>✅ Tested and trusted: Developed by passionate nutritionists with over 10 years of experience in pet supplements.</p>\n<p>Give your dog the peace and comfort he deserves. Order now and turn stressful moments into happy memories! 🐾</p>",
+   "published_at": "2025-10-15T08:51:26+01:00",
+   "created_at": "2025-10-15T08:36:21+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 51580217164118,
+     "title": "With chicken",
+     "option1": "With chicken",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203483",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9893099209046,
+     "created_at": "2025-10-15T08:36:22+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 51580217196886,
+     "title": "Without meat",
+     "option1": "Without meat",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203490",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9893099209046,
+     "created_at": "2025-10-15T08:36:22+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 68625199628630,
+     "created_at": "2025-11-11T15:34:38+00:00",
+     "position": 1,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-Guide.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67417956352342,
+     "created_at": "2025-10-08T14:46:02+01:00",
+     "position": 2,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-1.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67418810679638,
+     "created_at": "2025-10-08T15:38:35+01:00",
+     "position": 3,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-8_8fb2b483-21fc-4c4e-a022-f6eeb175bf6d.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872395606,
+     "created_at": "2025-10-15T08:49:59+01:00",
+     "position": 4,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-3_b9dce868-d4e8-49bd-b21f-5beacefbe61c.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872362838,
+     "created_at": "2025-10-15T08:49:59+01:00",
+     "position": 5,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-5_b95d94a8-b17b-4fe8-a094-7ed0f53e65b4.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67417956385110,
+     "created_at": "2025-10-08T14:46:02+01:00",
+     "position": 6,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-2.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872330070,
+     "created_at": "2025-10-15T08:49:59+01:00",
+     "position": 7,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-4_afc8ba70-cbf8-45a8-9b34-bf4f24c50a67.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872035158,
+     "created_at": "2025-10-15T08:49:58+01:00",
+     "position": 8,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-6_d5ab0184-c833-402c-9372-69b8104a4e2d.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872100694,
+     "created_at": "2025-10-15T08:49:58+01:00",
+     "position": 9,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9893099209046,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-7_79301d0d-ab25-41e3-8e00-a061dcf7a34c.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Taste",
+     "position": 1,
+     "values": [
+      "With chicken",
+      "Without meat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9797881659734,
+   "title": "Anxiety & Stress Relief 🌿 100% natural 🫙 60 soft chews",
+   "handle": "anxiety-stress-relief",
+   "body_html": "<p>Is your dog experiencing anxiety or stress? Do you notice one or more of these signs:<br>✔️ Excessive barking or howling<br>✔️ Shaking or trembling<br>✔️ Aggressive behaviour<br>✔️ Restlessness<br>✔️ Poor sleep</p>\n<p>What dog owners are saying:<br>💤 \"My dog finally sleeps peacefully during thunderstorms and is less afraid of fireworks.\" - Anna R.<br>🚗 \"Car rides are now calm and enjoyable, without excessive barking and shaking.\" - Roy P.<br>❤️ <meta charset=\"utf-8\"><meta charset=\"utf-8\"><span></span><span></span><span>“Since we started using these, he reacts far less to other dogs on our walks.”</span> - <meta charset=\"utf-8\"><meta charset=\"utf-8\"><span></span><span></span><span>Anne S.</span></p>\n<p>What makes this supplement so special?<br>✅ Proven effective: Relaxes your dog in stressful situations like fireworks, travel, new environments, or separation anxiety.<br>✅ 100% natural: Contains no chemicals, GMOs, sugars, grains, or gluten.<br>✅ Tested and trusted: Developed by passionate nutritionists with over 10 years of experience in pet supplements.</p>\n<p>Give your dog the peace and comfort they deserve. Order now and turn stressful moments into happy memories! 🐾</p>",
+   "published_at": "2025-10-04T09:39:06+01:00",
+   "created_at": "2025-09-04T08:47:49+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 51222377791830,
+     "title": "With chicken",
+     "option1": "With chicken",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203483",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9797881659734,
+     "created_at": "2025-09-04T08:47:49+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 51222377759062,
+     "title": "Without meat",
+     "option1": "Without meat",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203490",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9797881659734,
+     "created_at": "2025-09-04T08:47:49+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 67417956352342,
+     "created_at": "2025-10-08T14:46:02+01:00",
+     "position": 1,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-1.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872395606,
+     "created_at": "2025-10-15T08:49:59+01:00",
+     "position": 2,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-3_b9dce868-d4e8-49bd-b21f-5beacefbe61c.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872362838,
+     "created_at": "2025-10-15T08:49:59+01:00",
+     "position": 3,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-5_b95d94a8-b17b-4fe8-a094-7ed0f53e65b4.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67418810679638,
+     "created_at": "2025-10-08T15:38:35+01:00",
+     "position": 4,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-8_8fb2b483-21fc-4c4e-a022-f6eeb175bf6d.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872330070,
+     "created_at": "2025-10-15T08:49:59+01:00",
+     "position": 5,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-4_afc8ba70-cbf8-45a8-9b34-bf4f24c50a67.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67417956385110,
+     "created_at": "2025-10-08T14:46:02+01:00",
+     "position": 6,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-2.jpg?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872100694,
+     "created_at": "2025-10-15T08:49:58+01:00",
+     "position": 7,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-7_79301d0d-ab25-41e3-8e00-a061dcf7a34c.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67547872035158,
+     "created_at": "2025-10-15T08:49:58+01:00",
+     "position": 8,
+     "updated_at": "2025-12-17T15:04:44+00:00",
+     "product_id": 9797881659734,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AS-6_d5ab0184-c833-402c-9372-69b8104a4e2d.png?v=1765983884",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Taste",
+     "position": 1,
+     "values": [
+      "With chicken",
+      "Without meat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9772043534678,
+   "title": "Build Your Own Bundle",
+   "handle": "build-your-own-bundle",
+   "body_html": null,
+   "published_at": "2025-08-22T12:47:31+01:00",
+   "created_at": "2025-08-22T12:13:53+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 51113912762710,
+     "title": "Pack of 2",
+     "option1": "Pack of 2",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "0.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9772043534678,
+     "created_at": "2025-08-22T12:13:53+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 51113912795478,
+     "title": "Pack of 3",
+     "option1": "Pack of 3",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "0.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9772043534678,
+     "created_at": "2025-08-22T12:13:53+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 51113912828246,
+     "title": "Pack of 4",
+     "option1": "Pack of 4",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "0.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 9772043534678,
+     "created_at": "2025-08-22T12:13:53+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 51261931192662,
+     "title": "Pack of 5",
+     "option1": "Pack of 5",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "0.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 4,
+     "product_id": 9772043534678,
+     "created_at": "2025-09-09T09:51:37+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 51261931225430,
+     "title": "Pack of 6",
+     "option1": "Pack of 6",
+     "option2": null,
+     "option3": null,
+     "sku": null,
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "0.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 5,
+     "product_id": 9772043534678,
+     "created_at": "2025-09-09T09:51:37+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 71476420280662,
+     "created_at": "2026-01-26T10:54:43+00:00",
+     "position": 1,
+     "updated_at": "2026-01-26T10:54:45+00:00",
+     "product_id": 9772043534678,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/BYOB_UK_051f3f6e-954e-4df9-9562-70c831d10129.png?v=1769424885",
+     "width": 533,
+     "height": 320
+    }
+   ],
+   "options": [
+    {
+     "name": "Quantity",
+     "position": 1,
+     "values": [
+      "Pack of 2",
+      "Pack of 3",
+      "Pack of 4",
+      "Pack of 5",
+      "Pack of 6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9747973177686,
+   "title": "No Poo Eating 🌿 100% natural 🫙 60 soft chews",
+   "handle": "no-poo-eating",
+   "body_html": "<p data-end=\"124\" data-start=\"54\"><strong data-end=\"84\" data-start=\"54\">The No Poo Eating chews</strong> are specially developed for dogs who:</p>\n<ul data-end=\"266\" data-start=\"126\">\n<li data-end=\"165\" data-start=\"126\">\n<p data-end=\"165\" data-start=\"128\">Eat their own or other dogs’ poos</p>\n</li>\n<li data-end=\"199\" data-start=\"166\">\n<p data-end=\"199\" data-start=\"168\">Suffer from unpleasant breath</p>\n</li>\n<li data-end=\"266\" data-start=\"200\">\n<p data-end=\"266\" data-start=\"202\">Experience discomfort after eating or have a sensitive stomach</p>\n</li>\n</ul>\n<p data-end=\"631\" data-start=\"268\">These tasty chews reduce unwanted eating behaviour naturally. The ingredients make poos less appealing in both smell and taste – even those from other dogs. As a result, your dog begins to break the association between poos and a “reward” (taste/smell), which helps to stop the behaviour. At the same time, this supplement supports a healthy gut flora.</p>\n<p data-end=\"797\" data-start=\"633\">Many owners notice a clear improvement in behaviour and digestion within just a few weeks.<strong> Developed by passionate nutritionists with over 10 years of experience in pet supplements.</strong></p>\n<p data-end=\"925\" data-start=\"799\">Order now and help your dog overcome this habit safely and naturally – with free shipping and a <strong>60-day money-back guarantee on your first order.</strong></p>",
+   "published_at": "2025-08-22T10:44:18+01:00",
+   "created_at": "2025-08-07T14:08:20+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 51015070941526,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203414",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9747973177686,
+     "created_at": "2025-08-07T14:08:20+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 67224588976470,
+     "created_at": "2025-09-29T11:41:02+01:00",
+     "position": 1,
+     "updated_at": "2025-11-21T04:16:14+00:00",
+     "product_id": 9747973177686,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/NoPoo-1.png?v=1763698574",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 65787574124886,
+     "created_at": "2025-08-15T16:16:00+01:00",
+     "position": 2,
+     "updated_at": "2025-11-21T08:12:23+00:00",
+     "product_id": 9747973177686,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Poo-2.jpg?v=1763712743",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 65787574157654,
+     "created_at": "2025-08-15T16:16:00+01:00",
+     "position": 3,
+     "updated_at": "2025-11-21T08:12:23+00:00",
+     "product_id": 9747973177686,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Poo-3.jpg?v=1763712743",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67419569455446,
+     "created_at": "2025-10-08T16:36:09+01:00",
+     "position": 4,
+     "updated_at": "2025-11-21T08:12:23+00:00",
+     "product_id": 9747973177686,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Poo-7_e77139fa-3c41-4578-8289-cb3069570dc7.jpg?v=1763712743",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 65787574223190,
+     "created_at": "2025-08-15T16:16:00+01:00",
+     "position": 5,
+     "updated_at": "2025-11-21T08:12:23+00:00",
+     "product_id": 9747973177686,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Poo-5.jpg?v=1763712743",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67419579711830,
+     "created_at": "2025-10-08T16:37:15+01:00",
+     "position": 6,
+     "updated_at": "2025-11-21T08:12:23+00:00",
+     "product_id": 9747973177686,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Poo-4_10c25817-405e-4a0a-a56c-95f354547cf2.png?v=1763712743",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9747953254742,
+   "title": "Anal Glands 🌿 100% natural 🫙 60 soft chews",
+   "handle": "anal-glands",
+   "body_html": "<p data-start=\"53\" data-end=\"103\"><strong data-start=\"53\" data-end=\"101\">Developed for dogs with blocked anal glands:</strong></p>\n<ul data-start=\"105\" data-end=\"228\">\n<li data-start=\"105\" data-end=\"160\">\n<p data-start=\"107\" data-end=\"160\">Scooting or dragging their bottom along the floor</p>\n</li>\n<li data-start=\"161\" data-end=\"188\">\n<p data-start=\"163\" data-end=\"188\">Licking around the anus</p>\n</li>\n<li data-start=\"189\" data-end=\"228\">\n<p data-start=\"191\" data-end=\"228\">Strong, fishy odours being released</p>\n</li>\n</ul>\n<p data-start=\"230\" data-end=\"400\">✓ Owners notice positive results within 3–5 weeks<br data-start=\"279\" data-end=\"282\">✓ Supports gut health and digestion<br data-start=\"317\" data-end=\"320\">✓ 3.4 billion pre- and probiotics per chew<br data-start=\"360\" data-end=\"363\">✓ Contains no meat<br data-start=\"381\" data-end=\"384\">✓ 100% natural ingredients</p>\n<p data-start=\"402\" data-end=\"545\">Developed by passionate nutritionists with over 10 years of experience in pet supplements. Try it yourself with free shipping and a <strong>60-day money-back guarantee on your first order</strong>.</p>",
+   "published_at": "2025-08-22T10:44:17+01:00",
+   "created_at": "2025-08-07T14:04:28+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 51015038206294,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203407",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "29.80",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9747953254742,
+     "created_at": "2025-08-07T14:04:28+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 67224588616022,
+     "created_at": "2025-09-29T11:40:55+01:00",
+     "position": 1,
+     "updated_at": "2025-11-21T04:04:39+00:00",
+     "product_id": 9747953254742,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AnalG-1_3d8c56be-1f57-4fb0-8e10-d290fa936175.png?v=1763697879",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 65787516879190,
+     "created_at": "2025-08-15T16:11:36+01:00",
+     "position": 2,
+     "updated_at": "2025-11-21T04:04:39+00:00",
+     "product_id": 9747953254742,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AnalG-2.jpg?v=1763697879",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 65787516911958,
+     "created_at": "2025-08-15T16:11:36+01:00",
+     "position": 3,
+     "updated_at": "2025-11-21T04:04:39+00:00",
+     "product_id": 9747953254742,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AnalG-3.jpg?v=1763697879",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67419570241878,
+     "created_at": "2025-10-08T16:36:11+01:00",
+     "position": 4,
+     "updated_at": "2025-11-21T04:04:39+00:00",
+     "product_id": 9747953254742,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AnalG-7_480f7530-50f8-4102-aeeb-c67f6a8fd854.jpg?v=1763697879",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 65787516977494,
+     "created_at": "2025-08-15T16:11:36+01:00",
+     "position": 5,
+     "updated_at": "2025-11-21T04:04:39+00:00",
+     "product_id": 9747953254742,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AnalG-5.jpg?v=1763697879",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 67419598324054,
+     "created_at": "2025-10-08T16:39:43+01:00",
+     "position": 6,
+     "updated_at": "2025-11-21T04:15:02+00:00",
+     "product_id": 9747953254742,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/AnalG-4.1.png?v=1763698502",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9573440160086,
+   "title": "Hip & Joint 🌿 100% natural 🫙 60 soft chews",
+   "handle": "hip-joint-100-natural-ingredients-60-soft-chews",
+   "body_html": "<p>Everyday wear is the #1 cause of joint stiffness: joint lubrication decreases, cartilage wears down, and inflammation builds.</p>\n<p>Hip &amp; Joint is developed to break that cycle: stimulating healthy joint lubrication, nourishing cartilage, and calming inflammation so your dog can move freely again — without stiffness or pain.</p>\n<p>• 89% of owners report better mobility within 5 weeks<br>• 94% report significantly less stiffness within 8 weeks<br>• Suitable for dogs with arthritis<br>• Vet-approved, science-backed formula<br>• 100% natural ingredients<br></p>",
+   "published_at": "2025-05-02T14:54:54+01:00",
+   "created_at": "2025-04-15T11:26:49+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 50249857532246,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203223",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "34.86",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9573440160086,
+     "created_at": "2025-04-15T11:26:50+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83469555958102,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 1,
+     "updated_at": "2026-08-07T13:49:48+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/HJ_01.png?v=1786106988",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469556056406,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 2,
+     "updated_at": "2026-08-07T13:49:49+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/hj_vet-testimonial.jpg?v=1786106989",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469556154710,
+     "created_at": "2026-08-07T13:49:46+01:00",
+     "position": 3,
+     "updated_at": "2026-08-07T13:49:50+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/clients_4f91b354-b0eb-4123-b4a2-0ce1c93d023e.jpg?v=1786106990",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469555925334,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 4,
+     "updated_at": "2026-08-07T13:49:48+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1739331892.png?v=1786106988",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469555859798,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 5,
+     "updated_at": "2026-08-07T13:49:48+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/hj_us-vs-them_e249e961-1216-4b60-8df9-ff6c0f306765.png?v=1786106988",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469555892566,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 6,
+     "updated_at": "2026-08-07T13:49:48+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581111.png?v=1786106988",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469556121942,
+     "created_at": "2026-08-07T13:49:46+01:00",
+     "position": 7,
+     "updated_at": "2026-08-07T13:49:50+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581110.png?v=1786106990",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469555990870,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 8,
+     "updated_at": "2026-08-07T13:49:49+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/hj_system.png?v=1786106989",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469556089174,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 9,
+     "updated_at": "2026-08-07T13:49:49+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581117.png?v=1786106989",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469556023638,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 10,
+     "updated_at": "2026-08-07T13:49:49+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581118.png?v=1786106989",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469555827030,
+     "created_at": "2026-08-07T13:49:45+01:00",
+     "position": 11,
+     "updated_at": "2026-08-07T13:49:48+01:00",
+     "product_id": 9573440160086,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581115.png?v=1786106988",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9591306453334,
+   "title": "Clean Bite Dental Sticks 🌿 100% natural 5️⃣ 5 sticks",
+   "handle": "clean-bite-dental-sticks",
+   "body_html": "<p><meta charset=\"utf-8\">DogSuppy’s Clean Bite Dental Sticks are specially designed with ridges that gently scrape as your dog chews, helping to reach those tricky areas at the back of the mouth.</p>\n<p>The longer chewing time encourages saliva production, which naturally helps to clean the mouth and freshen breath.</p>\n<p>We’ve also added Calcium to support strong teeth, while Eucalyptus and Peppermint oils not only freshen breath but make the sticks extra tasty too.</p>\n<p>✓ Helps remove plaque and tartar<br>✓ Supports healthy gums<br>✓ 100% natural<br>✓ Provides fresh breath<br><meta charset=\"utf-8\">✓ Supports strong teeth<br></p>",
+   "published_at": "2025-04-30T14:36:11+01:00",
+   "created_at": "2025-04-30T04:00:24+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 50326207594838,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430003031353",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "7.14",
+     "grams": 100,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9591306453334,
+     "created_at": "2025-04-30T04:00:26+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 67224598151510,
+     "created_at": "2025-09-29T11:41:51+01:00",
+     "position": 1,
+     "updated_at": "2025-11-21T04:08:30+00:00",
+     "product_id": 9591306453334,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/DentalSticks-1.png?v=1763698110",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 61749485437270,
+     "created_at": "2025-04-30T09:34:08+01:00",
+     "position": 2,
+     "updated_at": "2025-11-21T04:08:30+00:00",
+     "product_id": 9591306453334,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Image_Key_Benefits_eb07175c-61a0-4a3b-bd67-22052a676e27.png?v=1763698110",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 61749490024790,
+     "created_at": "2025-04-30T09:34:15+01:00",
+     "position": 3,
+     "updated_at": "2025-11-21T04:08:30+00:00",
+     "product_id": 9591306453334,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Image_Sticks.png?v=1763698110",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9486109770070,
+   "title": "Dental Bright™ 🌿 100% natural 🫙 60 scoops",
+   "handle": "dental-bright",
+   "body_html": "<p>Dental Bright™ is a <strong>3-in-1 dental powder</strong>, natural and vet-approved.</p>\n<p>✅ Reduces bad breath in as little as 7 days<br>✅ Breaks down plaque and tartar in as little as 21 days</p>\n<p>Neutral flavour with a hint of bacon aroma that even the fussiest dogs love. Sprinkle over food once a day for fresher kisses - no brushing needed!</p>",
+   "published_at": "2025-02-28T13:17:32+00:00",
+   "created_at": "2025-02-25T10:53:07+00:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy UK",
+   "product_type": "",
+   "tags": [
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 49936631464278,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203230",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "32.36",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9486109770070,
+     "created_at": "2025-02-25T10:53:08+00:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83470333116758,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 1,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581100.png?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333083990,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 2,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db-vet-testimonial.jpg?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333280598,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 3,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/clients_b91d010a-eb23-4cd1-a6b3-781359b629b2.jpg?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470332887382,
+     "created_at": "2026-08-07T14:25:20+01:00",
+     "position": 4,
+     "updated_at": "2026-08-07T14:25:23+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581102.png?v=1786109123",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470332854614,
+     "created_at": "2026-08-07T14:25:20+01:00",
+     "position": 5,
+     "updated_at": "2026-08-07T14:25:23+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_us-vs-them_f331bf5b-a968-4c5a-a50d-1d0650fb545b.png?v=1786109123",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333018454,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 6,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_system.png?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333051222,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 7,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_freshens-breath_23b44631-4b86-44f7-bd0e-df661a7e9eca.png?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333247830,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 8,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/before_and_after_008a8681-65d6-4d03-ad71-99ba7a153eb9.png?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333182294,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 9,
+     "updated_at": "2026-08-07T14:25:25+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581104.png?v=1786109125",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470333149526,
+     "created_at": "2026-08-07T14:25:21+01:00",
+     "position": 10,
+     "updated_at": "2026-08-07T14:25:24+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Zonder_risoco_8f8e3662-4731-43a5-8bd8-828ff41602dd.png?v=1786109124",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83470332821846,
+     "created_at": "2026-08-07T14:25:20+01:00",
+     "position": 11,
+     "updated_at": "2026-08-07T14:25:23+01:00",
+     "product_id": 9486109770070,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/10._Frame_1484581021.png?v=1786109123",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9236874035542,
+   "title": "Itch Relief Probiotics Forte 🌿 100% natural 🫙 60 soft chews",
+   "handle": "probiotica-forte-anti-itch-dog",
+   "body_html": "<p class=\"product__description prose\">Supports your dog's gut health and immune system, targeting issues such as:</p>\n<ul>\n<li style=\"color: rgb(0, 0, 0);\">Scratching and paw licking</li>\n<li style=\"color: rgb(0, 0, 0);\">Red or irritated skin</li>\n<li style=\"color: rgb(0, 0, 0);\">Environmental and seasonal allergies</li>\n<li style=\"color: rgb(0, 0, 0);\">Head shaking and gunky ears</li>\n<li style=\"color: rgb(0, 0, 0);\">Excessive grass eating</li>\n<li style=\"color: rgb(0, 0, 0);\">Yeast infections</li>\n</ul>\n<p>✅ 83% saw improvement within 6 weeks<br>✅ 100% natural ingredients<br><meta charset=\"utf-8\">✅ Vet approved<meta charset=\"utf-8\"></p>",
+   "published_at": "2024-10-18T14:01:41+01:00",
+   "created_at": "2024-10-18T14:02:14+01:00",
+   "updated_at": "2026-11-23T15:54:55+00:00",
+   "vendor": "DogSuppy",
+   "product_type": "Dog Supplements",
+   "tags": [],
+   "variants": [
+    {
+     "id": 50461221716310,
+     "title": "Without meat",
+     "option1": "Without meat",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203018",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "34.86",
+     "grams": 180,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 9236874035542,
+     "created_at": "2025-05-20T12:45:55+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    },
+    {
+     "id": 55519533531478,
+     "title": "With chicken",
+     "option1": "With chicken",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203117",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "34.86",
+     "grams": 180,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 9236874035542,
+     "created_at": "2026-09-28T09:36:37+01:00",
+     "updated_at": "2026-11-23T15:54:55+00:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 83469770981718,
+     "created_at": "2026-08-07T13:59:30+01:00",
+     "position": 1,
+     "updated_at": "2026-08-07T13:59:34+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581105.png?v=1786107574",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66229334081878,
+     "created_at": "2025-08-31T17:02:27+01:00",
+     "position": 2,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_vet-testimonial.jpg?v=1775722515",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469776683350,
+     "created_at": "2026-08-07T14:00:36+01:00",
+     "position": 3,
+     "updated_at": "2026-08-07T14:00:40+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_clients.jpg?v=1786107640",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469770916182,
+     "created_at": "2026-08-07T13:59:30+01:00",
+     "position": 4,
+     "updated_at": "2026-08-07T13:59:33+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Frame_1484581107.png?v=1786107573",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469770883414,
+     "created_at": "2026-08-07T13:59:30+01:00",
+     "position": 5,
+     "updated_at": "2026-08-07T13:59:33+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/db_us-vs-them_d158eb61-c35f-4552-a01e-e617fd151e85.png?v=1786107573",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66229333918038,
+     "created_at": "2025-08-31T17:02:25+01:00",
+     "position": 6,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_us-vs-them.png?v=1775722515",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469801193814,
+     "created_at": "2026-08-07T14:01:36+01:00",
+     "position": 7,
+     "updated_at": "2026-08-07T14:01:40+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_system2.png?v=1786107700",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66229333983574,
+     "created_at": "2025-08-31T17:02:26+01:00",
+     "position": 8,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir_system.png?v=1775722515",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469771112790,
+     "created_at": "2026-08-07T13:59:31+01:00",
+     "position": 9,
+     "updated_at": "2026-08-07T13:59:35+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/before_and_after.png?v=1786107575",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 66297030803798,
+     "created_at": "2025-09-04T15:58:09+01:00",
+     "position": 10,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir-testi6.png?v=1775722515",
+     "width": 1074,
+     "height": 1074
+    },
+    {
+     "id": 66297030771030,
+     "created_at": "2025-09-04T15:58:09+01:00",
+     "position": 11,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/ir-testi4.png?v=1775722515",
+     "width": 1074,
+     "height": 1074
+    },
+    {
+     "id": 83469770948950,
+     "created_at": "2026-08-07T13:59:30+01:00",
+     "position": 12,
+     "updated_at": "2026-08-07T13:59:34+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/Zonder_risoco.png?v=1786107574",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 83469770785110,
+     "created_at": "2026-08-07T13:59:30+01:00",
+     "position": 13,
+     "updated_at": "2026-08-07T13:59:32+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/10._Frame_1484581020.png?v=1786107572",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 57664107348310,
+     "created_at": "2024-10-18T14:02:14+01:00",
+     "position": 14,
+     "updated_at": "2026-04-09T09:15:15+01:00",
+     "product_id": 9236874035542,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0862/8466/5174/files/giphy_f02df15b-56a5-4d40-9958-13d5806fb7e6.gif?v=1775722515",
+     "width": 450,
+     "height": 450
+    }
+   ],
+   "options": [
+    {
+     "name": "Taste",
+     "position": 1,
+     "values": [
+      "Without meat",
+      "With chicken"
+     ]
+    }
+   ]
+  }
+ ]
+}

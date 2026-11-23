@@ -1,0 +1,9 @@
+store,currency,currency_source,read_at
+dogsuppy.com,EUR,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.de,EUR,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.dk,DKK,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.no,NOK,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.se,SEK,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.co.uk,GBP,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.pl,PLN,GET /cart.js,2026-11-23T15:54:42+00:00
+dogsuppy.it,EUR,GET /cart.js,2026-11-23T15:54:42+00:00

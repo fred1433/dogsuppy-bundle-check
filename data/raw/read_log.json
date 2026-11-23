@@ -1,0 +1,95 @@
+{
+ "read_at_utc": "2026-11-23T15:54:42+00:00",
+ "requests": [
+  {
+   "url": "https://dogsuppy.com/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.com/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.de/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.de/cart.js",
+   "status": 301,
+   "location": "https://www.dogsuppy.de/cart.js"
+  },
+  {
+   "url": "https://dogsuppy.dk/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.dk/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.no/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.no/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.se/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.se/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.co.uk/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.co.uk/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.pl/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.pl/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.it/products.json?limit=250&page=1",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.it/cart.js",
+   "status": 200
+  },
+  {
+   "url": "https://dogsuppy.nl/",
+   "status": 301,
+   "location": "https://dogsuppy.com/"
+  },
+  {
+   "url": "https://dogsuppy.be/",
+   "status": 301,
+   "location": "https://dogsuppy.com/"
+  },
+  {
+   "url": "https://dogsuppy.es/",
+   "status": 200,
+   "location": null
+  },
+  {
+   "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+   "status": 200
+  },
+  {
+   "url": "https://www.dogsuppy.de/cart.js",
+   "status": 200,
+   "note": "followed the 301 from dogsuppy.de/cart.js",
+   "at_utc": "2026-11-23T15:55:21+00:00"
+  }
+ ]
+}

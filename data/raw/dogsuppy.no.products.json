@@ -1,0 +1,263 @@
+{
+ "products": [
+  {
+   "id": 8938844094626,
+   "title": "Itch Relief Probiotika",
+   "handle": "itch-relief",
+   "body_html": "<p data-start=\"0\" data-end=\"79\"><meta charset=\"utf-8\">Itch Relief Probiotika er 100 % naturlige godbiter som bidrar til å støtte hundens tarmhelse og immunforsvar.</p>\n<ul>\n<li data-end=\"223\" data-start=\"172\">Unik blanding av pre-, para-, post- og probiotika<br>\n</li>\n<li data-end=\"264\" data-start=\"225\">Bidrar til normal fordøyelsesfunksjon<br>\n</li>\n<li data-end=\"302\" data-start=\"266\">For en blank, sterk og vakker pels<br>\n</li>\n<li data-end=\"338\" data-start=\"304\">Støtter immunforsvarets funksjon<br>\n</li>\n<li data-end=\"375\" data-start=\"340\">Støtter hudens naturlige barriere</li>\n</ul>\n<p>✅ 83 % av kunder merket tydelig forbedring innen 6 uker<br data-start=\"292\" data-end=\"295\">✅ 100 % naturlige ingredienser<br data-start=\"325\" data-end=\"328\">✅ Anbefalt av veterinærer</p>",
+   "published_at": "2026-04-29T12:45:45+02:00",
+   "created_at": "2026-03-13T15:33:46+01:00",
+   "updated_at": "2026-11-23T16:54:50+01:00",
+   "vendor": "DogSuppy NO",
+   "product_type": "",
+   "tags": [
+    "main",
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 46671048376482,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203018",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "450.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8938844094626,
+     "created_at": "2026-03-13T15:36:08+01:00",
+     "updated_at": "2026-11-23T16:54:50+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 45333541486754,
+     "created_at": "2026-04-24T13:24:04+02:00",
+     "position": 1,
+     "updated_at": "2026-04-24T13:24:05+02:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/AnalG-1_5a05fe47-514d-42fa-ba27-308e0f591f6e.png?v=1777029845",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 45333541519522,
+     "created_at": "2026-04-24T13:24:04+02:00",
+     "position": 2,
+     "updated_at": "2026-04-24T13:24:06+02:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/UK-Itch-2_f2739a37-1186-41dd-9110-b0f50468c568.jpg?v=1777029846",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 45333545582754,
+     "created_at": "2026-04-24T13:25:39+02:00",
+     "position": 3,
+     "updated_at": "2026-04-24T13:25:40+02:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/Main_image_27.png?v=1777029940",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 44375575822498,
+     "created_at": "2026-03-14T17:41:50+01:00",
+     "position": 4,
+     "updated_at": "2026-03-20T16:50:50+01:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/Image_Ingredients.png?v=1774021850",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 44521039626402,
+     "created_at": "2026-03-27T12:06:48+01:00",
+     "position": 5,
+     "updated_at": "2026-03-27T12:14:29+01:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/ir_us-vs-them_1f95bb16-ec29-45c8-840c-3ae192d7dda1.png?v=1774610069",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 44381644816546,
+     "created_at": "2026-03-15T10:39:38+01:00",
+     "position": 6,
+     "updated_at": "2026-03-27T12:14:29+01:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/UK-Itch-4_1.png?v=1774610069",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 45333541421218,
+     "created_at": "2026-04-24T13:24:03+02:00",
+     "position": 7,
+     "updated_at": "2026-04-24T13:24:05+02:00",
+     "product_id": 8938844094626,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/UK-itch-7_5848bbb6-60e2-4e2a-ac82-ed99f4f33067.png?v=1777029845",
+     "width": 2000,
+     "height": 2000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8901832048802,
+   "title": "Dental Bright 🌿 100% naturlige ingredienser 🫙 60 porsjoner",
+   "handle": "dental-bright",
+   "body_html": "<p dir=\"ltr\"><span>Dental Bright</span><span>™</span><span> er et tannpulver som støtter både friskere pust og renere tenner. </span></p>\n<p dir=\"ltr\"><span>✅ Naturlig tannstøtte i hverdagen<br data-start=\"453\" data-end=\"456\">✅ Friskere pust, vanligvis innen 1 uke<br data-start=\"489\" data-end=\"492\">✅ Mindre plakk og tannstein, vanligvis innen 3 uker</span></p>\n<p dir=\"ltr\"><meta charset=\"utf-8\">Smaken er mild, med et lite hint av bacon, slik at selv kresne hunder elsker det. Strø pulveret på maten hver dag, så slipper du å styre med tannbørsten.</p>",
+   "published_at": "2026-03-06T02:10:36+01:00",
+   "created_at": "2026-01-30T12:50:44+01:00",
+   "updated_at": "2026-11-23T16:54:50+01:00",
+   "vendor": "DogSuppy NO",
+   "product_type": "",
+   "tags": [
+    "main",
+    "oos-on"
+   ],
+   "variants": [
+    {
+     "id": 46552793743522,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203797",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "430.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8901832048802,
+     "created_at": "2026-01-30T12:50:44+01:00",
+     "updated_at": "2026-11-23T16:54:50+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 44381939990690,
+     "created_at": "2026-03-15T13:04:36+01:00",
+     "position": 1,
+     "updated_at": "2026-03-15T13:04:58+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/DB-1_3.png?v=1773576298",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 44137177514146,
+     "created_at": "2026-02-20T10:54:38+01:00",
+     "position": 2,
+     "updated_at": "2026-03-15T13:04:58+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/DB-9_4.png?v=1773576298",
+     "width": 1080,
+     "height": 1080
+    },
+    {
+     "id": 43985598644386,
+     "created_at": "2026-01-30T12:46:41+01:00",
+     "position": 3,
+     "updated_at": "2026-03-15T13:04:58+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/DB-2.png?v=1773576298",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 44291747315874,
+     "created_at": "2026-03-06T15:32:08+01:00",
+     "position": 4,
+     "updated_at": "2026-03-15T22:59:22+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/Dental-GH-2_5.png?v=1773611962",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 44383054758050,
+     "created_at": "2026-03-15T22:58:27+01:00",
+     "position": 5,
+     "updated_at": "2026-03-15T22:59:47+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/DB-4_2.png?v=1773611987",
+     "width": 2000,
+     "height": 2000
+    },
+    {
+     "id": 44083254296738,
+     "created_at": "2026-02-16T18:51:20+01:00",
+     "position": 6,
+     "updated_at": "2026-03-15T22:59:47+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/db_complete_3.png?v=1773611987",
+     "width": 1080,
+     "height": 1080
+    },
+    {
+     "id": 43985598415010,
+     "created_at": "2026-01-30T12:46:40+01:00",
+     "position": 7,
+     "updated_at": "2026-03-15T22:59:47+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/DB-14.png?v=1773611987",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 43985598480546,
+     "created_at": "2026-01-30T12:46:40+01:00",
+     "position": 8,
+     "updated_at": "2026-03-15T22:59:47+01:00",
+     "product_id": 8901832048802,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0701/7961/8978/files/DB-Dosage_4280234a-d501-498f-aac6-c2c1485d57e2.png?v=1773611987",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

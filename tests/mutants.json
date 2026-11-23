@@ -1,0 +1,91 @@
+{
+ "cases": 9,
+ "caught": 14,
+ "total": 14,
+ "mutants": [
+  {
+   "mutant": "drop the quantity (2x counted once)",
+   "file": "10_checks_bundle_compare_at.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('bundle_compare_at', 'bundle-2a-b-or-c')]"
+  },
+  {
+   "mutant": "widen the tolerance to 50 cents",
+   "file": "10_checks_bundle_compare_at.sql",
+   "caught": true,
+   "first_failure": "trap off_by_ten_cents: expected one bundle_compare_at/mismatch row on bundle-ab, got []"
+  },
+  {
+   "mutant": "ignore the \"or\" alternative",
+   "file": "10_checks_bundle_compare_at.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('bundle_compare_at', 'bundle-2a-b-or-c')]"
+  },
+  {
+   "mutant": "pass bundles whose jars cannot be priced",
+   "file": "10_checks_bundle_compare_at.sql",
+   "caught": true,
+   "first_failure": "trap unknown_component: expected one bundle_compare_at/not_checked row on bundle-ab, got []"
+  },
+  {
+   "mutant": "count gifts and builders at 0.00",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('same_sku_two_prices', '5430000000111')]"
+  },
+  {
+   "mutant": "count a paid gift (no 0.00 price) as stock",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('same_sku_two_prices', '5430000000111')]"
+  },
+  {
+   "mutant": "count Hidden listings",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('same_sku_two_prices', '5430000000111')]"
+  },
+  {
+   "mutant": "compare SKUs without dropping the leading zero",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "trap same_sku_leading_zero: expected one same_sku_two_prices/mismatch row on 05430000000333, got []"
+  },
+  {
+   "mutant": "keep landing-page copies",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('same_sku_two_prices', '5430000000111')]"
+  },
+  {
+   "mutant": "keep marketplace-import copies",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('same_sku_two_prices', '05430000000333')]"
+  },
+  {
+   "mutant": "count B2B listings as retail",
+   "file": "01_listing_clean.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 1 rows: [('same_sku_two_prices', '5430000000111')]"
+  },
+  {
+   "mutant": "accept a struck price equal to the price",
+   "file": "11_checks_compare_at_not_above_price.sql",
+   "caught": true,
+   "first_failure": "trap compare_at_equal: expected one compare_at_not_above_price/mismatch row on bundle-ab / Default Title, got []"
+  },
+  {
+   "mutant": "report parsed bundles instead of unparsed ones",
+   "file": "12_checks_bundle_unparsed.sql",
+   "caught": true,
+   "first_failure": "clean catalogue returned 2 rows: [('bundle_unparsed', 'bundle-2a-b-or-c'), ('bundle_unparsed', 'bundle-ab')]"
+  },
+  {
+   "mutant": "never compare the two prices",
+   "file": "13_checks_same_sku_two_prices.sql",
+   "caught": true,
+   "first_failure": "trap same_sku_two_prices: expected one same_sku_two_prices/mismatch row on 5430000000111, got []"
+  }
+ ]
+}

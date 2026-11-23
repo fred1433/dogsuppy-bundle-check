@@ -1,0 +1,125 @@
+{
+ "products": [
+  {
+   "id": 8223535857698,
+   "title": "Dental Bright",
+   "handle": "dental-bright",
+   "body_html": "<p dir=\"ltr\"><span>Dental Bright er et <strong>3-i-1 tandpleje tilskud</strong>, naturligt og godkendt af dyrlæger.</span></p>\n<p dir=\"ltr\"><span><meta charset=\"utf-8\">✅ Naturlig støtte til den daglige tandpleje.</span></p>\n<p dir=\"ltr\"><span>✅ Bidrager til friskere ånde, på bare 7 dage.</span></p>\n<p dir=\"ltr\"><span>✅ Hjælper til nedbrydning af plak og tandsten, indenfor 21 dage.</span></p>\n<p dir=\"ltr\"><span>Neutral smag med et strejf af baconaroma, som selv kræsne hunde elsker. Drys over foderet én gang dagligt for friskere kys - helt uden tandbørstning!</span></p>",
+   "published_at": "2026-03-05T17:16:33+01:00",
+   "created_at": "2026-02-03T17:38:45+01:00",
+   "updated_at": "2026-11-23T16:54:47+01:00",
+   "vendor": "DogSuppy DK",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 44803472752674,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5430004203797",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "280.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8223535857698,
+     "created_at": "2026-02-03T17:38:45+01:00",
+     "updated_at": "2026-11-23T16:54:47+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 39702679552034,
+     "created_at": "2026-04-24T15:15:39+02:00",
+     "position": 1,
+     "updated_at": "2026-04-24T15:15:41+02:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/DB-1_2.png?v=1777036541",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 39702679650338,
+     "created_at": "2026-04-24T15:15:39+02:00",
+     "position": 2,
+     "updated_at": "2026-04-24T15:15:41+02:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/DB-2_1.png?v=1777036541",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 39702679519266,
+     "created_at": "2026-04-24T15:15:39+02:00",
+     "position": 3,
+     "updated_at": "2026-04-24T15:15:40+02:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/Dental-GH-2_1.png?v=1777036540",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 38878222778402,
+     "created_at": "2026-02-03T19:09:37+01:00",
+     "position": 4,
+     "updated_at": "2026-02-10T17:36:47+01:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/DB-9.png?v=1770741407",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 38878213537826,
+     "created_at": "2026-02-03T19:04:39+01:00",
+     "position": 5,
+     "updated_at": "2026-02-10T17:36:47+01:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/DB-Dosage_92fe2136-17dc-4328-a9c4-0f443a75c21d.png?v=1770741407",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 38878213177378,
+     "created_at": "2026-02-03T19:04:26+01:00",
+     "position": 6,
+     "updated_at": "2026-02-10T17:37:36+01:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/db_complete_077b11c8-9c2c-4ede-b839-5bfb6d7e5356.png?v=1770741456",
+     "width": 1000,
+     "height": 1000
+    },
+    {
+     "id": 38878217502754,
+     "created_at": "2026-02-03T19:06:39+01:00",
+     "position": 7,
+     "updated_at": "2026-02-10T17:36:47+01:00",
+     "product_id": 8223535857698,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0853/6594/8450/files/DB-14.png?v=1770741407",
+     "width": 1000,
+     "height": 1000
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}
